@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "15.0.0-rc.0",
     "react": "19.0.0-rc-65903583-20240805",
     "react-dom": "19.0.0-rc-65903583-20240805"
