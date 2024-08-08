@@ -12,46 +12,46 @@ export async function getPostSlugs() {
 }
 
 export async function getPostBySlug(slug: string) {
-  const realSlug = slug.replace(/\.md$/, "");
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  try
-  {
-    const { data, content } = matter(fileContents);
-    if(!data.author)
-    {
-      console.log("Warning: " + fullPath + " has no author, using default");
-      data.author = {
-        name: "Arnaud TANGUY (default)",
-        picture: "/assets/blog/authors/arnaud-tanguy.jpg"
-      }
-    }
-    if(!data.date)
-    {
-      console.log("Warning: " + fullPath + " has no date, using default");
-      data.date = new Date().toISOString();
-    }
-    if(!data.coverImage)
-    {
-      if(data.image)
-      {
-        // XXX check if image exists
-        data.coverImage = "/assets/blog/covers/" + data.image + "-cover.jpg";
-        console.log("Cover image is " + data.coverImage);
-      }
-    }
-    if(!data.ogImage)
-    {
-      data.ogImage = {
-        url: "/assets/blog/" + realSlug + "/cover.jpg"
-      }
-    }
-    return { ...data, slug: realSlug, content } as Post;
-  }
-  catch(error)
-  {
-    throw new Error(fullPath + " " + error); 
-  }
+ const realSlug = slug.replace(/\.md$/, "");
+ const fullPath = join(postsDirectory, `${realSlug}.md`);
+ const fileContents = fs.readFileSync(fullPath, "utf8");
+ try
+ {
+   const { data, content } = matter(fileContents);
+   if(!data.author)
+   {
+     console.log("Warning: " + fullPath + " has no author, using default");
+     data.author = {
+       name: "Arnaud TANGUY (default)",
+       picture: "/assets/blog/authors/arnaud-tanguy.jpg"
+     }
+   }
+   if(!data.date)
+   {
+     console.log("Warning: " + fullPath + " has no date, using default");
+     data.date = new Date().toISOString();
+   }
+   if(!data.coverImage)
+   {
+     if(data.image)
+     {
+       // XXX check if image exists
+       data.coverImage = "/assets/blog/covers/" + data.image + "-cover.jpg";
+       console.log("Cover image is " + data.coverImage);
+     }
+   }
+   if(!data.ogImage)
+   {
+     data.ogImage = {
+       url: "/assets/blog/" + realSlug + "/cover.jpg"
+     }
+   }
+   return { ...data, slug: realSlug, content } as Post;
+ }
+ catch(error)
+ {
+   throw new Error(fullPath + " " + error); 
+ }
 
 }
 

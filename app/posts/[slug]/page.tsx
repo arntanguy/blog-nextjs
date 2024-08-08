@@ -1,5 +1,7 @@
 import { getPostBySlug } from "@/app/lib/actions";
+import { MarkdownToReact } from "@/app/lib/markdownToReact";
 import Image from "next/image";
+import { teko } from "@/app/ui/fonts";
 
 export default async function Post( { params } : { params: { slug: string } } )
 {
@@ -7,10 +9,23 @@ export default async function Post( { params } : { params: { slug: string } } )
   const post = await getPostBySlug(slug);
 
   return (
-    <main>
-      <h1>{post.title}</h1>
-      { post.coverImage && <Image src={post.coverImage} alt={post.title} width={720} height={410} /> }
-      {post.content}
-    </main>
+  <div className="grid place-items-center h-screen"> 
+   <div className="w-full lg:w-4/5 max-w-[1024px]">
+      <h2 className={`${teko.className} text-lg font-semibold text-center uppercase`}>{post.author.name}</h2>
+      <h1 className={`${teko.className} text-3xl font-bold text-center`}>{post.title}</h1>
+      { post.coverImage && 
+          <div className="relative w-full h-96">
+          <Image src={post.coverImage} alt={post.title} fill/>
+          </div>
+      }
+      {/* By default tailwindcss removes all default html styles
+          We use prose to mimic the default html behaviour 
+          See https://github.com/tailwindlabs/tailwindcss-typography
+          */}
+      <article className="prose lg:prose-lg xl:prose-xl max-w-none">
+        <MarkdownToReact markdown={post.content} />
+      </article>
+    </div>
+    </div>
   );
 }
