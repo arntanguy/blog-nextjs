@@ -14,8 +14,8 @@ export default async function Post( { params } : { params: { slug: string } } )
       <h2 className={`${teko.className} text-lg font-semibold text-center uppercase`}>{post.author.name}</h2>
       <h1 className={`${teko.className} text-3xl font-bold text-center`}>{post.title}</h1>
       { post.coverImage && 
-          <div className="relative w-full h-96">
-          <Image src={post.coverImage} alt={post.title} fill/>
+          <div className="relative w-full h-[500px]">
+          <Image className="object-cover" src={post.coverImage} alt={post.title} fill/>
           </div>
       }
       {/* By default tailwindcss removes all default html styles

@@ -6,6 +6,7 @@ import { join } from "path";
 import matter from "gray-matter";
 
 const postsDirectory = join(process.cwd(), "_posts");
+const defaultAuthor = { name: "Arnaud TANGUY", picture: "/assets/blog/authors/arnaud-tanguy.jpg" };
 
 export async function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
@@ -21,10 +22,7 @@ export async function getPostBySlug(slug: string) {
    if(!data.author)
    {
      console.log("Warning: " + fullPath + " has no author, using default");
-     data.author = {
-       name: "Arnaud TANGUY (default)",
-       picture: "/assets/blog/authors/arnaud-tanguy.jpg"
-     }
+     data.author = defaultAuthor;
    }
    if(!data.date)
    {
