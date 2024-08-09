@@ -1,7 +1,14 @@
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-
+import Markdown from 'markdown-to-jsx'
+import Link from 'next/link'
 
 export function MarkdownToReact({ markdown } : { markdown: string }) {
-  return <ReactMarkdown>{markdown}</ReactMarkdown>; 
+  return <Markdown
+    children={markdown}
+    options={{
+      overrides: {
+        Link: {
+          component: Link
+        }
+      }
+    }} />
 }
