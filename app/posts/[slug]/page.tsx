@@ -9,7 +9,7 @@ export default async function Post( { params } : { params: { slug: string } } )
   const post = await getPostBySlug(slug);
 
   return (
-  <div className="grid place-items-center h-screen"> 
+  <div className="grid place-items-center h-screen m-4 md:m-8"> 
    <div className="w-full lg:w-4/5 max-w-[1024px]">
       <h2 className={`${teko.className} text-lg font-semibold text-center uppercase`}>{post.author.name}</h2>
       <h1 className={`${teko.className} text-3xl font-bold text-center`}>{post.title}</h1>
@@ -22,8 +22,8 @@ export default async function Post( { params } : { params: { slug: string } } )
           We use prose to mimic the default html behaviour 
           See https://github.com/tailwindlabs/tailwindcss-typography
           */}
-      <article className="prose lg:prose-lg xl:prose-xl max-w-none">
-        <MarkdownToReact markdown={post.content} />
+      <article className={`prose lg:prose-lg xl:prose-xl max-w-none mt-8 mb-8`}>
+        <MarkdownToReact post={post} />
       </article>
     </div>
     </div>

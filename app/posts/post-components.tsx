@@ -34,14 +34,14 @@ export async function PostPreview({
   return (
     <div key={slug} className="relative text-center bg-gray-100 rounded-lg hover:shadow-lg overflow-hidden">
       <div className="relative object-contain h-96">
-        <Link href={"/posts/" + slug} key={slug}>
+      <Link href={"/posts/" + slug} key={slug}>
           <Image
             className="hover:scale-110 ease-in duration-300"
             src={coverImage}
             alt={title}
             fill
           />
-        </Link>
+      </Link>
       </div>
       <div className="w-full absolute bottom-0 left-0 text-center bg-gradient-to-b from-gray-50 to-gray-200 opacity-70 hover:from-gray-200 hover:to-gray-400">
         <h3 className={`${teko.className} text-lg uppercase`}>{author.name}</h3>
