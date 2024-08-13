@@ -1,11 +1,8 @@
-"use client";
-
 import { Author } from "@/app/lib/definitions";
-import {getPostBySlug, getAllPosts} from '@/app/lib/actions'
 import Image from "next/image";
 import Link from "next/link";
-import { MarkdownToReact } from "@/app/lib/markdownToReact";
 import { teko } from "@/app/ui/fonts";
+import {getPostBySlug, getAllPosts} from '@/app/lib/actions'
 
 type Props = {
   title: string;
@@ -43,12 +40,16 @@ export async function PostPreview({
           />
       </Link>
       </div>
-      <div className="w-full absolute bottom-0 left-0 text-center bg-gradient-to-b from-gray-50 to-gray-200 opacity-70 hover:from-gray-200 hover:to-gray-400">
-        <h3 className={`${teko.className} text-lg uppercase`}>{author.name}</h3>
+      <div className="w-full absolute bottom-0 left-0 text-center
+        bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-600 dark:to-gray-900 opacity-70
+        hover:from-gray-200 hover:to-gray-400
+        dark:hover:from-gray-400 dark:hover:to-gray-600
+        ">
+        <h3 className={`${teko.className} text-gray-700 dark:text-gray-100 text-lg uppercase`}>{author.name}</h3>
         <Link href={"/posts/" + slug} key={slug}>
-        <h1 className={`${teko.className} text-xl md:text-2xl font-semibold text-black uppercase hover:underline`}>{title}</h1>
+        <h1 className={`${teko.className} text-gray-900 dark:text-gray-100 text-xl md:text-2xl font-semibold uppercase hover:underline`}>{title}</h1>
         </Link>
-        <p className={`${teko.className}`} >{dateFmt}</p>
+        <p className={`${teko.className} text-gray-700 dark:text-gray-100`} >{dateFmt}</p>
         { /* <p><MarkdownToReact markdown={excerpt} /></p> */ }
       </div>
     </div>

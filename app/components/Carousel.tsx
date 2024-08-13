@@ -7,7 +7,7 @@ export default function Carousel( { carousel }: { carousel : CarouselType } )
   const images = carousel.images;
 
   return (
-    <div className="bg-white rounded-xl overflow-hidden shadow-lg h-full py-6 sm:py-8 lg:py-12">
+    <div className="bg-gray-300 dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg h-full py-6 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
           {
@@ -38,8 +38,8 @@ export default function Carousel( { carousel }: { carousel : CarouselType } )
       </div>
       { (carousel.title || carousel.description) &&
         <div className="pt-6 sm:pt-8 lg:pt-12">
-          {carousel.title && <h1 className="text-center text-lg font-bold text-gray-900">{carousel.title}</h1>}
-          {carousel.description && <p className="text-center text-md font-medium text-gray-600">{carousel.description}</p>}
+          {carousel.title && <h1 className="text-center text-lg font-bold text-gray-900 dark:text-gray-100">{carousel.title}</h1>}
+          {carousel.description && <p className="text-center text-md font-medium text-gray-600 dark:text-gray-400">{carousel.description}</p>}
         </div>
       }
       </div>
