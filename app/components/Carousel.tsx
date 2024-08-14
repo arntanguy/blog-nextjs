@@ -20,7 +20,6 @@ export default function Carousel( { carousel }: { carousel : CarouselType } )
                     {"col-span-2" : image.large},
                     {"col-span-2 sm:col-span-3" : image.fullWidth},
                     "md:h-96")} >
-                    <a href="#">
                       { (!image.type || image.type === "image") &&
                         <>
                           <Image src={image.url} alt={image.title || ""} className="absolute h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" fill />
@@ -36,7 +35,6 @@ export default function Carousel( { carousel }: { carousel : CarouselType } )
                       { (image.type && image.type === "video") &&
                         <ReactPlayer url={image.url} width="100%" height="100%" controls />
                     }
-                    </a>
                   </div>)
             }
           )

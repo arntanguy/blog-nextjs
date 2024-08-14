@@ -4,8 +4,17 @@ import Markdown from 'markdown-to-jsx'
 import Link from 'next/link'
 import Carousel from '@/app/components/Carousel'
 import Video from '@/app/components/video'
+import Image from 'next/image'
 import { Post } from '@/app/lib/definitions';
 import React from 'react';
+
+export function MarkdownImage({ src, alt } : { src: string, alt: string }) {
+  return <>
+          <div className="relative h-[500px] w-full overflow-hidden not-prose my-4 md:my-8">
+            <Image src={src} alt={alt} className="absolute h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" fill />
+          </div>
+        </>;
+} 
 
 /*
  * Converts from markdown to JSX with curtom react components support
@@ -46,6 +55,9 @@ export function MarkdownToReact({ post } : { post: Post }) {
         },
         Carousel: {
           component: CarouselWithData
+        },
+        Image: {
+          component: MarkdownImage
         }
       },
     }} />
