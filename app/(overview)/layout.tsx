@@ -23,25 +23,15 @@ export default function RootLayout({
     children: React.ReactNode;
   }) {
   return (
-    <>
-      { /* hero */ }
-        <div className="relative">
-          <div className="relative w-full h-[500px]">
-            <Link href="/">
-              <Image className="object-cover" src="/header.jpg" alt="Arnaud Tanguy" fill />
-            </Link>
-          </div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-1/2">
-            <h1 className={`${teko.className} text-8xl font-bold text-gray-300`}>Arnaud TANGUY</h1>
-            <h2 className={`${prozaLibre.className} uppercase font-semibold text-gray-100`}>Mountaineering, Ice Climbing, Photography</h2>
-          </div>
+    <main>
+    <header
+        className="w-full h-[40vh] lg:h-[60vh] bg-[url('/header.jpg')] bg-cover bg-center flex justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
+            <h1 className={`${teko.className} text-5xl md:text-6xl font-extrabold text-gray-300 text-center`}>Arnaud <span className="">TANGUY</span></h1>
+            <h2 className={`${prozaLibre.className} uppercase mt-5 text-center text-2xl md:text-3xl lg:text-4xl text-white opacity-70 text-semibold tracking-tighter`}>Mountaineering, Ice Climbing, Photography</h2>
         </div>
-        { /* /hero */ }
-        <Navigation />
-
-        <div className="mt-4">
-          {children}
-        </div>
-      </>
+      </header>
+      {children}
+    </main>
   );
 }

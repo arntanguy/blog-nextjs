@@ -22,15 +22,13 @@ export default function Carousel( { carousel }: { carousel : CarouselType } )
                     "md:h-96")} >
                       { (!image.type || image.type === "image") &&
                         <>
-                          <Image src={image.url} alt={image.title || ""} className="absolute h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" fill />
-                            <div
-                            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            { image.title &&
-                              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">{image.title}</span>
+                          <Image src={image.url} alt={image.title || ""} className="absolute h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                          sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 10vw"
+                          fill />
+                          { image.title &&
+                              <span className="relative mx-4 my-3 inline-block text-sm text-white md:mx-5 md:text-lg">{image.title}</span>
                           }
-                          </>
+                        </>
                     }
                       { (image.type && image.type === "video") &&
                         <ReactPlayer url={image.url} width="100%" height="100%" controls />
