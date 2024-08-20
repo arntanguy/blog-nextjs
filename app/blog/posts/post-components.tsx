@@ -1,8 +1,8 @@
-import { Author } from "@/app/lib/definitions";
+import { Author } from "@/app/blog/lib/definitions";
 import Image from "next/image";
 import Link from "next/link";
 import { teko } from "@/app/ui/fonts";
-import {getPostBySlug, getAllPosts} from '@/app/lib/actions'
+import {getPostBySlug, getAllPosts} from '@/app/blog/lib/actions'
 
 type Props = {
   title: string;
@@ -31,7 +31,7 @@ export async function PostPreview({
   return (
     <div key={slug} className="relative text-center bg-gray-100 rounded-lg hover:shadow-lg overflow-hidden">
       <div className="relative object-contain h-96">
-      <Link href={"/posts/" + slug} key={slug}>
+      <Link href={"/blog/posts/" + slug} key={slug}>
           <Image
             className="hover:scale-110 ease-in duration-300"
             src={coverImage}
@@ -46,7 +46,7 @@ export async function PostPreview({
         dark:hover:from-gray-400 dark:hover:to-gray-600
         ">
         <h3 className={`${teko.className} text-gray-700 dark:text-gray-100 text-lg uppercase`}>{author.name}</h3>
-        <Link href={"/posts/" + slug} key={slug}>
+        <Link href={"/blog/posts/" + slug} key={slug}>
         <h1 className={`${teko.className} text-gray-900 dark:text-gray-100 text-xl md:text-2xl font-semibold uppercase hover:underline`}>{title}</h1>
         </Link>
         <p className={`${teko.className} text-gray-700 dark:text-gray-100`} >{dateFmt}</p>

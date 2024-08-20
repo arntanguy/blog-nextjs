@@ -1,11 +1,22 @@
-import { getPostBySlug } from "@/app/lib/actions";
-import { MarkdownToReact } from "@/app/lib/markdownToReact";
+import { getPostBySlug } from "@/app/blog/lib/actions";
+import { MarkdownToReact } from "@/app/blog/lib/markdownToReact";
 import Image from "next/image";
 import Link from 'next/link';
 import { teko, prozaLibre } from '@/app/ui/fonts';
-import { Post } from '@/app/lib/definitions';
-import Breadcrumbs from '@/app/components/breadcrumbs';
-import Navigation from '@/app/components/naviagation';
+import { Post } from '@/app/blog/lib/definitions';
+// import Breadcrumbs from '@/app/components/breadcrumbs';
+import { ArrowUturnLeftIcon } from "@heroicons/react/24/outline";
+
+// dynamic metadata
+// XXX: Duplicates reading the post data with the page
+// How to avoid this duplication?
+export async function generateMetadata( { params } : { params: { slug: string } } ) {
+  const post = await getPostBySlug(params.slug);
+
+  return {
+    title: post.title
+  }
+}
 
 export function Hero({post} : { post: Post })
 {
@@ -15,7 +26,7 @@ export function Hero({post} : { post: Post })
     <main>
       <div className="relative">
         <div className="w-full h-[500px]">
-          <Link href="/">
+          <Link href="/blog">
             <Image className="object-cover" src={post.coverImage} alt={post.title} fill />
           </Link>
         </div>
@@ -30,7 +41,11 @@ export function Hero({post} : { post: Post })
           <h3 className={`${prozaLibre.className} text-lg uppercase font-semibold text-gray-800 mt-2`}>{dateFmt}</h3>
         </div>
       </div>
-        <Navigation />
+      <div>
+        <Link href="/blog">
+          <ArrowUturnLeftIcon className="fixed w-6 h-6 my-8 mx-12 text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-200" />
+        </Link>
+      </div>
         {/* <div className="flex px-4 sm:px-12 md:px-24 lg:px-36 mt-4 mb-4"> */}
         {/*   <Breadcrumbs */}
         {/*   breadcrumbs={[ */}

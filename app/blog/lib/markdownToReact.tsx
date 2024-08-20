@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Carousel from '@/app/components/Carousel'
 import Video from '@/app/components/video'
 import Image from 'next/image'
-import { Post } from '@/app/lib/definitions';
+import { Post } from '@/app/blog/lib/definitions';
 import React from 'react';
 
 export function MarkdownImage({ src, alt } : { src: string, alt: string }) {

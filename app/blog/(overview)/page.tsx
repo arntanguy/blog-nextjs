@@ -1,4 +1,4 @@
-import { PostsGrid } from "@/app/posts/post-components";
+import { PostsGrid } from "@/app/blog/posts/post-components";
 
 export default async function Home() {
   return (

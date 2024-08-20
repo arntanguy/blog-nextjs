@@ -1,20 +1,7 @@
 // Import global css style
 import { Metadata } from 'next';
 import '@/app/ui/global.css';
-import Image from 'next/image';
-import Link from 'next/link';
 import { teko, prozaLibre } from '@/app/ui/fonts';
-import Navigation from '@/app/components/naviagation';
-
-
-export const metadata: Metadata = {
-  title: {
-    template: '%s | Arnaud\'s Blog',
-    default: 'Arnaud\'s Blog',
-  },
-  description: 'The official Next.js Learn Dashboard built with App Router.',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
-};
 
 
 export default function RootLayout({

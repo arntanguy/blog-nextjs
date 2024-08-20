@@ -1,24 +1,22 @@
-// Import global css style
 import { Metadata } from 'next';
 import '@/app/ui/global.css';
 import Providers from '@/app/ui/providers';
-import ThemeToggle from '@/app/ui/ToggleTheme';
+import Navigation from '@/app/components/naviagation';
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Arnaud\'s Blog',
-    default: 'Arnaud\'s Blog',
+    template: '%s | Arnaud Tanguy',
+    default: 'Portfolio',
   },
-  description: 'The official Next.js Learn Dashboard built with App Router.',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+  description: 'Arnaud TANGUY\'s - Portfolio, Climbing, Mountaineering, Robotics and Photography'
 };
 
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
-}) {
+    children: React.ReactNode;
+  }) {
   return (
     //  We add suppressHydrationWarning because the ThemeProvider updates
     //  this element. This only applies to the html tag itself, not its children
@@ -26,12 +24,13 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
     >
-      {/* Allows to change between light and dark theme, remember user preferences */}
-      <body className="bg-gray-100 dark:bg-gray-900">
-        <Providers>
-          {children}
-        </Providers>
-      </body>
-    </html>
+        <body className="bg-gray-100 dark:bg-gray-900">
+          {/* Allows to change between light and dark theme, remember user preferences */}
+          <Providers>
+            <Navigation />
+            {children}
+          </Providers>
+        </body>
+      </html>
   );
 }

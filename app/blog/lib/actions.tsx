@@ -1,6 +1,6 @@
 'use server';
 
-import { Post } from '@/app/lib/definitions';
+import { Post } from '@/app/blog/lib/definitions';
 import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
