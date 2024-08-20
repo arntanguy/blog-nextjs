@@ -1,4 +1,4 @@
-import { CarouselImage, CarouselType } from '@/app/lib/definitions';
+import { CarouselImage, CarouselType } from '@/app/blog/lib/definitions';
 import Image from 'next/image';
 import clsx from 'clsx';
 import ReactPlayer from 'react-player'

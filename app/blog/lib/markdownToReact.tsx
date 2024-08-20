@@ -43,7 +43,6 @@ export function MarkdownToReact({ post } : { post: Post }) {
   };
 
   return <Markdown
-    children={markdown}
     options={{
       // These components should be wrapped in className="not-pose" when appropriate
       overrides: {
@@ -60,5 +59,5 @@ export function MarkdownToReact({ post } : { post: Post }) {
           component: MarkdownImage
         }
       },
-    }} />
+    }}>{markdown}</Markdown>;
 }

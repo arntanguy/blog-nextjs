@@ -18,7 +18,7 @@ export async function generateMetadata( { params } : { params: { slug: string } 
   }
 }
 
-export function Hero({post} : { post: Post })
+function Hero({post} : { post: Post })
 {
   const dateFmt = new Date(post.date).toLocaleDateString(); 
 
