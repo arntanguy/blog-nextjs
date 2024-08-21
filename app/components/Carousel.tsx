@@ -21,6 +21,15 @@ export default function Carousel( { carousel, fullWidth = true }: { carousel : C
           {
           images.map(
             (image : CarouselImage) => {
+              let path = "";
+              if(carousel.basePath && !image.url.startsWith("/"))
+              {
+                  path = carousel.basePath + "/" + image.url; // relative path
+              }
+              else
+              {
+                  path = image.url; // absolute path
+              }
               return (
                 <div key={image.url}
                   className={clsx("group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg",
@@ -29,7 +38,7 @@ export default function Carousel( { carousel, fullWidth = true }: { carousel : C
                     "md:h-96")} >
                       { (!image.type || image.type === "image") &&
                         <>
-                          <Image src={image.url} alt={image.title || ""} className="absolute h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                          <Image src={path} alt={image.title || ""} className="absolute h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                           sizes="(max-width: 768px) 30vw, (max-width: 1200px) 40vw, 50vw"
                           fill />
                           { image.title &&

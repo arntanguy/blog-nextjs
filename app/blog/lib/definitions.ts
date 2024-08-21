@@ -16,6 +16,7 @@ export type CarouselImage = {
 export type CarouselType = {
   title?: string;
   description?: string;
+  basePath?: string;
   images: CarouselImage[];
 }
 

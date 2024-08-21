@@ -9,12 +9,27 @@ import { Post } from '@/app/blog/lib/definitions';
 import React from 'react';
 import Strava from '@/app/components/Strava'
 import FullWidth from '@/app/components/FullWidth';
+import clsx from 'clsx';
 
-export function MarkdownImage({ src, alt, fullWidth = false } : { src: string, alt: string, fullWidth?: boolean }) {
+export function MarkdownImage({ src, caption, credits, fullWidth = false } : { src: string, caption: string, credits?: string, fullWidth?: boolean }) {
+  console.log("Image src: " + src + " fullwidth: " + fullWidth);
   return <>
           <FullWidth fullWidth={fullWidth} padding={false} >
-          <div className="relative h-[300px] w-full overflow-hidden not-prose my-2 md:my-2">
-            <Image src={src} alt={alt} className="absolute h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" fill />
+          <div className={ clsx(
+            "relative overflow-hidden not-prose my-2 md:my-2",
+            fullWidth ?
+            "w-full my-2 md:my-2"
+            : "h-[300px] w-full" 
+      ) }>
+            {/* <Image src={src} alt={alt} className="w-full h-full object-contain object-center transition duration-200 group-hover:scale-110" fill /> */}
+            {/* XXX: Using next/image does not work without specifying height */}
+            <img src={src} alt={caption} className="w-full h-full object-contain object-center transition duration-200 group-hover:scale-110" fill />
+            { (caption || credits) &&
+              <figcaption className="italic ml-4 sm:ml-10 md:ml-20 lg:ml-30 p-2 md:p-4 bg-gray-200 dark:bg-gray-700 rounded-lg">
+              { caption && <p className="text-gray-600 dark:text-gray-300">{caption}</p> }
+              { credits && <p className="text-gray-400 dark:text-gray-400">Credits: {credits}</p> }
+              </figcaption>
+            }
           </div>
           </FullWidth>
         </>;
