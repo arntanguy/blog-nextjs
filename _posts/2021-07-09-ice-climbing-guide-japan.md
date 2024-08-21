@@ -43,7 +43,6 @@ carousels:
     - url: 06-view-down-1352x2227.jpg
     - url: /assets/blog/japan-ice-topo/hokkaido/raiden/view.mp4
       type: "video"
-# {% include video.html path="/images/japan-ice-topo/hokkaido/raiden/view.mp4" type="mp4" alt="Mount Raident" %}
 
   yatsugatake:
     basePath: "/assets/blog/japan-ice-topo/galleries/ice-climbing-guide-japan-yatsugatake"
@@ -249,9 +248,7 @@ The *Yatsugatake Mountains (八ヶ岳連峰 - eight peaks mountain)* are a volca
 
 Here is a map of the approach to 大同心 waterfall passing by the Akadake Kosen hut and the 行者小屋 on the way down.
 
-<center>
-<iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/4467667956/embed/dece7a6d4baa31d23bde5d5773d4f48e0426c5f6'></iframe>
-</center>
+<Strava url='https://www.strava.com/activities/4467667956/embed/dece7a6d4baa31d23bde5d5773d4f48e0426c5f6' />
 
 - **Accomodation**: Camping or Hut 
 - **Information**
@@ -285,8 +282,6 @@ Yonagofudo is known for its hard multipitch ice falls, some of which boasting ov
   - Dragon God (WI4, ~60m) [left of Anaconda ~50m walk]
 
 <Carousel name="yonagofudo" />
-
-{% include video.html path="/images/japan-ice-topo/yonagofudo/cobra_video.mp4" type="mp4" width="50%" %}
 
 ## Oyafudo
 
