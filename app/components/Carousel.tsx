@@ -3,12 +3,21 @@ import Image from 'next/image';
 import clsx from 'clsx';
 import ReactPlayer from 'react-player'
 
-export default function Carousel( { carousel }: { carousel : CarouselType } )
+export default function Carousel( { carousel, notFullWidth }: { carousel : CarouselType, notFullWidth?: boolean } )
 {
+  console.log("Carousel " + carousel.title + " fullwidth? " + notFullWidth);
   const images = carousel.images;
+  const fullWidth = !notFullWidth;
 
   return (
-    <div className="bg-gray-300 dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg h-full w-full py-6 sm:py-8 lg:py-12 mt-6 sm:mt-8 lg:mt-12 mb-6 sm:mb-8 lg:mb-12">
+    // Make carousel fullscreen
+    <div className={clsx(
+              fullWidth ? 'relative w-screen ml-[-50vw] left-1/2 px-1 sm:px-4 md:px-8 lg:px-12 xl:px-24' : 'w-full'
+            )}>
+    <div className={ clsx(
+      fullWidth && 'bg-gray-300 dark:bg-gray-700', // full width style
+      !fullWidth && 'bg-gray-300 dark:bg-gray-700',
+      "rounded-xl overflow-hidden shadow-lg h-full w-full py-6 sm:py-8 lg:py-12 mt-6 sm:mt-8 lg:mt-12 mb-6 sm:mb-8 lg:mb-12")} >
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
           {
@@ -45,6 +54,7 @@ export default function Carousel( { carousel }: { carousel : CarouselType } )
               {carousel.description && <p className="text-center text-md font-medium text-gray-600 dark:text-gray-400">{carousel.description}</p>}
             </div>
       }
+      </div>
       </div>
   )
 }

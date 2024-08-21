@@ -19,7 +19,8 @@ export default function Navigation() {
           <>
             <div className="flex items-center rounded-lg overflow-hidden
             text-gray-600 hover:text-gray-800 hover:bg-gray-300 
-            dark:text-gray-400 dark:hover:text-gray-100 dark:hover:bg-gray-700 mr-1 md:mx-2 lg:mx-4 py-2">
+            dark:text-gray-400 dark:hover:text-gray-100 dark:hover:bg-gray-700
+            mr-1 md:mr-2 lg:mr-4 px-2 py-2">
               <IconComponent className="w-5 h-5 md:w-7 md:h-7 mr-1 md:mr-2" />
               <Link key={link.href} href={link.href} 
               className={`${prozaLibre.className}
