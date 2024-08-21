@@ -29,13 +29,13 @@ export function MarkdownToReact({ post } : { post: Post }) {
 
   // Carousel image data is stored in the markdown frontmatter
   // Create a new component that forwards this data to the Carousel component
-  const CarouselWithData = ({ name, notFullWidth } : { name: string, notFullWidth?: boolean } ) => 
+  const CarouselWithData = ({ name, fullWidth = true } : { name: string, fullWidth?: boolean } ) => 
   {
     if(post.carousels && post.carousels[name])
     {
       const carousel = post.carousels[name];
       // Wrap in not-prose to prevent the prose style from messing up the carousel layout
-      return <div className="not-prose"><Carousel carousel={carousel} notFullWidth={notFullWidth} /></div>;
+      return <div className="not-prose"><Carousel carousel={carousel} fullWidth={fullWidth} /></div>;
     }
     else
     {
