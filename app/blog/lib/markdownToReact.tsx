@@ -8,12 +8,15 @@ import Image from 'next/image'
 import { Post } from '@/app/blog/lib/definitions';
 import React from 'react';
 import Strava from '@/app/components/Strava'
+import FullWidth from '@/app/components/FullWidth';
 
-export function MarkdownImage({ src, alt } : { src: string, alt: string }) {
+export function MarkdownImage({ src, alt, fullWidth = false } : { src: string, alt: string, fullWidth?: boolean }) {
   return <>
-          <div className="relative h-[500px] w-full overflow-hidden not-prose my-4 md:my-8">
+          <FullWidth fullWidth={fullWidth} padding={false} >
+          <div className="relative h-[300px] w-full overflow-hidden not-prose my-2 md:my-2">
             <Image src={src} alt={alt} className="absolute h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" fill />
           </div>
+          </FullWidth>
         </>;
 } 
 

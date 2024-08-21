@@ -8,4 +8,4 @@ tags: [climbing, big-wall, ecrins, ailefroide, france]
 
 Ascension de la grande voie "J'irai percer sur vos tombes" (TD, 6B+, 350m) en Juillet 2019, durant le camp d'été du CAF de Montpellier.
 
-<Video url="https://www.youtube.com/watch?v=w-xF5nGw-7E" />
+<Video url="https://www.youtube.com/watch?v=w-xF5nGw-7E" border />
