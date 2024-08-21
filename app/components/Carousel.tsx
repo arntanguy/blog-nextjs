@@ -23,7 +23,7 @@ export default function Carousel( { carousel }: { carousel : CarouselType } )
                       { (!image.type || image.type === "image") &&
                         <>
                           <Image src={image.url} alt={image.title || ""} className="absolute h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                          sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 10vw"
+                          sizes="(max-width: 768px) 30vw, (max-width: 1200px) 40vw, 50vw"
                           fill />
                           { image.title &&
                               <span className="relative mx-4 my-3 inline-block text-sm text-white md:mx-5 md:text-lg">{image.title}</span>

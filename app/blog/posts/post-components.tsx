@@ -30,10 +30,10 @@ export async function PostPreview({
 
   return (
     <div key={slug} className="relative text-center bg-gray-100 rounded-lg hover:shadow-lg overflow-hidden">
-      <div className="relative object-contain h-96">
+      <div className="relative h-96">
       <Link href={"/blog/posts/" + slug} key={slug}>
           <Image
-            className="hover:scale-110 ease-in duration-300"
+            className="object-cover hover:scale-110 ease-in duration-300"
             src={coverImage}
             alt={title}
             fill
@@ -61,7 +61,7 @@ export async function PostsGrid()
   const allPosts = await getAllPosts();
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 lg:gap-4 items-center m-2 md:m-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 md:gap-4 items-center m-2 md:m-8">
       {
         allPosts.map((post) => 
           <PostPreview 

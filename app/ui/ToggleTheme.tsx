@@ -20,8 +20,8 @@ export default function ThemeToggle() {
         return setTheme('dark')
       }}
     >
-        <SunIconOutline className="dark:hidden w-6 h-6 text-gray-500 hover:text-gray-800" />
-        <MoonIconOutline className="hidden dark:block w-6 h-6 text-gray-500 hover:text-gray-200" />
+        <SunIconOutline className="hidden dark:block w-6 h-6 text-gray-500 hover:text-gray-800" />
+        <MoonIconOutline className="dark:hidden w-6 h-6 text-gray-500 hover:text-gray-200" />
       </button>
       </div>
   )
