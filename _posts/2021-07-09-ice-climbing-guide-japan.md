@@ -327,7 +327,7 @@ The area around Nikko has the poptential for many interesting waterfall. Unfortu
 
 ## Kaikomagatake
 
-See the [Kaikomagatake - Pachinko Climbing post]({{site.baseurl}}/kaikomagatake).
+See the <Link href="/blog/posts/2019-12-25-kaikomagatake">Kaikomagatake - Pachinko Climbing post</Link>.
 
 <Image src="/assets/blog/japan-ice-topo/hokkaido-west-sunset-2400.jpg" caption="Sunset along the west coast of Hokkaido - January 2021" credits="Arnaud TANGUY" fullWidth />
 

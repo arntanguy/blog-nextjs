@@ -32,7 +32,8 @@ export default function Carousel( { carousel, fullWidth = true }: { carousel : C
               }
               return (
                 <div key={image.url}
-                  className={clsx("group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg",
+                  className={clsx("group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100",
+                  "bg-gray-300 dark:bg-gray-700",
                     {"col-span-2" : image.large},
                     {"col-span-2 sm:col-span-3" : image.fullWidth},
                     "md:h-96")} >
@@ -47,7 +48,7 @@ export default function Carousel( { carousel, fullWidth = true }: { carousel : C
                         </>
                     }
                       { (image.type && image.type === "video") &&
-                        <ReactPlayer url={image.url} width="100%" height="100%" controls />
+                        <ReactPlayer url={path} width="100%" height="100%" controls />
                     }
                   </div>)
             }
