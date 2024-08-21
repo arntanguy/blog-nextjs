@@ -81,6 +81,7 @@ carousels:
       caption: "... not formed yet (January 2021)"
     - url: "/assets/blog/japan-ice-topo/yatsugatake/bad_weather.mp4"
       type: "video"
+      fullWidth: true
   yonagofudo:
     basePath: "/assets/blog/japan-ice-topo/galleries/ice-climbing-guide-japan-yonagofudo"
     images:

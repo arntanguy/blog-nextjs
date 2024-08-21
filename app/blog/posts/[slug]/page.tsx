@@ -58,11 +58,11 @@ export default async function PostPage( { params } : { params: { slug: string } 
   return (
     <>
       <Hero post={post} />
-        <div className="px-2 md:px-8 xl:px-12 py-4 my-4 mx-auto shadow-md max-w-[65ch] md:bg-gray-200 dark:md:bg-gray-800 rounded-lg">
+        <div className="px-2 md:px-8 xl:px-12 py-4 my-4 mx-auto shadow-md max-w-[900px] md:bg-gray-200 dark:md:bg-gray-800 rounded-lg">
           {/* By default tailwindcss removes all default html styles */}
           {/* We use prose to mimic the default html behaviour  */}
           {/* See https://github.com/tailwindlabs/tailwindcss-typography */}
-          <article className={`prose dark:prose-invert text-justify`}>
+          <article className={`prose dark:prose-invert md:prose-base lg:prose-lg xl:prose-xl text-justify max-w-none`}>
             <MarkdownToReact post={post} />
           </article>
         </div>
