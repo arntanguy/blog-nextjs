@@ -100,20 +100,20 @@ carousels:
     basePath: "/assets/blog/camp-hiver-2022/camp-hiver-2022-cascade-delire-chacal"
     images:
     - url: 01-3000x2006.jpg
-      title: "Approche - D\xE9lire du Chacal - La Grave"
+      title: "Approche - Délire du Chacal - La Grave"
     - url: 02-3000x4487.jpg
-      title: "Approche - D\xE9lire du Chacal - La Grave"
+      title: "Approche - Délire du Chacal - La Grave"
     - url: 03-3000x2006.jpg
-      title: "Louis, L\xE9a et Tom-Alex au premier relai de D\xE9lire du Chacal"
+      title: "Louis, Léa et Tom-Alex au premier relai de Délire du Chacal"
     - url: 04-3000x2006.jpg
-      title: "Sarah Gr\xE9goire dans D\xE9lire du Chacal"
+      title: "Sarah Grégoire dans Délire du Chacal"
     - url: 05-3000x4487.jpg
-      title: "F\xE9lix appr\xE9cie sa premi\xE8re exp\xE9rience cascade de glace!"
+      title: "Félix apprécie sa première expérience cascade de glace!"
     - url: 06-3000x4487.jpg
-      title: "Nan mais vraiement, il adore \xE7a!"
+      title: "Nan mais vraiement, il adore ça!"
     - url: 07-3000x4487.jpg
     - url: 08-3000x4487.jpg
-      title: "Chass\xE9s par le spindrift"
+      title: "Chassés par le spindrift"
     - url: "traversee_riviere.mp4"
       type: "video"
 
@@ -382,7 +382,7 @@ Levé tôt, avant le levé du soleil pour entammer l'approche du Grand Pic de Be
 - Participants: Nicolas, Tom-Alex, Léa, Quentin, Arnaud, Sophie
 - Course: Cascades de Villard-Reymond, secteur La Gorge
 
-<Image src="/assets/blog/camp-hiver-2022/cascade-villard-reymond.jpg" caption="Arnaud Tanguy dans \"3 Cigares: La fête à la grenouille\" (WI5) - Villard Reymond - La Gorge" credits="Arnaud TANGUY" fullWidth />
+<Image src="/assets/blog/camp-hiver-2022/cascade-villard-reymond.jpg" caption='Arnaud Tanguy dans "3 Cigares: La fête à la grenouille" (WI5) - Villard Reymond - La Gorge' credits="Arnaud TANGUY" fullWidth />
 
 Le lendemain matin de notre aventure au Grand Pic de Bellone, la fatigue se fait sentir et la motivation n'est pas au plus haut. Après une bonne heure de tergiversations, nous arrivons cependant à nous décider à aller voir les cascades voisines de Villard-Reymond. L'heure se faisant tardive, se sera après un bref repas de midi que nous nous mettrons en chemin. Les cascades sont magnifiques, 3 beaux cigares et de nombreuses autres lignes. Les moins expérimentés du groupe s'essayent à la grimpe en tête en autonomie dans les premières demi-longueurs du secteur plus faciles, tandis que Sophie et Arnaud s'en vont mettre la corde dans un des cigares en WI5 aptement nommé "la fête à la grenouille". La corde en place, tout le monde aura l'occasion de se mesurer à un grade 5, une belle expérience pour tous, qui ne s'achèvera qu'à la tombée de la nuit, à la fontale!
 
