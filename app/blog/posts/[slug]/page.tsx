@@ -6,6 +6,7 @@ import { teko, prozaLibre } from '@/app/ui/fonts';
 import { Post } from '@/app/blog/lib/definitions';
 // import Breadcrumbs from '@/app/components/breadcrumbs';
 import { ArrowUturnLeftIcon } from "@heroicons/react/24/outline";
+import Footer from "@/app/components/Footer";
 
 // dynamic metadata
 // XXX: Duplicates reading the post data with the page
@@ -66,6 +67,7 @@ export default async function PostPage( { params } : { params: { slug: string } 
             <MarkdownToReact post={post} />
           </article>
         </div>
+      <Footer />
       </>
   );
 }

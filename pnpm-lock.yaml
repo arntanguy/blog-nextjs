@@ -44,6 +44,9 @@ importers:
       react-dom:
         specifier: 19.0.0-rc-65903583-20240805
         version: 19.0.0-rc-65903583-20240805(react@19.0.0-rc-65903583-20240805)
+      react-icons:
+        specifier: ^5.3.0
+        version: 5.3.0(react@19.0.0-rc-65903583-20240805)
       react-iframe:
         specifier: ^1.8.5
         version: 1.8.5(react@19.0.0-rc-65903583-20240805)
@@ -1709,6 +1712,11 @@ packages:
 
   react-fast-compare@3.2.2:
     resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
+
+  react-icons@5.3.0:
+    resolution: {integrity: sha512-DnUk8aFbTyQPSkCfF8dbX6kQjXA9DktMeJqfjrg6cK9vwQVMxmcA3BfP4QoiztVmEHtwlTgLFsPuH2NskKT6eg==}
+    peerDependencies:
+      react: '*'
 
   react-iframe@1.8.5:
     resolution: {integrity: sha512-F4cQJGs3ydaG6fJWfuz9yLwOU0Trzl6kttXuUG+vYwosH8enOOFxZWEDQCSbNVO8ayjfYZeqLxEvdvcsSy4GvA==}
@@ -4038,6 +4046,10 @@ snapshots:
       scheduler: 0.25.0-rc-65903583-20240805
 
   react-fast-compare@3.2.2: {}
+
+  react-icons@5.3.0(react@19.0.0-rc-65903583-20240805):
+    dependencies:
+      react: 19.0.0-rc-65903583-20240805
 
   react-iframe@1.8.5(react@19.0.0-rc-65903583-20240805):
     dependencies:

@@ -2,6 +2,7 @@
 import { Metadata } from 'next';
 import '@/app/ui/global.css';
 import { teko, prozaLibre } from '@/app/ui/fonts';
+import Footer from '@/app/components/Footer';
 
 
 export default function RootLayout({
@@ -19,6 +20,7 @@ export default function RootLayout({
         </div>
       </header>
       {children}
+      <Footer />
     </main>
   );
 }
