@@ -23,7 +23,7 @@ function Hero({post} : { post: Post })
   const dateFmt = new Date(post.date).toLocaleDateString(); 
 
   return (
-      <>
+    <>
       <div className="relative">
         <div className="w-full h-[50vh] lg:h-[60vh]">
           <Link href="/blog">
@@ -46,23 +46,6 @@ function Hero({post} : { post: Post })
             <ArrowUturnLeftIcon className="hidden lg:block fixed w-6 h-6 my-8 mx-12 text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-200" />
           </Link>
         </div>
-        {/* <div className="flex px-4 sm:px-12 md:px-24 lg:px-36 mt-4 mb-4"> */}
-        {/*   <Breadcrumbs */}
-        {/*   breadcrumbs={[ */}
-        {/*     { label: 'Home', href: '/' }, */}
-        {/*     { */}
-        {/*       label: 'Posts', */}
-        {/*       href: '/', */}
-        {/*       active: true, */}
-        {/*     }, */}
-        {/*     { */}
-        {/*       label: post.title, */}
-        {/*       href: '/posts/' + post.slug, */}
-        {/*       active: true, */}
-        {/*     } */}
-        {/*   ]} */}
-        {/* /> */}
-        {/* </div> */}
       </>
   );
 }
@@ -75,15 +58,13 @@ export default async function PostPage( { params } : { params: { slug: string } 
   return (
     <>
       <Hero post={post} />
-        <div className="grid place-items-center m-4 md:m-8 overflow-hidden"> 
-          <div className="w-full lg:w-4/5 max-w-[1024px] md:bg-gray-200 dark:md:bg-gray-800 rounded-lg">
-            {/* By default tailwindcss removes all default html styles */}
-            {/* We use prose to mimic the default html behaviour  */}
-            {/* See https://github.com/tailwindlabs/tailwindcss-typography */}
-            <article className={`prose dark:prose-invert lg:prose-lg xl:prose-xl text-justify max-w-none my-8 md:px-8`}>
-              <MarkdownToReact post={post} />
-            </article>
-          </div>
+        <div className="p-8 my-4 mx-auto shadow-md max-w-[65ch] md:bg-gray-200 dark:md:bg-gray-800 rounded-lg">
+          {/* By default tailwindcss removes all default html styles */}
+          {/* We use prose to mimic the default html behaviour  */}
+          {/* See https://github.com/tailwindlabs/tailwindcss-typography */}
+          <article className={`prose dark:prose-invert text-justify my-8 md:px-8`}>
+            <MarkdownToReact post={post} />
+          </article>
         </div>
       </>
   );

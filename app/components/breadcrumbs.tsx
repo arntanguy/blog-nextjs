@@ -8,6 +8,24 @@ interface Breadcrumb {
   active?: boolean;
 }
 
+// Example:
+// <div className="flex px-4 sm:px-12 md:px-24 lg:px-36 mt-4 mb-4">
+//   <Breadcrumbs
+//   breadcrumbs={[
+//     { label: 'Home', href: '/' },
+//     {
+//       label: 'Posts',
+//       href: '/',
+//       active: true,
+//     },
+//     {
+//       label: post.title,
+//       href: '/posts/' + post.slug,
+//       active: true,
+//     }
+//   ]}
+// />
+// </div>
 export default function Breadcrumbs({
   breadcrumbs,
 }: {
