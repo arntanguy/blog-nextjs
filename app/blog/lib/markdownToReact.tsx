@@ -23,7 +23,7 @@ export function MarkdownImage({ src, caption, credits, fullWidth = false } : { s
       ) }>
             {/* <Image src={src} alt={alt} className="w-full h-full object-contain object-center transition duration-200 group-hover:scale-110" fill /> */}
             {/* XXX: Using next/image does not work without specifying height */}
-            <img src={src} alt={caption} className="w-full h-full object-contain object-center transition duration-200 group-hover:scale-110" fill />
+            <img src={src} alt={caption} className="w-full h-full object-contain object-center transition duration-200 group-hover:scale-110" />
             { (caption || credits) &&
               <figcaption className="italic ml-4 sm:ml-10 md:ml-20 lg:ml-30 p-2 md:p-4 bg-gray-200 dark:bg-gray-700 rounded-lg">
               { caption && <p className="text-gray-600 dark:text-gray-300">{caption}</p> }
