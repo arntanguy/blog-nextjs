@@ -7,6 +7,7 @@ import Video from '@/app/components/video'
 import Image from 'next/image'
 import { Post } from '@/app/blog/lib/definitions';
 import React from 'react';
+import Strava from '@/app/components/Strava'
 
 export function MarkdownImage({ src, alt } : { src: string, alt: string }) {
   return <>
@@ -57,6 +58,9 @@ export function MarkdownToReact({ post } : { post: Post }) {
         },
         Image: {
           component: MarkdownImage
+        },
+        Strava: {
+          component: Strava
         }
       },
     }}>{markdown}</Markdown>;
