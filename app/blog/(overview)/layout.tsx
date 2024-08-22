@@ -11,7 +11,7 @@ export default function RootLayout({
     children: React.ReactNode;
   }) {
   return (
-    <main>
+    <>
     <header
         className="w-full h-[40vh] lg:h-[60vh] bg-[url('/header.jpg')] bg-cover bg-center flex justify-center items-center">
         <div className="flex flex-col justify-center items-center">
@@ -21,6 +21,6 @@ export default function RootLayout({
       </header>
       {children}
       <Footer />
-    </main>
+      </>
   );
 }

@@ -4,7 +4,7 @@ export default function FullWidth({ children, fullWidth = true, padding = true }
 
   return (
     <div className={clsx(
-              fullWidth ? 'relative w-screen ml-[-50vw] left-1/2' : 'w-full',
+              fullWidth ? 'relative w-[90vw] ml-[-45vw] sm:w-[95vw] sm:ml-[-47.5vw] left-1/2 overflow-hidden' : 'w-full',
               padding && 'sm:px-4 md:px-8 lg:px-20 xl:px-50'
             )}>
       {children}

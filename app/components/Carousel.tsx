@@ -16,7 +16,7 @@ export default function Carousel( { carousel, fullWidth = true }: { carousel : C
       !fullWidth && 'bg-gray-300 dark:bg-gray-700',
       "sm:rounded-xl overflow-hidden shadow-lg h-full w-full",
       "py-6 sm:py-8 lg:py-12 mt-6 sm:mt-8 lg:mt-12 mb-6 sm:mb-8 lg:mb-12")} >
-      <div className="mx-auto max-w-screen-2xl px-2 sm:px-4 md:px-8">
+      <div className="mx-auto px-2 sm:px-4 md:px-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6 xl:gap-16">
           {
           images.map(

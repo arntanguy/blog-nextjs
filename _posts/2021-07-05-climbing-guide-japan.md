@@ -225,7 +225,7 @@ Mizugaki is one of the largest climbing areas of Japan, with a rich climbing his
 - **Guidebook**: The Mizugaki guidebook is excellent, please refer to it for futher inspiration and all the information you will ever need for climbing in Mizugaki!
 - **Best period**: Spring and Autumn. However due to its high elevation above 1600m, it is one of the best areas to survive climbing during the hot summer months. Winter is tricky, as temperatures are cold, and the access road to the main parking area is closed due to snow, which adds about a kilometer of walking. 
 
-<Image src="/assets/blog/climbing-guide-japan/razor_blade-2400.jpg" caption="Joe Mignano climbing Razor's Edge - 5.10d" credits="Arnaud TANGUY" fullWidth /> 
+<Image src="/assets/blog/climbing-guide-japan/razor_blade-2400.jpg" caption="Joe Mignano climbing Razor's Edge> - 5.10d" credits="Arnaud TANGUY" fullWidth /> 
 
 ## Ogawayama (小川山)
 

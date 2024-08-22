@@ -22,6 +22,7 @@ export default function RootLayout({
     //  this element. This only applies to the html tag itself, not its children
     <html 
       lang="en"
+      className="scroll-smooth"
       suppressHydrationWarning
     >
         <body className="bg-gray-100 dark:bg-gray-900">
