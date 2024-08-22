@@ -2,7 +2,8 @@ import { Author } from "@/app/blog/lib/definitions";
 import Image from "next/image";
 import Link from "next/link";
 import { teko } from "@/app/ui/fonts";
-import {getPostBySlug, getAllPosts} from '@/app/blog/lib/actions'
+import {getPostBySlug, getAllPosts, getPostsByTag} from '@/app/blog/lib/actions'
+import { Post} from "@/app/blog/lib/definitions";
 
 type Props = {
   title: string;
@@ -56,14 +57,12 @@ export async function PostPreview({
   );
 }
 
-export async function PostsGrid()
+export async function PostsGrid({ posts } : { posts: Post[] })
 {
-  const allPosts = await getAllPosts();
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 md:gap-4 items-center m-2 md:m-8">
       {
-        allPosts.map((post) => 
+        posts.map((post) => 
           <PostPreview 
             key={post.slug}
             title={post.title}

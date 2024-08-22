@@ -62,3 +62,29 @@ export async function getAllPosts() {
   // sort posts by date in descending order
   .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
 }
+
+export async function getPostsByTag( tag: string) {
+  const allPosts = await getAllPosts();
+  return allPosts.filter((post) => post.tags ? post.tags.includes(tag) : false);
+  // XXX: would be more efficient to get posts unsorted and then sort them here
+}
+
+export async function getAllTags() {
+  const allPosts = await getAllPosts();
+  // Count how many times each tag appears
+  // Return an array of {name, count} objects sorted by descending count
+  return allPosts
+    .map((post) => post.tags)
+    .flat()
+    .reduce((acc, tag) => {
+      if(!tag) return acc;
+      const existing = acc.find((item) => item.name === tag);
+      if (existing) {
+        existing.count++;
+      } else {
+        acc.push({ name: tag, count: 1 });
+      }
+      return acc;
+    }, [])
+    .sort((a, b) => b.count - a.count);
+}

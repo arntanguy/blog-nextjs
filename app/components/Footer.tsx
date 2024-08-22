@@ -1,5 +1,6 @@
 import { teko, prozaLibre } from '@/app/ui/fonts';
 import SocialButtons from '@/app/components/Social';
+import Tags from '@/app/components/Tags';
 
 export default function Footer() {
   return (
@@ -13,6 +14,7 @@ export default function Footer() {
           </div>
         <div className="mx-auto">
           <h1 className={`${teko.className} text-lg md:text-xl lg:text-2xl uppercase font-bold tracking-wider text-gray-800 dark:text-gray-200 my-4`}>Explore Tags</h1>
+          <Tags />
         </div>
       </div>
       <div className="text-center m-8">
