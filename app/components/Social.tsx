@@ -23,7 +23,7 @@ export default function SocialButtons({ social = DefaultSocials }: { social?: So
     { 
       social.map((s : any) => {
        return (
-        <a href={s.url} key={s.url} className="mx-2 lg:mx-4 dark:bg-gray-700 dark:hover:bg-gray-600 p-1 sm:p-2 md:p-3 lg:p-4 rounded-lg" target="_blank" rel="noopener noreferrer">
+        <a href={s.url} key={s.url} className="mx-2 lg:mx-4 dark:bg-gray-700 dark:hover:bg-gray-600 p-1 sm:p-2 md:p-3 lg:p-4 rounded-lg border-transparent border-2 hover:border-solid hover:border-orange-500" target="_blank" rel="noopener noreferrer">
               {s.icon}
         </a>)
       })

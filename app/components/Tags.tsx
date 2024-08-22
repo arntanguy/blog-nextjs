@@ -20,7 +20,7 @@ export default async function Tags() {
           const className = ``;
           return (
             // TODO: Display color according to count
-            <Link href={`/blog/tags/${tag.name}`} key={tag.name} className={`${teko.className} text-lg tracking-wider m-1 lg:m-2 dark:bg-gray-700 dark:hover:bg-gray-600 p-1 sm:p-2 md:p-3 rounded-lg uppercase`}>
+            <Link href={`/blog/tags/${tag.name}`} key={tag.name} className={`${teko.className} text-lg tracking-wider m-1 lg:m-2 border-2 border-solid hover:border-2 border-gray-400 hover:border-orange-500 hover:text-orange-800 dark:border-gray-500 dark:hover:border-orange-400 dark:hover:text-orange-400 p-1 sm:p-2 md:p-3 rounded-lg uppercase transition-colors duration-300`}>
               {tag.name}
               </Link>
           )
