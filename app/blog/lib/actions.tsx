@@ -1,6 +1,6 @@
 'use server';
 
-import { Post } from '@/app/blog/lib/definitions';
+import { Post, TagWithCount } from '@/app/blog/lib/definitions';
 import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
@@ -76,9 +76,9 @@ export async function getAllTags() {
   return allPosts
     .map((post) => post.tags)
     .flat()
-    .reduce((acc, tag) => {
+    .reduce((acc : TagWithCount[], tag) => {
       if(!tag) return acc;
-      const existing = acc.find((item) => item.name === tag);
+      const existing = acc.find((item : TagWithCount) => item.name === tag);
       if (existing) {
         existing.count++;
       } else {

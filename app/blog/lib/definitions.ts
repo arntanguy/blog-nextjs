@@ -39,3 +39,8 @@ export type Post = {
   preview?: boolean;
   carousels?: Carousels;
 };
+
+export type TagWithCount = {
+  name: string;
+  count: number;
+}

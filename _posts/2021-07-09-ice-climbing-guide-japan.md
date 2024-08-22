@@ -4,7 +4,7 @@ title: Ice climbing guide to Japan
 coverImage: /assets/blog/japan-ice-topo/cover.jpg
 date: 2021-07-09 12:00:00 +0900
 description: Ice climbing guide to Japan
-tag: [japan, ice climbing, topo]
+tags: [japan, ice climbing, topo]
 carousels:
   intro:
     basePath: "/assets/blog/japan-ice-topo/galleries/ice-climbing-guide-japan-intro"
