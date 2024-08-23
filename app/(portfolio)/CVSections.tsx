@@ -63,7 +63,7 @@ export function CVWork( { workSection } : { workSection: ResumeWorkType[] } )
           {
           workSection.map((workElement : ResumeWorkType) => {
             const w = workElement;
-            if(!workElement) throw new Error('Invalid work data ' + w); 
+            if(!w) throw new Error('Invalid work data ' + w); 
 
             const { name, location, position, time, address, work, startDate, endDate, summary, url} = w;
 
