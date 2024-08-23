@@ -22,7 +22,7 @@ const AnimatedTimeline = ({children} : {children: React.ReactNode}) => {
           className="absolute left-2 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top"
           style={{ scaleY: scrollYProgress }}
           />
-          <ul className="w-full flex flex-col items-start justify-between ml-1 md:ml-4">
+          <ul className="w-full flex flex-col items-start justify-between ml-2 md:ml-4">
             {children}
           </ul>
         </div>
