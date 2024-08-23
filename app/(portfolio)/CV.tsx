@@ -1,6 +1,5 @@
 // Handle JSON CV
 
-
 import ReadCV from '@/app/components/portfolio/ReadCV';
 import { CVEducation, CVWork } from './CVSections'; 
 

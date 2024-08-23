@@ -4,8 +4,6 @@ import AnimatedText from '@/app/components/portfolio/AnimatedText';
 import Link from 'next/link';
 import { LinkIcon } from '@heroicons/react/24/outline';
 import Footer from '@/app/components/portfolio/Footer';
-import AnimatedExperience from '@/app/components/portfolio/Experience';
-import AnimatedEducation from '@/app/components/portfolio/Education';
 import CVComponent from './CV';
 
 
@@ -35,9 +33,6 @@ p-2.5 px-6 rounded-lg text-lg font-semiboold `} download>Resume <LinkIcon classN
       </div>
       </div>
         
-      {/* Dummy data */}
-      {/* <AnimatedExperience /> */}
-      {/* <AnimatedEducation /> */}
       <CVComponent />
       <Footer />
     </>

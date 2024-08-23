@@ -113,8 +113,8 @@
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Montpellier",
-      "area": "Robotics",
+      "institution": "Laboratoire d'Informatique et de Robotique de l'Université de Montpellier - I3S Sophia-Antipolis - Joint Robotics Laboratory",
+      "area": "Robotique Humanoïde, Vision par Ordinateur, SLAM",
       "studyType": "Doctor of Philosophy - PhD",
       "startDate": "2016-10-31",
       "endDate": "2019-10-31",
@@ -123,8 +123,8 @@
     },
     {
       "institution": "Polytech'Nice-Sophia",
-      "area": "Computer Science ",
-      "studyType": "Master's degree",
+      "area": "Sciences Informatiques, Vision par ordinateur",
+      "studyType": "Diplôme d'ingénieur - Spécialité vision par ordinateur",
       "startDate": "2011-12-31",
       "endDate": "2014-12-31",
       "score": "",
@@ -132,19 +132,19 @@
     },
     {
       "institution": "Trinity College",
-      "area": "Computer Science, Interactive Entertainment Technologies",
-      "studyType": "",
+      "area": "Sciences informatiques, technologies du jeux vidéo",
+      "studyType": "Master's Degree in Interactive Entertainment Technologies",
       "startDate": "2012-12-31",
       "endDate": "2013-12-31",
       "score": "",
       "courses": [
-        "null - Interactive Entertainment Technologies"
+        "Interactive Entertainment Technologies"
       ]
     },
     {
-      "institution": "CPGE MP Lycée de Kérichen",
+      "institution": "Lycée de Kérichen",
       "area": "Maths, Physique, Informatique",
-      "studyType": "",
+      "studyType": "Classes Préparatoires aux Grandes Écoles (CPGE MPSI)",
       "startDate": "2009-12-31",
       "endDate": "2011-12-31",
       "score": "",
