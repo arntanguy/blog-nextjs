@@ -14,7 +14,7 @@ const AnimatedTimelineItem = ( { key, children } : { key: string, children: Reac
 
   const ref = useRef<HTMLLIElement>(null);
   return (
-    <li key={key} ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-column items-center justify-between" >
+    <li key={key} ref={ref} className="my-8 first:mt-0 last:mb-0 w-[80%] md:w-[70%] lg:w-[80%] mx-auto flex flex-column items-center justify-between" >
       { 
         // Only render the animated icon once the reference has been fully hydrated
         // See https://github.com/framer/motion/issues/1853 
@@ -25,6 +25,7 @@ const AnimatedTimelineItem = ( { key, children } : { key: string, children: Reac
         initial={{y:50}}
         whileInView={{y:0}}
         transition={{duration: 0.5, type: 'spring'}}
+        className="w-full"
       >
         {children}
       </motion.div>
