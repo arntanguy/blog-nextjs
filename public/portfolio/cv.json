@@ -1,0 +1,436 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Arnaud TANGUY",
+    "label": "Research engineer at Laboratoire d'Informatique et de Microélectronique de l'Université de Montpellier (LIRMM)",
+    "image": "",
+    "email": "arn.tanguy@gmail.com",
+    "phone": "+33 7 62 70 55 79",
+    "url": "https://arntanguy.fr",
+    "summary": "I'm a research engineer in the field of Humanoid Robotics, with a strong background in dense visual Simultaneous Localization and Mapping (SLAM).",
+    "location": {
+      "countryCode": "FR",
+      "address": ""
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "arnaud-tanguy",
+        "url": "https://www.linkedin.com/in/arnaud-tanguy/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Centre national de la recherche scientifique",
+      "position": "Robotics Engineer in Humanoid Robotics",
+      "startDate": "2021-10-31",
+      "endDate": "",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/cnrs/",
+      "location": "Montpellier, Occitanie, France"
+    },
+    {
+      "name": "National Institute of Advanced Industrial Science and Technology (AIST)",
+      "position": "Software Engineer",
+      "startDate": "2019-11-30",
+      "endDate": "2021-04-30",
+      "highlights": [],
+      "summary": "- Responsible for the unification of two control frameworks: mc_rtc and HMC\n- Assisting students and researchers\n- Responsible for experiments and demonstrations on the robots (HRP-5P, HRP-2Kai, Sawyer, Panda, etc)",
+      "url": "https://www.linkedin.com/company/aist/",
+      "location": "Tsukuba, Japan"
+    },
+    {
+      "name": "Centre national de la recherche scientifique",
+      "position": "Research Engineer in Humanoid Robotics",
+      "startDate": "2018-10-31",
+      "endDate": "2019-11-30",
+      "highlights": [],
+      "summary": "- Responsible for the integration of visual SLAM for robust localisation of the HRP4 Humanoid Robot, notably withing an Airbus aircraft for the final demonstration of the H2020 COMANOID project.\n- Responsible for the development of all experiments performed on the HR4 at LIRMM.\n- Integration of new methods and tools within our control framework",
+      "url": "https://www.linkedin.com/company/cnrs/",
+      "location": "Montpellier Area, France"
+    },
+    {
+      "name": "CNRS - Centre national de la recherche scientifique",
+      "position": "PhD in Humanoid Robotics and Computer Vision",
+      "startDate": "2014-10-31",
+      "endDate": "2018-11-30",
+      "highlights": [],
+      "summary": "• Improved robot-environment interactions and reliability with state-of-the-art real-time\nvisual localization and mapping from color and depth images (SLAM)\n• Under CNRS contract funded by COMANOID European research project\n• Worked in three major international labs: Joint Robotics Laboratory - Tsukuba, Japan ; LIRMM - Montpellier, France ; I3S-CNRS - Sophia-Antipolis, France\n• Obtained best paper finalist award at IEEE International Symposium on System Integration for the paper on \"Closed-loop RGB-D SLAM Multi-contact Control for Humanoid Robots\"\n\nMain technologies: C++, ROS, SLAM, Optimization",
+      "url": "https://www.linkedin.com/company/cnrs/",
+      "location": "I3S Sophia-Antipolis"
+    },
+    {
+      "name": "Defense Advanced Research Projects Agency (DARPA)",
+      "position": "DARPA Robotics Challenge",
+      "startDate": "2015-06-30",
+      "endDate": "2015-06-30",
+      "highlights": [],
+      "summary": "• Took part in major worldwide competition lead by US military research agency\n• Developed robot-control strategies for disaster response scenarios, designed specifically to emulate the conditions of Fukushima nuclear plant\n• Ranked 10 out of 23 leading labs",
+      "url": "https://www.linkedin.com/company/darpa/",
+      "location": "United States"
+    },
+    {
+      "name": "Technische Universität München",
+      "position": "Reasearch Internship - Loop-closure detection for SLAM",
+      "startDate": "2014-03-31",
+      "endDate": "2014-09-30",
+      "highlights": [],
+      "summary": "Place recognition using Convolutional Neural Networks (deep-learning) applied to SLAM Loop-closure detection algorithms.\n\nMain technologies: C++, GPU (Cuda), Python",
+      "url": "https://www.linkedin.com/school/technische-universitat-munchen/",
+      "location": "Fakultät für Informatik"
+    },
+    {
+      "name": "Polytech'Nice-Sophia, Trinity College Dublin",
+      "position": "University Projects",
+      "startDate": "2011-12-31",
+      "endDate": "2014-12-31",
+      "highlights": [],
+      "summary": "• 3D Game Programming (physics and rendering engine)\n • Interactive curve-fitting for Scanning Tunnelling Spectroscopy (Atomic Microscope)\n • Distributed computing grid exploiting unused smartphone resources\n • 3D-Game for visually-disabled players (Project DEVINT)",
+      "url": ""
+    },
+    {
+      "name": "CRANN",
+      "position": "Research Internship - Scanning Tunneling Spectroscopy",
+      "startDate": "2013-06-30",
+      "endDate": "2013-08-31",
+      "highlights": [],
+      "summary": "Interactive curve-fitting for Scanning Tunneling Spectroscopy (Atomic Microscope)\n\nMain technologies: C++, Qt",
+      "url": "",
+      "location": "Dublin, Ireland"
+    },
+    {
+      "name": "High school",
+      "position": "Developement of Fotowall",
+      "startDate": "2008-12-31",
+      "endDate": "2011-12-31",
+      "highlights": [],
+      "summary": "• Developed a popular open-source interactive image manipulation program Fotowall with\nan Italian partner\n• Over 470, 000 downloads (as of December 2011)",
+      "url": "https://www.linkedin.com/company/highschool/",
+      "location": "France, Italy"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Montpellier",
+      "area": "Robotics",
+      "studyType": "Doctor of Philosophy - PhD",
+      "startDate": "2016-10-31",
+      "endDate": "2019-10-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Polytech'Nice-Sophia",
+      "area": "Computer Science ",
+      "studyType": "Master's degree",
+      "startDate": "2011-12-31",
+      "endDate": "2014-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Trinity College",
+      "area": "Computer Science, Interactive Entertainment Technologies",
+      "studyType": "",
+      "startDate": "2012-12-31",
+      "endDate": "2013-12-31",
+      "score": "",
+      "courses": [
+        "null - Interactive Entertainment Technologies"
+      ]
+    },
+    {
+      "institution": "CPGE MP Lycée de Kérichen",
+      "area": "Maths, Physique, Informatique",
+      "studyType": "",
+      "startDate": "2009-12-31",
+      "endDate": "2011-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Lycée de l’Harteloire",
+      "area": "Série Scientiﬁque",
+      "studyType": "Baccalauréat",
+      "startDate": "2002-12-31",
+      "endDate": "2009-12-31",
+      "score": "Mention Bien",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Paper Finalist Award",
+      "date": "2016-12-31",
+      "awarder": "IEEE/SICE International Symposium on Industrial Informatics",
+      "summary": ""
+    },
+    {
+      "title": "DARPA Robotics Challenge Finalist as part of team AIST-NEDO",
+      "date": "",
+      "awarder": null,
+      "summary": "Finished 10 out of 23 world-leading humanoid robotics teams."
+    }
+  ],
+  "certificates": [],
+  "publications": [
+    {
+      "name": "Humanoid robots in aircraft manufacturing: The airbus use cases [Best Paper Award]",
+      "publisher": "IEEE Robotics & Automation Magazine",
+      "releaseDate": "2019-10-31",
+      "summary": "We report on the results of a collaborative project that investigated the deployment of humanoid robotic solutions in air-craft manufacturing for several assembly op erations where access by wheeled or railported robotic platforms is not possible. Recent de velopments in multicontact planning and control, bipedal walking, embedded simultaneous localization and mapping (SLAM), whole-body multisensory task-space optimization control, and contact detection and safety suggest that humanoids could be a plausible solution for automation, given the specific requirements in large-scale manufacturing sites. The main challenge is the integration of these scientific and technological advances into two existing humanoid platforms: the position-controlled Human Robotics Project (HRP-4) and the torque-controlled robot (TORO). This integration effort was demonstrated during a bracket-assembly operation inside a 1:1-scale A350 mockup of the front part of the fuselage at the Airbus Saint-Nazaire site. We present and discuss the main results achieved in this project and provide recommendations for future work.",
+      "url": "https://ieeexplore.ieee.org/abstract/document/8889461"
+    },
+    {
+      "name": "Closed-loop MPC with Dense Visual SLAM-Stability through Reactive Stepping",
+      "publisher": "IEEE International Conference on Robotics and Automation",
+      "releaseDate": "2019-03-31",
+      "summary": "Model Predictive Control (MPC) is a widely used technique for humanoid gait generation due to its capability to handle several constraints that characterize humanoid locomotion. The use of simplified models to describe the humanoid dynamics (the Linear Inverted Pendulum) allows to perform computations in real time, giving the robot the fundamental capacity to replan its motion to follow external inputs (e.g. reference velocity, footstep plans). However, usually the MPC does not take into account the current state of the robot when computing the reference motion, losing the ability to react to external disturbances. In this paper a closed-loop MPC scheme is proposed to estimate the robot's real state through Simultaneous Localization and Mapping (SLAM) and proprioceptive sensors (force/torque). With the proposed control scheme it is shown that the robot is able to react to external disturbances (push), by stepping to recover from the loss of balance. Moreover the localization allows the robot to navigate to target positions in the environment without being affected by the drift generated by imperfect open-loop control execution. We validate the proposed scheme through two different experiments with a HRP-4 humanoid robot. ",
+      "url": "https://hal.archives-ouvertes.fr/hal-01883725"
+    },
+    {
+      "name": "Online Eye-Robot Self-Caliration",
+      "publisher": "IEEE International Conference on Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR)",
+      "releaseDate": "2018-06-11",
+      "summary": "We present a new approach that extends the well known Eye-Hand calibration to the online whole-body calibration of the kinematic tree geometric parameters. Only on-board RGB-D sensor and joint encoders are required. Online calibration allows to estimate the state of the kinematic tree at any time, and thus account for inaccurate models, passive joints, mechanical wear, unexpected damages, etc. One major challenge in achieving such an online self-calibration procedure with the available sensors is that the observability of the calibrated parameters cannot always be guaranteed. In this work, we determine the effect of joint degrees of freedom on observability. From this, we propose a novel Eye-Robot calibration method that determines the geometric transformations between joints. Conditions on joint motion are further used to improve upon existing kinematic tree parameters when observability is incomplete. In practice a dense SLAM algorithm is used for online pose estimation and the results are demonstrated with an HRP-4 humanoid robot.",
+      "url": "https://ieeexplore.ieee.org/abstract/document/8376273/"
+    },
+    {
+      "name": "Closed-loop RGB-D SLAM Multi-Contact Control for humanoid robots",
+      "publisher": "IEEE/SICE International Symposium on System Integration (SII)",
+      "releaseDate": "2017-02-09",
+      "summary": "This paper discusses the integration of a state-of-the-art dense 6D simultaneous localisation and mapping (D6DSLAM) to close the QP control loop on an humanoid robot in multi-contact motions. Our multi-contact planning defines desired contacts based on 3D (CAD) models, and generates a reaching plan. Registration of the 3D model onto an RGB-D key-frame graph representation of the explored environment allows to use of visual odometry to make real-time adjustments to the reaching plan, leading to improved in robustness from a wide range of perturbations. Extensive results are presented on various complex tasks using the HRP-2Kai humanoid robot including valve and car's steering-wheel grasping, multi-contact stair climbing from approximate initial humanoid poses.",
+      "url": "https://hal.archives-ouvertes.fr/hal-01568048"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Humanoid robots",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Robot Operating System (ROS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Visual SLAM",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SLAM",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Convolutional Neural Networks (CNN)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Deep Learning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Caffe",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Physics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Game Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Distributed Computing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mathematical Modeling",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GitHub",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "mc_rtc",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Robotics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C++",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "OpenGL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GLSL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "OpenCL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Qt",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Informatique",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Vision par ordinateur",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "OGRE",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Matlab",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CAML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Haskell",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Programmation",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "fr",
+      "fluency": "Native Speaker"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "English"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "French"
+    },
+    {
+      "fluency": "Elementary",
+      "language": "German"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "mc_rtc robotics framework",
+      "startDate": "2016-12-31",
+      "summary": "I am one of the lead developpers of the mc_rtc robotics framework. It has been used extensively at both AIST and LIRMM research labs. Notable achievements with the framework include:\n- DARPA Robotic Challenge\n- COMANOID project: large scale aircraft manufacturing in partnership with Airbus\n- ANA Avatar XPrize Finalist\n- Walking, including stair climbing (see https://github.com/jrl-umi3218/lipm_walking_controller)",
+      "url": "https://jrl-umi3218.github.io/mc_rtc/index.html"
+    },
+    {
+      "name": "COMANOID H2020 European Research Project",
+      "startDate": "2015-01-31",
+      "summary": "COMANOID (Multi-Contact Collaborative Humanoids in Aircraft Manufacturing) is a RIA four-year European research project that started in January 2015 as part of the Horizon H2020 program. The project focuses on developping abilities of humanoid robots to evolve in complex enviroment -namely an aircraft fuselage- through whole body multi-contact planning motion with embeded 6D dense SLAM localization.",
+      "url": "http://comanoid.cnrs.fr/"
+    },
+    {
+      "name": "Robohow.Cog",
+      "startDate": "2014-10-31",
+      "summary": "Robohow is a four-year European research project that started in February 2012. It aims at enabling robots to competently perform everyday human-scale manipulation activities - both in human working and living environments. In order to achieve this goal, Robohow pursues a knowledge-enabled and plan-based approach to robot programming and control. The vision of the project is that of a cognitive robot that autonomously performs complex everyday manipulation tasks and extends its repertoire of such by acquiring new skills using web-enabled and experience-based learning as well as by observing humans. ",
+      "url": "http://robohow.eu/",
+      "endDate": "2015-02-28"
+    },
+    {
+      "name": "Loop-closure detection for visual odometry (SLAM)",
+      "startDate": "2014-03-31",
+      "summary": "Visual odometery consists of tracking the position and orientation of camera-like sensors as they are moving. As the camera moves, drift in the estimated camera pose can accumulate.\nLoop-closure detection is a technique to minimise the pose drift, by exploiting knowledge about previously visited locations. The goal of this project was to explore the feasibility of using \"convolutional neural networks\" to perform place-recognition.\n\nMain technologies: C++, GPU (Cuda), Python",
+      "url": null,
+      "endDate": "2014-09-30"
+    },
+    {
+      "name": "Fotowall",
+      "startDate": "2008-06-30",
+      "summary": "Fotowall is an opensource tool that creates patchworks with photos, text, live videos from your webcam. The development of this application helped me to build up my C++ experience along with my knowledge of the framwork Qt. It also developed my capacities of teamwork, and I learned to use project managment tools like git.\n\nMain technologies: C++, Qt, Git",
+      "url": "http://enricoros.com/opensource/fotowall",
+      "endDate": "2012-03-31"
+    },
+    {
+      "name": "StartRacing (DEVINT)",
+      "startDate": "2012-01-31",
+      "summary": "The goal of this project was to create a game for visually impaired people. We focused on creating a 3D game, that provides a great user experience for both people with perfect vision and those with disabilities.\n\nThe game is built around the idea of using sound as a main gameplay component. The sound made by the engine is created by interpolating between multiple audio recording of real car engines recorded at specific fixed rpm. This provides a realistic engine sound that is directly correlated to the car performance at any given RPM and gear ratio.\n\nAdditionnaly to sound, great care was taken into modelling realistic car engine physics.\nIt uses torque curve data obtained from the cars brand used in the game to compute the force generated on each wheel, and thus achieve a realistic car speed.\n\n\nThis allowed us to build a game mode suitable for even blind people, where the concept is to have the user compete with an artificial intelligence in a quarter mile race. The user needs to change gears at the most appropriate moment based on sound to achieve maximum speed, and beat the AI.\nIn that mode, the AI uses a gaussian-like statistical model to choose when to change gears.\n\nWe also created a \"free for all\" mode, where cars have an artificial intelligence making them try to hit the player's car. A damage system is in place modulating the damage according to the angle and strenght of collisions (managed by Bullet Physics).\n\n\nThe project has been tested during Project DEVINT 2012 by a class of primary school students, and their supervisors, suffering from a wide range of visual defficiencies, including blindness. Even blind people were able to successfully manage to beat the artificial intelligence just by hearing the sound made by the engine!\n\nMain technologies: Java, OpenGL",
+      "url": "http://prdevint.polytech.unice.fr/index.php",
+      "endDate": "2012-03-31"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}

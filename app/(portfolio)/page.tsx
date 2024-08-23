@@ -6,6 +6,7 @@ import { LinkIcon } from '@heroicons/react/24/outline';
 import Footer from '@/app/components/portfolio/Footer';
 import AnimatedExperience from '@/app/components/portfolio/Experience';
 import AnimatedEducation from '@/app/components/portfolio/Education';
+import CVComponent from './CV';
 
 
 export const metadata: Metadata = {
@@ -34,8 +35,10 @@ p-2.5 px-6 rounded-lg text-lg font-semiboold `} download>Resume <LinkIcon classN
       </div>
       </div>
         
-      <AnimatedExperience />
-      <AnimatedEducation />
+      {/* Dummy data */}
+      {/* <AnimatedExperience /> */}
+      {/* <AnimatedEducation /> */}
+      <CVComponent />
       <Footer />
     </>
   );

@@ -1,7 +1,7 @@
 import AnimatedTimeline from './AnimatedTimeline';
 import AnimatedTimelineItem from './AnimatedTimelineItem';
 
-const ExperienceDetails = ( { position, company, companyLink, time, address, work } : { position: string, company: string, companyLink: string, time: string, address: string, work: string }) => {
+export const ExperienceDetails = ( { position, company, companyLink, time, address, work } : { position: string, company: string, companyLink: string, time: string, address: string, work: string }) => {
   return (
     <>
     <h3 className="capitalize font-bold text-2xl">
