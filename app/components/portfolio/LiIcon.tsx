@@ -1,7 +1,5 @@
 'use client';
-import { useRef } from 'react';
 import { motion, useScroll } from 'framer-motion';
-import {useMotionValueEvent} from 'framer-motion';
 
 const LiIcon = ( { reference } : { reference: React.RefObject<HTMLLIElement> } ) => {
   const { scrollYProgress} = useScroll(
@@ -15,10 +13,6 @@ const LiIcon = ( { reference } : { reference: React.RefObject<HTMLLIElement> } )
         "center center", // Finish animation when the center of the "reference" target  crosses the center of the viewport
       ]
     });
-
-  // It's easier to debug motion values using this hook, rather than printing them
-  useMotionValueEvent(scrollYProgress, 'change', (val) => console.log('ScrollProgress change', val));
-
 
   return (
   <div>
