@@ -15,12 +15,11 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="w-full flex items-center justify-center">
-      <div className="w-1/2">
-        <h1 className="font-bold text-3xl text-center m-4">Portfolio</h1>
+      <div className="my-32 grid grid-cols-1 md:grid-cols-2 items-start justify-center">
+      <div className="w-full flex flex-col items-center self-center">
+          <span className="text-xl">Placeholder for picture</span>
       </div>
-      </div>
-      <div className="w-1/2 flex flex-col items-center self-center">
+      <div className="w-full flex flex-col items-center self-center">
         <AnimatedText text="Turning Vision into Reality With Code and Design." className="!text-6xl !text-left" />
         <p className="my-4 text-base font-medium">As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles.</p>
         <div className="flex items-center self-start mt-2">
@@ -33,6 +32,8 @@ p-2.5 px-6 rounded-lg text-lg font-semiboold `} download>Resume <LinkIcon classN
           <Link href="mailto:arn.tanguy@gmail.com" target={"_blank"} className="ml-4 text-lg font-medium capitalize underline">Contact</Link>
         </div>
       </div>
+      </div>
+        
       <AnimatedExperience />
       <AnimatedEducation />
       <Footer />
