@@ -22,7 +22,9 @@ export default function RootLayout({
     //  this element. This only applies to the html tag itself, not its children
     <html 
       lang="en"
-      className="scroll-smooth"
+      // relative is needed by framer motion
+      // See https://github.com/framer/motion/issues/1853
+      className={`scroll-smooth relative`}
       suppressHydrationWarning
     >
         <body className="bg-gray-100 dark:bg-gray-900">
