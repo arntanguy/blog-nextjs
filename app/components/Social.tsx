@@ -22,7 +22,7 @@ export const PortfolioSocials : SocialType[] = [
   { icon: <FaLinkedin    size="1.25rem" />, url: "https://www.linkedin.com/in/arnaud-tanguy" },
 ]
 
-export default function SocialButtons({ social = DefaultSocials, className }: { social?: SocialType[], className: string }) {
+export default function SocialButtons({ social = DefaultSocials, className }: { social?: SocialType[], className?: string }) {
   return (
     <>
       <div className="flex items-center my-4 lg:my-8">
