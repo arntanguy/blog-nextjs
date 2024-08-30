@@ -1,4 +1,6 @@
-export const EducationDetails = ( {type, time, place, info} : { type: string, time: string, place: string, info: string }) => {
+import Keywords from "./CVKeywords";
+
+export const EducationDetails = ( {type, time, place, courses} : { type: string, time: string, place: string, courses?: string[] }) => {
   return (
     <>
     <h3 className="capitalize font-bold text-2xl">
@@ -7,9 +9,9 @@ export const EducationDetails = ( {type, time, place, info} : { type: string, ti
     <span className='capitalize font-medium text-gray-300/75'>
       {time} | {place}
     </span>
-    <p className='font-medium w-full'>
-      {info}
-    </p>
+    {
+      courses && <Keywords keywords={courses} />
+    }
     </>
   )
 }

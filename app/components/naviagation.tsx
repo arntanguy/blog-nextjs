@@ -23,8 +23,9 @@ export default function Navigation() {
         const IconComponent = link.icon;
         const isCurrentPath = link.href === currentPath;
         return ( 
-          <>
-            <div className={
+          <div key={link.label}>
+            <div 
+            className={
             clsx(
             "flex items-center rounded-lg overflow-hidden",
             isCurrentPath ? "text-gray-800 bg-gray-300 dark:text-gray-100 dark:bg-gray-700" 
@@ -38,7 +39,7 @@ export default function Navigation() {
                 {link.label}
               </Link>
               </div>
-            </> )
+            </div> )
       })
     }
         {/* Fill space to align the remaining items to the right */}

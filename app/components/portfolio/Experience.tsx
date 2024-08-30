@@ -1,4 +1,7 @@
-export const ExperienceDetails = ( { position, company, companyLink, time, address, work } : { position: string, company: string, companyLink?: string, time: string, address: string, work: string }) => {
+import Keywords from './CVKeywords';
+import { ClockIcon, MapPinIcon } from '@heroicons/react/24/outline';
+
+export const ExperienceDetails = ( { position, company, companyLink, time, address, summary, highlights, keywords} : { position: string, company: string, companyLink?: string, time: string, address: string, summary?: string, highlights?: string[], keywords?: string[]}) => {
   return (
     <>
     <h3 className="capitalize font-bold text-xl md:text-2xl">
@@ -6,7 +9,7 @@ export const ExperienceDetails = ( { position, company, companyLink, time, addre
       {companyLink && 
       <a href={companyLink} target="_blank"
         className='capitalize text-primary dark:text-primaryDark'
-      >@{company}</a>
+      > @ {company}</a>
       }
       {!companyLink &&
       <span className='capitalize text-primary dark:text-primaryDark'>
@@ -14,12 +17,28 @@ export const ExperienceDetails = ( { position, company, companyLink, time, addre
       </span>
       }
     </h3>
-    <span className='capitalize text-sm md:text-lg font-medium text-gray-300/75'>
-      {time} | {address}
-    </span>
-    <p className='font-medium text-sm md:text-lg w-full'>
-      {work}
-    </p>
+    <div className='flex items-center justify-start uppercase text-sm md:text-lg font-medium text-gray-300/75'>
+      <ClockIcon className="inline-block h-4 w-4 mr-2" /> {time} 
+      <span className='mx-auto'></span>
+      <MapPinIcon className="inline-block h-4 w-4 mr-2" /> {address}
+    </div>
+    { summary && 
+      <p className='font-medium text-sm md:text-lg w-full'>
+        {summary}
+      </p>
+    }
+    { highlights &&
+      <ul className='ml-8 list-disc font-medium text-sm md:text-lg w-full'>
+        {
+          highlights.map((item, index) => (
+          <li key={item + index}> {item}</li>
+            ))
+        }
+      </ul>
+    }
+    {
+        keywords && <div className="flex items-center self-start m-4"><Keywords keywords={keywords} /></div>
+    }
     </>
   )
 }

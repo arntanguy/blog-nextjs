@@ -23,52 +23,53 @@
   "work": [
     {
       "name": "Centre national de la recherche scientifique",
-      "position": "Robotics Engineer in Humanoid Robotics",
+      "position": "Robotics Engineer - Humanoid Robotics",
       "startDate": "2021-10-31",
       "endDate": "2024-04-31",
-      "highlights": [],
+      "highlights": ["Live robot dance performance on stage at Centre des Arts Enghain-les-Bains", "ANA Avatar XPrize Finalist"],
       "url": "https://www.linkedin.com/company/cnrs/",
-      "location": "Montpellier, Occitanie, France"
+      "location": "Montpellier, Occitanie, France",
+      "keywords": ["C++", "Humanoid Robotics", "Unity", "Augmented Reality", "ANA Avatar XPRIZE", "mc_rtc framework"]
     },
     {
       "name": "National Institute of Advanced Industrial Science and Technology (AIST)",
-      "position": "Software Engineer",
+      "position": "Research Engineer - Humanoid Robotics",
       "startDate": "2019-11-30",
       "endDate": "2021-04-30",
-      "highlights": [],
-      "summary": "- Responsible for the unification of two control frameworks: mc_rtc and HMC\n- Assisting students and researchers\n- Responsible for experiments and demonstrations on the robots (HRP-5P, HRP-2Kai, Sawyer, Panda, etc)",
+      "highlights": ["Responsible for the unification of two control frameworks: mc_rtc and HMC", "Assisting students and researchers", "Responsible for experiments and demonstrations on the robots (HRP-5P, HRP-2Kai, Sawyer, Panda, etc)"],
       "url": "https://www.linkedin.com/company/aist/",
-      "location": "Tsukuba, Japan"
+      "location": "Tsukuba, Japan",
+      "keywords": ["C++", "Humanoid Robotics", "Unity", "Augmented Reality", "ANA Avatar XPrize", "mc_rtc framework"]
     },
     {
       "name": "Centre national de la recherche scientifique",
       "position": "Research Engineer in Humanoid Robotics",
       "startDate": "2018-10-31",
       "endDate": "2019-11-30",
-      "highlights": [],
-      "summary": "- Responsible for the integration of visual SLAM for robust localisation of the HRP4 Humanoid Robot, notably withing an Airbus aircraft for the final demonstration of the H2020 COMANOID project.\n- Responsible for the development of all experiments performed on the HR4 at LIRMM.\n- Integration of new methods and tools within our control framework",
+      "highlights": ["Responsible for the integration of visual SLAM for robust localisation of the HRP4 Humanoid Robot, notably withing an Airbus aircraft for the final demonstration of the H2020 COMANOID project", "Responsible for the development of all experiments performed on the HR4 at LIRMM", "Integration of new methods and tools within our control framework"],
       "url": "https://www.linkedin.com/company/cnrs/",
-      "location": "Montpellier Area, France"
+      "location": "Montpellier, France",
+      "keywords": ["C++", "Humanoid Robotics", "SLAM", "COMANOID H2020", "mc_rtc framework"]
     },
     {
       "name": "CNRS - Centre national de la recherche scientifique",
       "position": "PhD in Humanoid Robotics and Computer Vision",
       "startDate": "2014-10-31",
       "endDate": "2018-11-30",
-      "highlights": [],
-      "summary": "• Improved robot-environment interactions and reliability with state-of-the-art real-time\nvisual localization and mapping from color and depth images (SLAM)\n• Under CNRS contract funded by COMANOID European research project\n• Worked in three major international labs: Joint Robotics Laboratory - Tsukuba, Japan ; LIRMM - Montpellier, France ; I3S-CNRS - Sophia-Antipolis, France\n• Obtained best paper finalist award at IEEE International Symposium on System Integration for the paper on \"Closed-loop RGB-D SLAM Multi-contact Control for Humanoid Robots\"\n\nMain technologies: C++, ROS, SLAM, Optimization",
+      "highlights": ["Improved robot-environment interactions and reliability with state-of-the-art real-time visual localization and mapping from color and depth images (SLAM)", "Under CNRS contract funded by COMANOID European research project", "Worked in three major international labs: Joint Robotics Laboratory - Tsukuba, Japan ; LIRMM - Montpellier, France ; I3S-CNRS - Sophia-Antipolis, France", "Obtained best paper finalist award at IEEE International Symposium on System Integration for the paper on \"Closed-loop RGB-D SLAM Multi-contact Control for Humanoid Robots\""],
+      "keywords": ["Humanoid Robotics", "Visual SLAM", "C++", "ROS", "mc_rtc framework", "Humanoid Robots", "Optimization", "Quadratic Programming", "Model Preview Control"],
       "url": "https://www.linkedin.com/company/cnrs/",
-      "location": "I3S Sophia-Antipolis"
+      "location": "Sophia-Antipolis, France | Tsukuba, Japan | Montpellier, France"
     },
     {
       "name": "Defense Advanced Research Projects Agency (DARPA)",
-      "position": "DARPA Robotics Challenge",
+      "position": "DARPA Robotics Challenge Finalist",
       "startDate": "2015-06-30",
       "endDate": "2015-06-30",
-      "highlights": [],
-      "summary": "• Took part in major worldwide competition lead by US military research agency\n• Developed robot-control strategies for disaster response scenarios, designed specifically to emulate the conditions of Fukushima nuclear plant\n• Ranked 10 out of 23 leading labs",
+      "highlights": ["Took part in major worldwide competition lead by US military research agency", "Developed robot-control strategies for disaster response scenarios, designed specifically to emulate the conditions of Fukushima nuclear plant", "Ranked 10 out of 23 leading labs"],
       "url": "https://www.linkedin.com/company/darpa/",
-      "location": "United States"
+      "location": "United States",
+      "keywords": ["International Competition", "C++", "ROS", "SLAM", "ICP", "Humanoid Robotics", "HRP-2"]
     },
     {
       "name": "Technische Universität München",
@@ -77,17 +78,18 @@
       "endDate": "2014-09-30",
       "highlights": [],
       "summary": "Place recognition using Convolutional Neural Networks (deep-learning) applied to SLAM Loop-closure detection algorithms.\n\nMain technologies: C++, GPU (Cuda), Python",
+      "keywords": ["C++", "Python", "Deep Learning", "Convolutional Neural Networks", "Caffe framework", "CUDA",  "SLAM", "Loop-closure detection"],
       "url": "https://www.linkedin.com/school/technische-universitat-munchen/",
-      "location": "Fakultät für Informatik"
+      "location": "Munich"
     },
     {
       "name": "Polytech'Nice-Sophia, Trinity College Dublin",
       "position": "University Projects",
       "startDate": "2011-12-31",
       "endDate": "2014-12-31",
-      "highlights": [],
-      "summary": "• 3D Game Programming (physics and rendering engine)\n • Interactive curve-fitting for Scanning Tunnelling Spectroscopy (Atomic Microscope)\n • Distributed computing grid exploiting unused smartphone resources\n • 3D-Game for visually-disabled players (Project DEVINT)",
-      "url": ""
+      "highlights": ["3D Game Programming (physics and rendering engine)", "Interactive curve-fitting for Scanning Tunnelling Spectroscopy (Atomic Microscope)", "Distributed computing grid exploiting unused smartphone resources", "3D-Game for visually-disabled players (Project DEVINT)"],
+      "keywords": ["C++", "Java", "OpenGL", "3D", "Game Development", "Computer Graphics", "Computer Science"],
+      "location": "Sophia-Antipolis, France"
     },
     {
       "name": "CRANN",
@@ -95,8 +97,9 @@
       "startDate": "2013-06-30",
       "endDate": "2013-08-31",
       "highlights": [],
-      "summary": "Interactive curve-fitting for Scanning Tunneling Spectroscopy (Atomic Microscope)\n\nMain technologies: C++, Qt",
-      "url": "",
+      "summary": "Interactive curve-fitting for Scanning Tunneling Spectroscopy (Atomic Microscope)",
+      "keywords": ["C++", "Qt", "Computer Science"],
+      "url": "https://www.tcd.ie/crann/",
       "location": "Dublin, Ireland"
     },
     {
@@ -104,10 +107,10 @@
       "position": "Developement of Fotowall",
       "startDate": "2008-12-31",
       "endDate": "2011-12-31",
-      "highlights": [],
-      "summary": "• Developed a popular open-source interactive image manipulation program Fotowall with\nan Italian partner\n• Over 470, 000 downloads (as of December 2011)",
-      "url": "https://www.linkedin.com/company/highschool/",
-      "location": "France, Italy"
+      "highlights": ["Developed a popular open-source interactive image manipulation program Fotowall with an Italian partner", "Over 470, 000 downloads (as of December 2011)"],
+      "url": "https://github.com/enricoros/fotowall",
+      "location": "France",
+      "keywords": ["C++", "Qt", "Self-taught", "git", "collaborative project", "open source"]
     }
   ],
   "volunteer": [],
@@ -115,20 +118,20 @@
     {
       "institution": "Laboratoire d'Informatique et de Robotique de l'Université de Montpellier - I3S Sophia-Antipolis - Joint Robotics Laboratory",
       "area": "Robotique Humanoïde, Vision par Ordinateur, SLAM",
-      "studyType": "Doctor of Philosophy - PhD",
+      "studyType": "PhD in Humanoid Robotics and Computer Vision",
       "startDate": "2016-10-31",
       "endDate": "2019-10-31",
       "score": "",
-      "courses": []
+      "courses": ["Humanoid Robotics", "Visual SLAM", "C++", "ROS", "mc_rtc framework", "Humanoid Robots", "Optimization", "Quadratic Programming", "Model Preview Control"]
     },
     {
       "institution": "Polytech'Nice-Sophia",
       "area": "Sciences Informatiques, Vision par ordinateur",
-      "studyType": "Diplôme d'ingénieur - Spécialité vision par ordinateur",
+      "studyType": "Software Engineer (Master's degree)",
       "startDate": "2011-12-31",
       "endDate": "2014-12-31",
       "score": "",
-      "courses": []
+      "courses": ["Computer Vision", "Game Development", "Java", "C++", "Computer Science", "Algorithmic", "Maths", "Languages"]
     },
     {
       "institution": "Trinity College",
@@ -148,16 +151,16 @@
       "startDate": "2009-12-31",
       "endDate": "2011-12-31",
       "score": "",
-      "courses": []
+      "courses": ["Maths", "Physics", "Engineering", "Computer Science (Functional Programming, Algorithms, Complexity)", "Languages"]
     },
     {
       "institution": "Lycée de l’Harteloire",
-      "area": "Série Scientiﬁque",
+      "area": "Science",
       "studyType": "Baccalauréat",
       "startDate": "2002-12-31",
       "endDate": "2009-12-31",
       "score": "Mention Bien",
-      "courses": []
+      "courses": ["Maths", "Physics", "Earth and Life Sciences", "Litterature", "Phylosophy", "English", "German"]
     }
   ],
   "awards": [

@@ -3,6 +3,7 @@
 import React from 'react'
 import { useRef} from 'react';
 import { motion, useScroll } from "framer-motion"
+import { nanoid } from 'nanoid'
 
 const AnimatedTimeline = ({children} : {children: React.ReactNode}) => {
   const ref = useRef(null);

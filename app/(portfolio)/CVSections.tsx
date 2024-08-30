@@ -5,6 +5,7 @@ import { ExperienceDetails } from '@/app/components/portfolio/Experience';
 import AnimatedTimeline from '@/app/components/portfolio/AnimatedTimeline';
 import AnimatedTimelineItem from '@/app/components/portfolio/AnimatedTimelineItem';
 import { ResumeWorkType, ResumeEducationType } from '@/app/(portfolio)/JSONResumeSchema';
+import { nanoid } from 'nanoid'
 
 
 
@@ -19,7 +20,7 @@ export function handleDate(startDate: string | undefined, endDate: string | unde
 export function CVSectionTitle( { title } : { title: string } )
 {
   return (
-    <div className="my-16 md:my-32 lg:my-64">
+    <div className="my-16 md:my-32">
       <h2 className="font-bold text-6xl lg:text-8xl mb-32 w-full text-center">
         {title} 
       </h2>
@@ -40,8 +41,8 @@ export function CVEducation( { educationSection } : { educationSection: ResumeEd
             const { institution, studyType, startDate, endDate, score, area, courses } = e;
             const date = handleDate(startDate, endDate);
             return (
-              <AnimatedTimelineItem key={institution + "/" + date}>
-                <EducationDetails type={studyType ?? ''} time={date} place={institution ?? ''} info={courses?.join(' | ') ?? ''} />
+              <AnimatedTimelineItem key={nanoid()}>
+                <EducationDetails type={studyType ?? ''} time={date} place={institution ?? ''} courses={courses} />
                 </AnimatedTimelineItem>
             )
           }
@@ -58,19 +59,19 @@ export function CVWork( { workSection } : { workSection: ResumeWorkType[] } )
 
   return (
     <div>
-      <CVSectionTitle title="Experience" />
+      <CVSectionTitle title="Work Experience" />
         <AnimatedTimeline>
           {
           workSection.map((workElement : ResumeWorkType) => {
             const w = workElement;
             if(!w) throw new Error('Invalid work data ' + w); 
 
-            const { name, location, position, time, address, work, startDate, endDate, summary, url} = w;
+            const { name, location, position, time, address, work, startDate, endDate, summary, highlights, keywords, url} = w;
 
             const date = handleDate(startDate, endDate);
             return (
-              <AnimatedTimelineItem key={name + "/" + date}>
-                <ExperienceDetails position={position ?? ''} company={name ?? ''} companyLink={url} time={date} address={location ?? ''} work={summary ?? ''} />
+              <AnimatedTimelineItem key={nanoid()}>
+                <ExperienceDetails position={position ?? ''} company={name ?? ''} companyLink={url} time={date} address={location ?? ''} summary={summary} highlights={highlights} keywords={keywords} />
                 </AnimatedTimelineItem>
             )
           }
