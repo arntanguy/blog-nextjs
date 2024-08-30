@@ -2,20 +2,14 @@
 
 import { EducationDetails } from '@/app/components/portfolio/Education';
 import { ExperienceDetails } from '@/app/components/portfolio/Experience';
+import { ProjectsDetails } from '@/app/components/portfolio/Projects';
 import AnimatedTimeline from '@/app/components/portfolio/AnimatedTimeline';
 import AnimatedTimelineItem from '@/app/components/portfolio/AnimatedTimelineItem';
 import { ResumeWorkType, ResumeEducationType } from '@/app/(portfolio)/JSONResumeSchema';
 import { nanoid } from 'nanoid'
+import { handleDate } from '@/app/components/portfolio/Date';
 
 
-
-export function handleDate(startDate: string | undefined, endDate: string | undefined)
-{
-  var dateStr : string = startDate ? startDate : '';
-  if(endDate && startDate) { dateStr += ' - ' + endDate; }
-  else if (startDate && !endDate) { dateStr += '- Present' }
-  return dateStr
-}
 
 export function CVSectionTitle( { title } : { title: string } )
 {
@@ -38,12 +32,10 @@ export function CVEducation( { educationSection } : { educationSection: ResumeEd
             const e = education;
             if(!e) return;
 
-            const { institution, studyType, startDate, endDate, score, area, courses } = e;
-            const date = handleDate(startDate, endDate);
             return (
               <AnimatedTimelineItem key={nanoid()}>
-                <EducationDetails type={studyType ?? ''} time={date} place={institution ?? ''} courses={courses} />
-                </AnimatedTimelineItem>
+                <EducationDetails education={e} />
+              </AnimatedTimelineItem>
             )
           }
           )
@@ -66,12 +58,9 @@ export function CVWork( { workSection } : { workSection: ResumeWorkType[] } )
             const w = workElement;
             if(!w) throw new Error('Invalid work data ' + w); 
 
-            const { name, location, position, time, address, work, startDate, endDate, summary, highlights, keywords, url} = w;
-
-            const date = handleDate(startDate, endDate);
             return (
               <AnimatedTimelineItem key={nanoid()}>
-                <ExperienceDetails position={position ?? ''} company={name ?? ''} companyLink={url} time={date} address={location ?? ''} summary={summary} highlights={highlights} keywords={keywords} />
+                <ExperienceDetails experience={w} />
                 </AnimatedTimelineItem>
             )
           }
@@ -82,3 +71,28 @@ export function CVWork( { workSection } : { workSection: ResumeWorkType[] } )
   )
 }
 
+export function CVProjects( { projectsSection } : { projectsSection: ResumeWorkType[] } )
+{
+  if(!projectsSection) return <></>;
+
+  return (
+    <div>
+      <CVSectionTitle title="Projects" />
+        <AnimatedTimeline>
+          {
+          projectsSection.map((projectElement : ResumeWorkType) => {
+            const w = projectElement;
+            if(!w) throw new Error('Invalid work data ' + w); 
+
+            return (
+              <AnimatedTimelineItem key={nanoid()}>
+                <ProjectsDetails project={w} />
+                </AnimatedTimelineItem>
+            )
+          }
+          )
+        }
+        </AnimatedTimeline>
+      </div>
+  )
+}

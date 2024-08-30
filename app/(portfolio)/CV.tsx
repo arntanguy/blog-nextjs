@@ -1,7 +1,7 @@
 // Handle JSON CV
 
 import ReadCV from '@/app/components/portfolio/ReadCV';
-import { CVEducation, CVWork } from './CVSections'; 
+import { CVEducation, CVWork, CVProjects } from './CVSections'; 
 
 export default async function CVComponent()
 {
@@ -9,6 +9,7 @@ export default async function CVComponent()
 
   return (
     <>
+      <CVProjects projectsSection={cvData.projects} />
       <CVWork workSection={cvData.work} />
       <CVEducation educationSection={cvData.education} />
     </>

@@ -1,29 +1,30 @@
 import Keywords from './CVKeywords';
-import { ClockIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import { MapPinIcon } from '@heroicons/react/24/outline';
+import { ResumeWorkType } from '@/app/(portfolio)/JSONResumeSchema';
+import { StartEndDate } from '@/app/components/portfolio/Date';
 
-export const ExperienceDetails = ( { position, company, companyLink, time, address, summary, highlights, keywords} : { position: string, company: string, companyLink?: string, time: string, address: string, summary?: string, highlights?: string[], keywords?: string[]}) => {
+export const ExperienceDetails = ( { experience } : { experience : ResumeWorkType }) => {
+  const { name, location, description, position, url, startDate, endDate, summary, highlights, keywords } = experience;
   return (
     <>
     <h3 className="capitalize font-bold text-xl md:text-2xl">
       {position}
-      {companyLink &&
-      <a href={companyLink} target="_blank"
+      {url &&
+      <a href={url} target="_blank"
         className='capitalize text-primary dark:text-primaryDark'
-      > @ {company}</a>
+      > @ {name}</a>
       }
-      {!companyLink &&
+      {!url &&
       <span className='capitalize text-primary dark:text-primaryDark'>
-        @{company}
+        @ {name}
       </span>
       }
     </h3>
     <div className='flex items-center justify-start flex-wrap uppercase text-sm md:text-lg font-medium dark:text-gray-300 text-gray-600'>
-      <div className="flex items-center justify-center">
-        <ClockIcon className="inline-block h-4 w-4 mr-2" /> {time}
-      </div>
+      <StartEndDate startDate={startDate} endDate={endDate} />
       <span className='mx-auto'></span>
       <div className="flex items-center justify-center">
-        <MapPinIcon className="inline-block h-4 w-4 mr-2" /> {address}
+        <MapPinIcon className="inline-block h-4 w-4 mr-2" /> {location}
       </div>
     </div>
     { summary &&
