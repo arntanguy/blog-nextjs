@@ -17,7 +17,7 @@ export const ExperienceDetails = ( { position, company, companyLink, time, addre
       </span>
       }
     </h3>
-    <div className='flex items-center justify-start flex-wrap uppercase text-sm md:text-lg font-medium text-gray-300/75'>
+    <div className='flex items-center justify-start flex-wrap uppercase text-sm md:text-lg font-medium dark:text-gray-300 text-gray-600'>
       <div className="flex items-center justify-center">
         <ClockIcon className="inline-block h-4 w-4 mr-2" /> {time}
       </div>

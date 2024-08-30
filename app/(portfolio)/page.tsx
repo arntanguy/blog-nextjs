@@ -7,6 +7,8 @@ import Footer from '@/app/components/portfolio/Footer';
 import CVComponent from './CV';
 import Image from 'next/image';
 import Keyword from '@/app/components/Keyword';
+import SocialButtons from '@/app/components/Social';
+import { PortfolioSocials } from '@/app/components/Social';
 
 export const metadata: Metadata = {
   title: 'Portfolio | Arnaud TANGUY',
@@ -27,6 +29,7 @@ export default function Page() {
         <AnimatedText text="Software Engineer in Robotics and Computer Vision" className="!text-3xl md:!text-4xl lg:!text-6xl !text-left" />
         <p className="my-4 text-base font-medium">I am a skilled <Keyword>C++ software engineer</Keyword>  with <Keyword>8⁺ years</Keyword> of experience in <Keyword>Humanoid Robotics</Keyword> and <Keyword>Computer Vision</Keyword>. I have worked as a research engineer for both CNRS (France) and AIST (Japan) on control of state-of-the-art full size Humanoid Robots. Our work has lead to the development of the mc_rtc robotics framework.</p>
         <div className="flex items-center self-start mt-2">
+          <SocialButtons social={PortfolioSocials} className="!mx-0 !mr-4 !p-3" />
           <Link href="/portfolio/cv_english.pdf" target={"_blank"} className={`
 flex items-center 
 bg-gray-800 text-gray-100 
