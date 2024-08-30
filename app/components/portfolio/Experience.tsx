@@ -5,8 +5,8 @@ export const ExperienceDetails = ( { position, company, companyLink, time, addre
   return (
     <>
     <h3 className="capitalize font-bold text-xl md:text-2xl">
-      {position} 
-      {companyLink && 
+      {position}
+      {companyLink &&
       <a href={companyLink} target="_blank"
         className='capitalize text-primary dark:text-primaryDark'
       > @ {company}</a>
@@ -17,12 +17,16 @@ export const ExperienceDetails = ( { position, company, companyLink, time, addre
       </span>
       }
     </h3>
-    <div className='flex items-center justify-start uppercase text-sm md:text-lg font-medium text-gray-300/75'>
-      <ClockIcon className="inline-block h-4 w-4 mr-2" /> {time} 
+    <div className='flex items-center justify-start flex-wrap uppercase text-sm md:text-lg font-medium text-gray-300/75'>
+      <div className="flex items-center justify-center">
+        <ClockIcon className="inline-block h-4 w-4 mr-2" /> {time}
+      </div>
       <span className='mx-auto'></span>
-      <MapPinIcon className="inline-block h-4 w-4 mr-2" /> {address}
+      <div className="flex items-center justify-center">
+        <MapPinIcon className="inline-block h-4 w-4 mr-2" /> {address}
+      </div>
     </div>
-    { summary && 
+    { summary &&
       <p className='font-medium text-sm md:text-lg w-full'>
         {summary}
       </p>
