@@ -1,19 +1,21 @@
 'use client';
 
 import React from 'react'
-import { useRef} from 'react';
+import { useRef, useState } from 'react';
 import { motion, useScroll } from "framer-motion"
 import { nanoid } from 'nanoid'
 
 const AnimatedTimeline = ({children} : {children: React.ReactNode}) => {
   const ref = useRef(null);
+
   const { scrollYProgress} = useScroll(
     {
       target: ref,
+      layoutEffect: false, 
       offset: 
       [
        "start end", // empty when the start of the container appears at the bottom of the viewport
-       "center center", // full when center of the container reaches center of viewport 
+       "center start", // full when center of the container reaches center of viewport 
       ]
     });
   return (

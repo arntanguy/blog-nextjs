@@ -19,8 +19,7 @@ const AnimatedTimelineItem = ( { children } : { children: React.ReactNode }) => 
       { 
         // Only render the animated icon once the reference has been fully hydrated
         // See https://github.com/framer/motion/issues/1853 
-        containerRendered &&
-        <LiIcon reference={ref} />
+        containerRendered && <LiIcon reference={ref} />
       }
       <motion.div
         initial={{y:50}}

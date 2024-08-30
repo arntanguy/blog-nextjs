@@ -7,8 +7,6 @@ import AnimatedTimeline from '@/app/components/portfolio/AnimatedTimeline';
 import AnimatedTimelineItem from '@/app/components/portfolio/AnimatedTimelineItem';
 import { ResumeWorkType, ResumeEducationType } from '@/app/(portfolio)/JSONResumeSchema';
 import { nanoid } from 'nanoid'
-import { handleDate } from '@/app/components/portfolio/Date';
-
 
 
 export function CVSectionTitle( { title } : { title: string } )
