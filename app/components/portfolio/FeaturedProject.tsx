@@ -36,7 +36,7 @@ export const sortFeaturedProjects = ( projects : FeaturedProjectType[] ) =>
   //   </>)
 }
 
-export function DummyIcon({ scale, className } : { scale?: number, className: string })
+export function DummyIcon({ scale, className } : { scale?: number, className?: string })
 {
   const w = 100 * (scale || 1);
   return (
@@ -77,13 +77,15 @@ export function FeaturedProject( { project } : { project: FeaturedProjectType } 
 
         <DateAndLocation location={project.location} startDate={project.startDate} endDate={project.endDate} />
 
-        <div className="text-lg w-full mt-4 md:mt-8">
-            <Markdown>{project.description}</Markdown>
-        </div>
+        { project.description &&
+          <div className="text-lg w-full mt-4 md:mt-8">
+              <Markdown>{project.description}</Markdown>
+          </div>
+        }
         { project.highlights &&
           <ul className='ml-4 md:ml-8 list-disc font-medium text-sm md:text-lg w-full mt-2 md:mt-4'>
           { project.highlights.map((highlight) => (
-            <li><span><Markdown key={nanoid()}>{highlight}</Markdown></span></li>
+            <li key={nanoid()}><span><Markdown key={nanoid()}>{highlight}</Markdown></span></li>
             ))
           }
           </ul>
@@ -95,7 +97,7 @@ export function FeaturedProject( { project } : { project: FeaturedProjectType } 
             <ul className='ml-4 md:ml-8 list-disc font-medium text-sm md:text-lg w-full mt-1 md:mt-2'>
             {
               project.roles.map((role) => (
-                <li><span><Markdown key={nanoid()}>{role}</Markdown></span></li>
+                <li key={nanoid()}><span><Markdown key={nanoid()}>{role}</Markdown></span></li>
               ))
             }
             </ul>

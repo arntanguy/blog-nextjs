@@ -83,7 +83,7 @@ export function CVProjects( { projectsSection } : { projectsSection: FeaturedPro
             if(!w) throw new Error('Invalid work data ' + w); 
 
             return (
-                <FeaturedProject project={w} />
+                <FeaturedProject key={nanoid()} project={w} />
             )
           }
           )
