@@ -15,18 +15,15 @@ export type ResumeEducationType = StripAll<ResumeSchema['education']>;
 // Projects section
 export type ProjectsType = StripAll<ResumeSchema['projects']>;
 
-// Extra category for featured projects
-export type FeaturedProjectType =
+// Extra information for featured projects
+export type FeaturedProjectType = ProjectsType &
 {
-  name: string,
-  description: string,
   location?: string,
-  url?: string,
   startDate?: string,
   endDate: string,
   keywords?: string[],
-  logo?: string,
-  media: CarouselImage 
+  media: CarouselImage,
+  featured: boolean
 };
 
 export type FullResumeSchema = ResumeSchema & {

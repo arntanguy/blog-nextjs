@@ -9,11 +9,11 @@ export const EducationDetails = ( { education } : { education : ResumeEducationT
 
   return (
     <>
-    <h3 className="capitalize font-bold text-2xl">
-      {institution}
+    <h3 className="capitalize font-bold text-xl md:text-2xl">
+      {studyType}<span className='text-primary dark:text-primaryDark'> @ {institution}</span>
     </h3>
 
-    <DateAndLocation startDate={startDate} endDate={endDate} location={area} className="mb-2 md:mb-4" />
+    <DateAndLocation startDate={startDate} endDate={endDate} className="mb-2 md:mb-4" />
     {
       courses && <Keywords keywords={courses} />
     }

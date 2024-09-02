@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="max-w-[1600px] mx-auto">
+    <div className="mx-auto w-full">
       <div className="h-screen my-auto grid grid-cols-1 md:grid-cols-2 items-start justify-center">
       <div className="w-full flex flex-col items-center self-center">
           {/* <span className="text-xl">Placeholder for picture</span> */}
@@ -24,10 +24,10 @@ export default function Page() {
           <Image src="/portfolio/arnaud_tanguy.jpg" alt="Photo of Arnaud TANGUY" className="object-cover rounded-full" fill />
           </div>
       </div>
-      <div className="w-full flex flex-col items-center self-center p-2">
+      <div className="w-full flex flex-col items-center justify-center p-2">
         <AnimatedText text="Software Engineer in Robotics and Computer Vision" className="!text-3xl md:!text-4xl lg:!text-6xl !text-left" />
         <p className="my-4 text-base font-medium">I am a skilled <Keyword>C++ software engineer</Keyword>  with <Keyword>8⁺ years</Keyword> of experience in <Keyword>Humanoid Robotics</Keyword> and <Keyword>Computer Vision</Keyword>. I have worked as a research engineer for both CNRS (France) and AIST (Japan) on control of state-of-the-art full size Humanoid Robots. Our work has lead to the development of the mc_rtc robotics framework.</p>
-        <div className="flex items-center self-start mt-2">
+        <div className="flex items-center justify-center md:self-start flex-wrap mt-2">
           <SocialButtons social={PortfolioSocials} className="!mx-0 !mr-4 !p-3" />
           <Link href="/portfolio/cv_english.pdf" target={"_blank"} className={`
 flex items-center 

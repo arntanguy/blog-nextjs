@@ -15,11 +15,12 @@ const AnimatedTimelineItem = ( { children } : { children: React.ReactNode }) => 
 
   const ref = useRef<HTMLLIElement>(null);
   return (
-    <li key={nanoid()} ref={ref} className="my-8 first:mt-0 last:mb-0 w-[80%] md:w-[70%] lg:w-[80%] mx-auto flex flex-column items-center justify-between" >
+    <li key={nanoid()} ref={ref} className="my-8 first:mt-0 last:mb-0 w-full md:w-[70%] lg:w-[80%] mx-auto flex flex-col items-center justify-between" >
       { 
         // Only render the animated icon once the reference has been fully hydrated
         // See https://github.com/framer/motion/issues/1853 
-        containerRendered && <LiIcon reference={ref} />
+        containerRendered &&
+        <LiIcon reference={ref} className="hidden md:block" />
       }
       <motion.div
         initial={{y:50}}

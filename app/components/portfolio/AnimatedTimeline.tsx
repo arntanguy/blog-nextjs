@@ -22,10 +22,10 @@ const AnimatedTimeline = ({children} : {children: React.ReactNode}) => {
         <div ref={ref} className="w-[90%] md:[w-80%] lg:w-[75%] mx-auto relative">
           {/* // Vertical bar with height growing with scroll */}
           <motion.div 
-          className="absolute left-2 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top"
+          className="hidden md:block absolute left-2 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top"
           style={{ scaleY: scrollYProgress }}
           />
-          <ul className="w-full flex flex-col items-start justify-between ml-2 md:ml-4">
+          <ul className="w-full flex flex-col items-start justify-between md:ml-4">
             {children}
           </ul>
         </div>

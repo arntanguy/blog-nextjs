@@ -36,9 +36,13 @@ export const DateAndLocation = ( { startDate, endDate, location, className } : {
   return (
     <div className={`flex items-center justify-start flex-wrap uppercase text-sm md:text-lg font-medium dark:text-gray-300 text-gray-600 mb-2 mt-1 md:mb-4 ${className}`}>
       <StartEndDate startDate={startDate} endDate={endDate} />
+      {location &&
+          <>
       <span className='mx-auto'></span>
       <div className="flex items-center justify-center">
         <MapPinIcon className="inline-block h-4 w-4 mr-2" /> {location}
       </div>
+      </>
+      }
     </div>)
 }

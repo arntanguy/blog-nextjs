@@ -392,13 +392,20 @@
   "references": [],
   "projects": [
     {
+      "featured": true,
       "name": "mc_rtc robotics framework",
       "startDate": "2016-12-31",
-      "description": "I am one of the lead developpers of the mc_rtc robotics framework. It has been used extensively at both AIST and LIRMM research labs. Notable achievements with the framework include",
+      "description": "I am one of the lead developpers of the mc_rtc robotics framework. It has been used extensively at both AIST and LIRMM research labs. Notable achievements with the framework include:",
       "highlights": ["DARPA Robotic Challenge",
-        "COMANOID project: large scale aircraft manufacturing in partnership with Airbus", "ANA Avatar XPrize Finalist", "Walking, including stair climbing (see https://github.com/jrl-umi3218/lipm_walking_controller)"],
+        "COMANOID project: large scale aircraft manufacturing in partnership with Airbus", "ANA Avatar XPrize Finalist", "Walking, including stair climbing (see https://github.com/jrl-umi3218/lipm_walking_controller)", "Widely used within the research community", "Fully open-source under BSD-2"],
       "url": "https://jrl-umi3218.github.io/mc_rtc/index.html",
-      "keywords": ["C++", "mc_rtc", "ROS", "ROS2", "Real-time Control", "Humanoid Robots", "HRP-2", "HRP-4", "HRP-5P", "Pepper", "NAO", "Sawyer", "Panda", "Kukka LWR"]
+      "roles": ["Co-Lead Developper", "Implementation of industrial demonstrators", "Support for PhD and PostDocs (Paper experiments, framework development)", "Integration with robots and sensors"],
+      "keywords": ["C++", "mc_rtc", "ROS", "ROS2", "Real-time Control", "Humanoid Robots", "HRP-2", "HRP-4", "HRP-5P", "Pepper", "NAO", "Sawyer", "Panda", "Kukka LWR"],
+      "media":
+      {
+        "url": "/portfolio/featured_projects/mc_rtc.png",
+        "title": "mc_rtc"
+      }
     },
     {
       "name": "COMANOID H2020 European Research Project",
@@ -437,10 +444,9 @@
       "endDate": "2012-03-31",
       "keywords": ["Java", "OpenGL", "Game Development", "Computer Graphics", "Computer Science", "University"]
 
-    }
-  ],
-  "featuredProjects": [
+    },
     {
+      "featured": true,
       "name": "Robotic Dance Performance at CDA d’Enghien",
       "description": "This **Robotic Dance Performance** was produced as part of the Co-Évolution, Co-Création et Improvisation Homme-Machine (CECCI-H2M) project of the EUR d'ArTeC, led by Pr. Chu-Yin Chen, the Image Numérique et Réalité Virtuelle (INREV) research team of the labo. AIAC of Université Paris 8, in collaboration with CDA d'Enghien-les-Bains and LIRMM Interactive Digital Human (IDH) team.",
       "location": "Centre des Arts, Enghien-les-Bains",
@@ -456,6 +462,7 @@
       }
     },
     {
+      "featured": true,
       "name": "PhD Thesis: Visual SLAM for humanoid robot localization and closed-loop control",
       "description": "This thesis deals with the problem of localizing and controlling humanoid robots with respect to its environment, as observed by its on-board sensors. Dense visual SLAM, consisting in the simultaneous estimation of a 3D map of the environment and of the robot localization within that maps is exploited to extend and robustify multi-contact planning and control. Establishing and exploiting robot-environment contacts allows the accomplishment of both locomotion and manipulation tasks. Uncertainties in the initial robot posture, and perturbations arising from improper contact-modelling and external causes are accounted for by observing the state of the robot and its environment. A whole-body calibration method is also proposed, so that robust knowledge of the robot's kinematic structure is known, a prerequisite to all robot-environment interaction tasks. Finally, a walking method based on model predictive control is robustified by taking into account large perturbations, and adjusting the footstep and center-of-mass trajectories accordingly to guarantee stability while accomplishing desired objectives.Several experiments on an HRP-2Kai and an HRP-4 humanoid robots are presented and discussed to illustrate and validate each of the proposed methods.",
       "location": "I3S Sophia-Antipolis - LIRMM Montpellier - AIST Tskububa, Japan",
@@ -471,6 +478,7 @@
       }
     },
     {
+      "featured": true,
       "name": "ANA Avatar XPrize: Team JANUS’ cybernetic avatar system for exploration and skill transfer",
       "endDate": "2023",
       "description": "This video presents experimental results demonstrating the performance of the avatar system developed by Team JANUS to compete at the ANA Avatar XPRIZE - Finals global competition.",
@@ -485,6 +493,7 @@
       }
     },
     {
+      "featured": true,
       "name": "COMANOID H2020 European Project",
       "startDate": "2015-01-31",
       "endDate": "2018-12-31",
@@ -500,6 +509,7 @@
       }
     },
     {
+      "featured": true,
       "name": "DARPA Robotics Challenge",
       "endDate": "2015",
       "description": "",
@@ -514,6 +524,7 @@
       }
     },
     {
+      "featured": true,
       "name": "Loco-Manipulation of Large Industrial Objects",
       "startDate": "2015-01-31",
       "endDate": "2018-12-31",

@@ -5,9 +5,9 @@ import { ExperienceDetails } from '@/app/components/portfolio/Experience';
 import { ProjectsDetails } from '@/app/components/portfolio/Projects';
 import AnimatedTimeline from '@/app/components/portfolio/AnimatedTimeline';
 import AnimatedTimelineItem from '@/app/components/portfolio/AnimatedTimelineItem';
-import { ResumeWorkType, ResumeEducationType } from '@/app/(portfolio)/JSONResumeSchema';
+import { ResumeWorkType, ResumeEducationType, FeaturedProjectType } from '@/app/(portfolio)/JSONResumeSchema';
 import { nanoid } from 'nanoid'
-
+import { FeaturedProject } from '@/app/components/portfolio/FeaturedProject';
 
 export function CVSectionTitle( { title } : { title: string } )
 {
@@ -69,28 +69,26 @@ export function CVWork( { workSection } : { workSection: ResumeWorkType[] } )
   )
 }
 
-export function CVProjects( { projectsSection } : { projectsSection: ResumeWorkType[] } )
+export function CVProjects( { projectsSection } : { projectsSection: FeaturedProjectType[] } )
 {
   if(!projectsSection) return <></>;
 
   return (
-    <div>
+    <div className="w-full mx-auto">
       <CVSectionTitle title="Projects" />
-        <AnimatedTimeline>
+        {/* <AnimatedTimeline> */}
           {
-          projectsSection.map((projectElement : ResumeWorkType) => {
+          projectsSection.map((projectElement : FeaturedProjectType) => {
             const w = projectElement;
             if(!w) throw new Error('Invalid work data ' + w); 
 
             return (
-              <AnimatedTimelineItem key={nanoid()}>
-                <ProjectsDetails project={w} />
-                </AnimatedTimelineItem>
+                <FeaturedProject project={w} />
             )
           }
           )
         }
-        </AnimatedTimeline>
+        {/* </AnimatedTimeline> */}
       </div>
   )
 }

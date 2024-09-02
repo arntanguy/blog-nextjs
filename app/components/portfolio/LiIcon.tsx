@@ -1,7 +1,7 @@
 'use client';
 import { motion, useScroll } from 'framer-motion';
 
-const LiIcon = ( { reference } : { reference: React.RefObject<HTMLLIElement> } ) => {
+const LiIcon = ( { reference, className } : { reference: React.RefObject<HTMLLIElement>, className?: string } ) => {
   const { scrollYProgress} = useScroll(
     {
       target: reference, // Target is the parent's <li> tag
@@ -15,8 +15,8 @@ const LiIcon = ( { reference } : { reference: React.RefObject<HTMLLIElement> } )
     });
 
   return (
-  <div>
-      <figure className="absolute -left-7 stroke-dark dark:stroke-light scale-150">
+  <div className={`${className}`}>
+      <figure className={`absolute -left-7 stroke-dark dark:stroke-light scale-150 ${className}`}>
       <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
         <circle cx="75" cy="50" r="20" className="stroke-1 fill-none stroke-primary dark:stroke-primaryDark dark:bg-gray-800" />
         <motion.circle cx="75" cy="50" r="20" className="stroke-[5px] fill-none border-light" 
