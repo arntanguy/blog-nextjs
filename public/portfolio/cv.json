@@ -394,8 +394,11 @@
     {
       "name": "mc_rtc robotics framework",
       "startDate": "2016-12-31",
-      "description": "I am one of the lead developpers of the mc_rtc robotics framework. It has been used extensively at both AIST and LIRMM research labs. Notable achievements with the framework include:\n- DARPA Robotic Challenge\n- COMANOID project: large scale aircraft manufacturing in partnership with Airbus\n- ANA Avatar XPrize Finalist\n- Walking, including stair climbing (see https://github.com/jrl-umi3218/lipm_walking_controller)",
-      "url": "https://jrl-umi3218.github.io/mc_rtc/index.html"
+      "description": "I am one of the lead developpers of the mc_rtc robotics framework. It has been used extensively at both AIST and LIRMM research labs. Notable achievements with the framework include",
+      "highlights": ["DARPA Robotic Challenge",
+        "COMANOID project: large scale aircraft manufacturing in partnership with Airbus", "ANA Avatar XPrize Finalist", "Walking, including stair climbing (see https://github.com/jrl-umi3218/lipm_walking_controller)"],
+      "url": "https://jrl-umi3218.github.io/mc_rtc/index.html",
+      "keywords": ["C++", "mc_rtc", "ROS", "ROS2", "Real-time Control", "Humanoid Robots", "HRP-2", "HRP-4", "HRP-5P", "Pepper", "NAO", "Sawyer", "Panda", "Kukka LWR"]
     },
     {
       "name": "COMANOID H2020 European Research Project",
@@ -406,30 +409,235 @@
     {
       "name": "Robohow.Cog",
       "startDate": "2014-10-31",
-      "description": "Robohow is a four-year European research project that started in February 2012. It aims at enabling robots to competently perform everyday human-scale manipulation activities - both in human working and living environments. In order to achieve this goal, Robohow pursues a knowledge-enabled and plan-based approach to robot programming and control. The vision of the project is that of a cognitive robot that autonomously performs complex everyday manipulation tasks and extends its repertoire of such by acquiring new skills using web-enabled and experience-based learning as well as by observing humans. ",
+      "description": "*Robohow* is a **four-year European research project** that started in February 2012. It aims at enabling robots to competently perform everyday human-scale manipulation activities - both in human working and living environments. In order to achieve this goal, *Robohow* pursues a knowledge-enabled and plan-based approach to robot programming and control. The vision of the project is that of a cognitive robot that autonomously performs complex everyday manipulation tasks and extends its repertoire of such by acquiring new skills using web-enabled and experience-based learning as well as by observing humans. ",
       "url": "http://robohow.eu/",
       "endDate": "2015-02-28"
     },
     {
       "name": "Loop-closure detection for visual odometry (SLAM)",
       "startDate": "2014-03-31",
-      "description": "Visual odometery consists of tracking the position and orientation of camera-like sensors as they are moving. As the camera moves, drift in the estimated camera pose can accumulate.\nLoop-closure detection is a technique to minimise the pose drift, by exploiting knowledge about previously visited locations. The goal of this project was to explore the feasibility of using \"convolutional neural networks\" to perform place-recognition.\n\nMain technologies: C++, GPU (Cuda), Python",
-      "url": null,
+      "highlights": ["Visual odometery consists of tracking the position and orientation of camera-like sensors as they are moving. As the camera moves, drift in the estimated camera pose can accumulate.", "Loop-closure detection is a technique to minimise the pose drift, by exploiting knowledge about previously visited locations. The goal of this project was to explore the feasibility of using \"convolutional neural networks\" to perform place-recognition."],
+      "keywords": ["C++", "GPU (Cuda)", "Python"],
       "endDate": "2014-09-30"
     },
     {
       "name": "Fotowall",
       "startDate": "2008-06-30",
-      "description": "Fotowall is an opensource tool that creates patchworks with photos, text, live videos from your webcam. The development of this application helped me to build up my C++ experience along with my knowledge of the framwork Qt. It also developed my capacities of teamwork, and I learned to use project managment tools like git.\n\nMain technologies: C++, Qt, Git",
-      "url": "http://enricoros.com/opensource/fotowall",
-      "endDate": "2012-03-31"
+      "description": "Fotowall is an opensource tool that creates patchworks with photos, text, live videos from your webcam. The development of this application helped me to build up my C++ experience along with my knowledge of the framwork Qt. It also developed my capacities of teamwork, and I learned to use project managment tools like git.",
+      "url": "https://github.com/enricoros/fotowall",
+      "endDate": "2012-03-31",
+      "keywords": ["C++", "Qt", "Self-taught", "git", "collaborative project", "open source"]
+
     },
     {
       "name": "StartRacing (DEVINT)",
       "startDate": "2012-01-31",
       "description": "The goal of this project was to create a game for visually impaired people. We focused on creating a 3D game, that provides a great user experience for both people with perfect vision and those with disabilities.\n\nThe game is built around the idea of using sound as a main gameplay component. The sound made by the engine is created by interpolating between multiple audio recording of real car engines recorded at specific fixed rpm. This provides a realistic engine sound that is directly correlated to the car performance at any given RPM and gear ratio.\n\nAdditionnaly to sound, great care was taken into modelling realistic car engine physics.\nIt uses torque curve data obtained from the cars brand used in the game to compute the force generated on each wheel, and thus achieve a realistic car speed.\n\n\nThis allowed us to build a game mode suitable for even blind people, where the concept is to have the user compete with an artificial intelligence in a quarter mile race. The user needs to change gears at the most appropriate moment based on sound to achieve maximum speed, and beat the AI.\nIn that mode, the AI uses a gaussian-like statistical model to choose when to change gears.\n\nWe also created a \"free for all\" mode, where cars have an artificial intelligence making them try to hit the player's car. A damage system is in place modulating the damage according to the angle and strenght of collisions (managed by Bullet Physics).\n\n\nThe project has been tested during Project DEVINT 2012 by a class of primary school students, and their supervisors, suffering from a wide range of visual defficiencies, including blindness. Even blind people were able to successfully manage to beat the artificial intelligence just by hearing the sound made by the engine!\n\nMain technologies: Java, OpenGL",
       "url": "http://prdevint.polytech.unice.fr/index.php",
-      "endDate": "2012-03-31"
+      "endDate": "2012-03-31",
+      "keywords": ["Java", "OpenGL", "Game Development", "Computer Graphics", "Computer Science", "University"]
+
+    }
+  ],
+  "featuredProjects": [
+    {
+      "name": "Robotic Dance Performance at CDA d’Enghien",
+      "description": "This **Robotic Dance Performance** was produced as part of the Co-Évolution, Co-Création et Improvisation Homme-Machine (CECCI-H2M) project of the EUR d'ArTeC, led by Pr. Chu-Yin Chen, the Image Numérique et Réalité Virtuelle (INREV) research team of the labo. AIAC of Université Paris 8, in collaboration with CDA d'Enghien-les-Bains and LIRMM Interactive Digital Human (IDH) team.",
+      "location": "Centre des Arts, Enghien-les-Bains",
+      "endDate": "2023",
+      "keywords": ["C++", "mc_rtc", "XSens MVN", "Teleoperation", "On-stage", "Open-source"],
+      "url": "https://github.com/arntanguy/CDADance",
+      "media":
+      {
+        "url": "https://youtube.com/watch?v=iAVdj0rey5M?si=qIeUXtNo5mm854f-",
+        "type": "video",
+        "title": "Featured Project",
+        "description": "Featured Project"
+      }
+    },
+    {
+      "name": "PhD Thesis: Visual SLAM for humanoid robot localization and closed-loop control",
+      "description": "This thesis deals with the problem of localizing and controlling humanoid robots with respect to its environment, as observed by its on-board sensors. Dense visual SLAM, consisting in the simultaneous estimation of a 3D map of the environment and of the robot localization within that maps is exploited to extend and robustify multi-contact planning and control. Establishing and exploiting robot-environment contacts allows the accomplishment of both locomotion and manipulation tasks. Uncertainties in the initial robot posture, and perturbations arising from improper contact-modelling and external causes are accounted for by observing the state of the robot and its environment. A whole-body calibration method is also proposed, so that robust knowledge of the robot's kinematic structure is known, a prerequisite to all robot-environment interaction tasks. Finally, a walking method based on model predictive control is robustified by taking into account large perturbations, and adjusting the footstep and center-of-mass trajectories accordingly to guarantee stability while accomplishing desired objectives.Several experiments on an HRP-2Kai and an HRP-4 humanoid robots are presented and discussed to illustrate and validate each of the proposed methods.",
+      "location": "I3S Sophia-Antipolis - LIRMM Montpellier - AIST Tskububa, Japan",
+      "startDate": "2014-10",
+      "endDate": "2018-11",
+      "keywords": ["thesis", "SLAM", "Humanoid Robotics", "C++", "mc_rtc"],
+      "url": "https://theses.fr/2018MONTS082",
+      "media":
+      {
+        "url": "/portfolio/featured_projects/thesis.png",
+        "type": "image",
+        "title": "Thesis Cover"
+      }
+    },
+    {
+      "name": "ANA Avatar XPrize: Team JANUS’ cybernetic avatar system for exploration and skill transfer",
+      "endDate": "2023",
+      "description": "This video presents experimental results demonstrating the performance of the avatar system developed by Team JANUS to compete at the ANA Avatar XPRIZE - Finals global competition.",
+      "location": "AIST, Japan - LIRMM, France - Los Angeles, USA",
+      "keywords": ["Finalist", "International Competition", "mc_rtc", "humanoid robotics", "C++", "Augemented Reality", "Teleoperation", "Unity", "ANA Avatar XPRIZE"],
+      "url": "https://unit.aist.go.jp/jrl-22022/en/projects/janus/team-janus.html",
+      "media":
+      {
+        "url": "https://www.youtube.com/watch?v=CaOOoSqWjCo",
+        "type": "video",
+        "title": "ANA Avatar XPrize: Team JANUS’ cybernetic avatar system for exploration and skill transfer"
+      }
+    },
+    {
+      "name": "COMANOID H2020 European Project",
+      "startDate": "2015-01-31",
+      "endDate": "2018-12-31",
+      "description": "COMANOID (Multi-Contact Collaborative Humanoids in Aircraft Manufacturing) is a RIA four-year European research project that started in January 2015 as part of the Horizon H2020 program. The project focuses on developping abilities of humanoid robots to evolve in complex enviroment -namely an aircraft fuselage- through whole body multi-contact planning motion with embeded 6D dense SLAM localization.",
+      "location": "Airbus - Saint Nazaire",
+      "keywords": ["Best paper award", "C++", "mc_rtc", "SLAM", "Manufacturing"],
+      "url": "https://cordis.europa.eu/article/id/386867-humanoids-may-soon-conquer-airplane-assembly",
+      "media":
+      {
+        "url": "/portfolio/featured_projects/comanoid.jpg",
+        "type": "image",
+        "title": "COMANOID"
+      }
+    },
+    {
+      "name": "DARPA Robotics Challenge",
+      "endDate": "2015",
+      "description": "",
+      "location": "Las Vegas - USA",
+      "keywords": ["Finalist", "International competition", "Team AIST-NEDO", "mc_rtc", "SLAM", "Iterative Closest Point"],
+      "url": "https://cordis.europa.eu/article/id/386867-humanoids-may-soon-conquer-airplane-assembly",
+      "media":
+      {
+        "url": "https://www.youtube.com/watch?v=8P9geWwi9e0",
+        "type": "video",
+        "title": "DARPA Robotics Challenge"
+      }
+    },
+    {
+      "name": "Loco-Manipulation of Large Industrial Objects",
+      "startDate": "2015-01-31",
+      "endDate": "2018-12-31",
+      "description": "To efficiently achieve complex humanoid loco-manipulation tasks in industrial contexts, we propose a combined vision-based tracker-localization interplay integrated as part of a task-space whole-body optimization control. To achieve good perception complementarity between manipulation and localization, a new fast dense 3D model-based tracking using wide-angle depth image is developed and used in conjunction with a simultaneous localization and mapping software. Our approach allows humanoid robots, targeted for industrial manufacturing, to manipulate and assemble large-scale objects while walking. It is assessed with experiments consisting in rolling and assembling in an unwinder a heavy and wide bobbin using bimanual grasping and bipedal locomotion at a time. This experimental use-case is found in some large-scale manufacturing where bobbins are enrolled with various materials (cables, papers, rubbers, etc.). The same experiments are made using two different humanoid robots of the same family.",
+      "location": "Confidential - Industrial Factory",
+      "keywords": ["C++", "mc_rtc", "SLAM", "Manufacturing"],
+      "url": "https://cordis.europa.eu/article/id/386867-humanoids-may-soon-conquer-airplane-assembly",
+      "media":
+      {
+        "url": "/portfolio/featured_projects/bobbin.mp4",
+        "type": "video",
+        "title": "Bobbin Manipulation"
+      }
+    },
+    {
+      "name": "Humanoid in aircraft manufacturing: ﻿Nut Fastening with a Humanoid Robot HRP-5P",
+      "endDate": "2020-10-01",
+      "location": "AIST - Tsukuba - Japan",
+      "keywords": ["C++", "mc_rtc", "Visual servoing", "Manufacturing"],
+      "url": "https://www.youtube.com/watch?v=FT2CD1UiExs",
+      "media":
+      {
+        "url": "https://www.youtube.com/watch?v=FT2CD1UiExs",
+        "type": "video",
+        "title": "HRP-5P Fastening a Nut with Visual Servoing"
+      }
+    },
+    {
+      "name": "ICRA2019 - Closed-loop MPC with Dense Visual SLAM-Stability through Reactive Stepping",
+      "description": "Closed-loop MPC with Dense Visual SLAM-Stability through Reactive Stepping - Arnaud Tanguy, Daniele de Simone, Andrew Comport, Giuseppe Oriolo, Abderrahmane Kheddar",
+      "endDate": "2020-10-01",
+      "location": "AIST - Tsukuba - Japan",
+      "keywords": ["C++", "mc_rtc", "SLAM", "Model Predictive Control"],
+      "url": "https://hal.archives-ouvertes.fr/hal-01883725",
+      "media":
+      {
+        "url": "https://www.youtube.com/watch?v=h38D6yRJM24",
+        "type": "video",
+        "title": "Closed-loop MPC with Dense Visual SLAM-Stability through Reactive Stepping Video"
+      }
+    },
+    {
+      "name": "SII 2016 - Closed-loop RGB-D SLAM Multi-Contact Control for Humanoid Robots",
+      "description": "Closed-loop RGB-D SLAM multi-contact control for humanoid robots A Tanguy, P Gergondet, AI Comport, A Kheddar System Integration (SII), 2016 IEEE/SICE International Symposium on, 51-57",
+      "endDate": "2016",
+      "location": "AIST - Tsukuba - Japan",
+      "keywords": ["Best paper finalist award", "C++", "mc_rtc", "SLAM", "Model Predictive Control", "Stair climbing", "Object manipulation"],
+      "url": "https://hal.archives-ouvertes.fr/hal-01883725",
+      "media":
+      {
+        "url": "https://www.youtube.com/watch?v=2Ch9uraz3_Y&feature=youtu.be",
+        "type": "video",
+        "title": "Closed-loop RGB-D SLAM Multi-Contact Control for Humanoid Robots Video"
+      }
+    },
+    {
+      "name": "Humanoid robot HRP-4 keeps balance in multi-contact and sliding scenarios",
+      "description": "HRP-4 keeps balance in multi-contact while sliding its hand on a wall. To maintain balance, the robot holds its center of mass (CoM) inside a CoM support area (CSA) that takes all contacts and their contact modes into consideration. When we want to apply more force on the hand contact, the controller moves its CoM towards the wall accordingly. This video compares the performance of this control strategy with a baseline where the CoM is simply kept between the feet. Pushing and sliding operations are demonstrated.",
+      "endDate": "2019",
+      "location": "LIRMM - Montpellier - France",
+      "keywords": ["C++", "mc_rtc", "Force Control", "Stability"],
+      "url": "https://hal.science/hal-02297879",
+      "media":
+      {
+        "url": "https://www.youtube.com/watch?v=Wai-Lp4e5FE",
+        "type": "video",
+        "title": "Humanoid robot HRP-4 keeps balance in multi-contact and sliding scenarios"
+      }
+    },
+    {
+      "name": "Humanoid Control Under Interchangeable Fixed and Sliding Unilateral Contacts",
+      "description": "In this video, the HRP-4 humanoid robot demonstrates contact interchanges from fully-fixed to multi-sliding and also shuffling of the foot. This scenarios illustrate the performance of the proposed whole-body  control strategy for humanoid robots in multi-contact settings that enables switching between fixed and sliding contacts under active balance. We compute, in real-time, a safe center-of-mass position and wrench distribution of the contact points based on the Chebyshev center. Our solution is formulated as a quadratic programming problem without a priori computation of balance regions.",
+      "endDate": "2021",
+      "location": "LIRMM - Montpellier - France",
+      "keywords": ["C++", "mc_rtc", "Force Control", "Stability"],
+      "url": "https://arxiv.org/pdf/2103.02906",
+      "media":
+      {
+        "url": "https://www.youtube.com/watch?v=cFYd9oQueRE",
+        "type": "video",
+        "title": "Humanoid robot HRP-4 keeps balance in multi-contact and sliding scenarios"
+      }
+    },
+    {
+      "name": "Task-Space Control Interface for SoftBank Humanoids and its Human-Robot Interaction Applications",
+      "description": "In this video, we present an open-source software interface, called mc_naoqi, that allows to perform whole-body task-space Quadratic Programming based control, implemented in mc_rtc framework, on the SoftBank Robotics Europe humanoid robots. We showcase the use of the developed open-source tools for running the human-robot close contact interaction experiments with real human subjects inspired from assistance scenarios. Finally, we describe in detail the entire system including the control interface, associated robot description packages and modules and how the developed tools connect to the mc_rtc controller.",
+      "endDate": "2020",
+      "location": "LIRMM - Montpellier - France",
+      "keywords": ["C++", "mc_rtc", "Pepper", "integration"],
+      "url": "https://hal.science/hal-02919367",
+      "media":
+      {
+        "url": "https://www.youtube.com/watch?v=qzEnCGlT93s",
+        "type": "video",
+        "title": "Task-Space Control Interface for SoftBank Humanoids and its Human-Robot Interaction Applications"
+      }
+    },
+    {
+      "name": "Impact-Aware Task-Space Quadratic-Programming Control",
+      "description": "Robots usually establish contacts at rigid surfaces with near-zero relative velocities. Otherwise, impact-induced energy propagates in the robot’s linkage and may cause irreversible damage to the hardware. Moreover, abrupt changes in task-space contact velocity and peak impact forces also result in abrupt changes in robot joint velocities and torques;which can compromise controllers’ stability, especially for those based on smooth models. In reality, several tasks would require establishing contact with moderately high velocity. We propose to enhance task-space multi-objective controllers formulated as a quadratic program (QP) to be resilient to frictional impacts in three dimensions. We devise new constraints and reformulate the usual ones to be robust to the abrupt joint state changes mentioned earlier. The impact event becomes a controlled process once the optimal control search space is aware of: (1) the hardware-affordable impact bounds and (2) the analytically-computed feasible set (polyhedra) that constrain post-impact critical states. Prior to and nearby the targeted contact spot, we assume, at each control cycle, that the impact will occurat the next iteration. This somewhat one-step preview makes our controller robust to impact time and location. To assess our approach, we experimented its resilience to moderate impacts with the Panda manipulator and achieved swift grabbing tasks with the HRP-4 humanoid robot.",
+      "endDate": "2022",
+      "location": "LIRMM - Montpellier - France",
+      "keywords": ["Paper", "C++", "mc_rtc", "HRP-4", "Logistics", "Impact"],
+      "url": "https://arxiv.org/pdf/2006.01987",
+      "media":
+      {
+        "url": "https://www.youtube.com/watch?v=78xPQ_7qM4I",
+        "type": "video",
+        "title": "Impact-Aware Task-Space Quadratic-Programming Control"
+      }
+    },
+    {
+      "name": "Online Object Searching by a Humanoid Robot in an Unknown Environment",
+      "description": "The main video of Online Object Searching by a Humanoid Robot in an Unknown Environment, ICRA-RAL2021. M.Tsuru, A.Escande, A.Tanguy, K.Chappellet, and K.Harada, AIST, Japan.",
+      "endDate": "2021-03",
+      "location": "AIST - Tsukuba - Japan",
+      "keywords": ["Paper", "C++", "mc_rtc", "HRP-2Kai", "SLAM", "Mapping", "Localization", "Exploration", "Object Manipulation"],
+      "url": "https://ieeexplore.ieee.org/abstract/document/9361266",
+      "media":
+      {
+        "url": "https://www.youtube.com/watch?v=2rr84jnez4k",
+        "type": "video",
+        "title": "Online Object Searching by a Humanoid Robot in an Unknown Environment"
+      }
     }
   ],
   "meta": {

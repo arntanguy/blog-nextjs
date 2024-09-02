@@ -1,7 +1,7 @@
 import Keywords from './CVKeywords';
-import { MapPinIcon } from '@heroicons/react/24/outline';
 import { ResumeWorkType } from '@/app/(portfolio)/JSONResumeSchema';
-import { StartEndDate } from '@/app/components/portfolio/Date';
+import { DateAndLocation } from '@/app/components/portfolio/DateAndLocation';
+import Markdown from 'markdown-to-jsx'
 
 export const ExperienceDetails = ( { experience } : { experience : ResumeWorkType }) => {
   const { name, location, description, position, url, startDate, endDate, summary, highlights, keywords } = experience;
@@ -11,7 +11,7 @@ export const ExperienceDetails = ( { experience } : { experience : ResumeWorkTyp
       {position}
       {url &&
       <a href={url} target="_blank"
-        className='capitalize text-primary dark:text-primaryDark'
+        className='capitalize text-primary dark:text-primaryDark hover:text-dark hover:dark:text-light'
       > @ {name}</a>
       }
       {!url &&
@@ -20,23 +20,17 @@ export const ExperienceDetails = ( { experience } : { experience : ResumeWorkTyp
       </span>
       }
     </h3>
-    <div className='flex items-center justify-start flex-wrap uppercase text-sm md:text-lg font-medium dark:text-gray-300 text-gray-600'>
-      <StartEndDate startDate={startDate} endDate={endDate} />
-      <span className='mx-auto'></span>
-      <div className="flex items-center justify-center">
-        <MapPinIcon className="inline-block h-4 w-4 mr-2" /> {location}
-      </div>
-    </div>
+    <DateAndLocation startDate={startDate} endDate={endDate} location={location} />
     { summary &&
-      <p className='font-medium text-sm md:text-lg w-full'>
-        {summary}
-      </p>
+      <span>
+        <Markdown>{summary}</Markdown>
+      </span>
     }
     { highlights &&
       <ul className='ml-8 list-disc font-medium text-sm md:text-lg w-full'>
         {
           highlights.map((item, index) => (
-          <li key={item + index}> {item}</li>
+          <li key={item + index}><span><Markdown>{item}</Markdown></span></li>
             ))
         }
       </ul>

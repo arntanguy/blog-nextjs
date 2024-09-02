@@ -16,15 +16,15 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <>
-      <div className="my-32 grid grid-cols-1 md:grid-cols-2 items-start justify-center">
+    <div className="max-w-[1600px] mx-auto">
+      <div className="h-screen my-auto grid grid-cols-1 md:grid-cols-2 items-start justify-center">
       <div className="w-full flex flex-col items-center self-center">
           {/* <span className="text-xl">Placeholder for picture</span> */}
-          <div className="relative w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px]">
+          <div className="relative w-[200px] h-[200px] md:w-[350px] md:h-[350px] lg:w-[450px] lg:h-[450px]">
           <Image src="/portfolio/arnaud_tanguy.jpg" alt="Photo of Arnaud TANGUY" className="object-cover rounded-full" fill />
           </div>
       </div>
-      <div className="w-full flex flex-col items-center self-center">
+      <div className="w-full flex flex-col items-center self-center p-2">
         <AnimatedText text="Software Engineer in Robotics and Computer Vision" className="!text-3xl md:!text-4xl lg:!text-6xl !text-left" />
         <p className="my-4 text-base font-medium">I am a skilled <Keyword>C++ software engineer</Keyword>  with <Keyword>8⁺ years</Keyword> of experience in <Keyword>Humanoid Robotics</Keyword> and <Keyword>Computer Vision</Keyword>. I have worked as a research engineer for both CNRS (France) and AIST (Japan) on control of state-of-the-art full size Humanoid Robots. Our work has lead to the development of the mc_rtc robotics framework.</p>
         <div className="flex items-center self-start mt-2">
@@ -42,6 +42,6 @@ p-2.5 px-6 rounded-lg text-lg font-semiboold `} download>Resume <LinkIcon classN
         
       <CVComponent />
       <Footer />
-    </>
+    </div>
   );
 }
