@@ -50,13 +50,15 @@ export function DummyIcon({ scale, className } : { scale?: number, className?: s
   )
 }
 
+// One colum below md size
+// Two colum on larger screen 
 export function FeaturedProject( { project } : { project: FeaturedProjectType } ) {
   const ref = React.useRef(null);
   return (
       <div ref={ref} className="flex w-full first:mt-0 mb-16 last:mb-0">
           <div className="hidden md:flex md:w-2/5 items-center justify-center">
             { project.media 
-              ? <MediaPlayer image={project.media} className="w-full h-[350px]" showTitle={false} />
+              ? <MediaPlayer image={project.media} className="w-full !h-[350px]" showTitle={false} />
               : <DummyIcon scale={1} />
             }
           </div>
@@ -64,13 +66,13 @@ export function FeaturedProject( { project } : { project: FeaturedProjectType } 
 
         { project.media &&
             <div className="md:hidden w-full first:mt-0 mt-16 mb-2 flex items-center justify-center">
-              <MediaPlayer image={project.media} className="w-full h-[150px]" showTitle={false} />
+              <MediaPlayer image={project.media} className="w-full h-[300px]" showTitle={false} />
             </div>
         }
 
         <h1 className="uppercase flex items-center self-start font-bold text-xl md:text-2xl">
           { !project.media &&
-            <DummyIcon scale={0.} className="mr-2" />
+            <DummyIcon scale={0.3} className="mr-2" />
           }
           <CVLink href={project.url}>{project.name}</CVLink>
         </h1>
