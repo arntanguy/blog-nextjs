@@ -408,12 +408,6 @@
       }
     },
     {
-      "name": "COMANOID H2020 European Research Project",
-      "startDate": "2015-01-31",
-      "description": "COMANOID (Multi-Contact Collaborative Humanoids in Aircraft Manufacturing) is a RIA four-year European research project that started in January 2015 as part of the Horizon H2020 program. The project focuses on developping abilities of humanoid robots to evolve in complex enviroment -namely an aircraft fuselage- through whole body multi-contact planning motion with embeded 6D dense SLAM localization.",
-      "url": "http://comanoid.cnrs.fr/"
-    },
-    {
       "name": "Robohow.Cog",
       "startDate": "2014-10-31",
       "description": "*Robohow* is a **four-year European research project** that started in February 2012. It aims at enabling robots to competently perform everyday human-scale manipulation activities - both in human working and living environments. In order to achieve this goal, *Robohow* pursues a knowledge-enabled and plan-based approach to robot programming and control. The vision of the project is that of a cognitive robot that autonomously performs complex everyday manipulation tasks and extends its repertoire of such by acquiring new skills using web-enabled and experience-based learning as well as by observing humans. ",
@@ -500,6 +494,7 @@
       "description": "COMANOID (Multi-Contact Collaborative Humanoids in Aircraft Manufacturing) is a RIA four-year European research project that started in January 2015 as part of the Horizon H2020 program. The project focuses on developping abilities of humanoid robots to evolve in complex enviroment -namely an aircraft fuselage- through whole body multi-contact planning motion with embeded 6D dense SLAM localization.",
       "location": "Airbus - Saint Nazaire",
       "keywords": ["Best paper award", "C++", "mc_rtc", "SLAM", "Manufacturing"],
+      "roles": ["Integration of Dense Visual SLAM for Localization and Mapping within the Airplane", "Accurate Control of the Humanoid robot based on Visual SLAM"],
       "url": "https://cordis.europa.eu/article/id/386867-humanoids-may-soon-conquer-airplane-assembly",
       "media":
       {
@@ -515,6 +510,10 @@
       "description": "",
       "location": "Las Vegas - USA",
       "keywords": ["Finalist", "International competition", "Team AIST-NEDO", "mc_rtc", "SLAM", "Iterative Closest Point"],
+      "highlights": ["Took part in major worldwide competition lead by US military research agency", 
+        "Developed robot-control strategies for disaster response scenarios, designed specifically to emulate the conditions of Fukushima nuclear plant",
+        "Ranked 10 out of 23 leading labs"],
+      "roles": ["Localization and Mapping", "Object Registration (ICP)"],
       "url": "https://cordis.europa.eu/article/id/386867-humanoids-may-soon-conquer-airplane-assembly",
       "media":
       {
@@ -531,6 +530,7 @@
       "description": "To efficiently achieve complex humanoid loco-manipulation tasks in industrial contexts, we propose a combined vision-based tracker-localization interplay integrated as part of a task-space whole-body optimization control. To achieve good perception complementarity between manipulation and localization, a new fast dense 3D model-based tracking using wide-angle depth image is developed and used in conjunction with a simultaneous localization and mapping software. Our approach allows humanoid robots, targeted for industrial manufacturing, to manipulate and assemble large-scale objects while walking. It is assessed with experiments consisting in rolling and assembling in an unwinder a heavy and wide bobbin using bimanual grasping and bipedal locomotion at a time. This experimental use-case is found in some large-scale manufacturing where bobbins are enrolled with various materials (cables, papers, rubbers, etc.). The same experiments are made using two different humanoid robots of the same family.",
       "location": "Confidential - Industrial Factory",
       "keywords": ["C++", "mc_rtc", "SLAM", "Manufacturing"],
+      "roles": ["Software Engineering for the demonstrator's implementation", "Consulting for the implementation of the Dense Visual Tracker for the Bobbin"],
       "url": "https://cordis.europa.eu/article/id/386867-humanoids-may-soon-conquer-airplane-assembly",
       "media":
       {

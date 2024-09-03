@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="mx-auto w-full">
-      <div className="h-screen my-auto grid grid-cols-1 md:grid-cols-2 items-start justify-center">
+      <div className="h-screen my-auto grid grid-cols-1 md:grid-cols-2 items-center justify-center">
       <div className="w-full flex flex-col items-center self-center">
           {/* <span className="text-xl">Placeholder for picture</span> */}
           <div className="relative w-[200px] h-[200px] md:w-[350px] md:h-[350px] lg:w-[450px] lg:h-[450px]">
