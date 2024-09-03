@@ -1,15 +1,12 @@
 import React from 'react';
 import {MediaPlayer} from '@/app/components/Carousel';
-import { CarouselType } from '@/app/blog/lib/definitions';
 import { FeaturedProjectType } from '@/app/(portfolio)/JSONResumeSchema'; 
-import { CVSectionTitle } from '@/app/(portfolio)/CVSections';
 import { DateAndLocation } from '@/app/components/portfolio/DateAndLocation';
 import Markdown from 'markdown-to-jsx'
 import Keywords from '@/app/components/portfolio/CVKeywords';
 import CVLink from '@/app/components/portfolio/CVLink';
 import {nanoid} from 'nanoid'
 import clsx from 'clsx'
-import LiIcon from '@/app/components/portfolio/LiIcon';
 
 export const sortFeaturedProjects = ( projects : FeaturedProjectType[] ) =>
 {
@@ -72,7 +69,7 @@ export function FeaturedProject( { project } : { project: FeaturedProjectType } 
 
         <h1 className="uppercase flex items-center self-start font-bold text-xl md:text-2xl">
           { !project.media &&
-            <DummyIcon scale={0.3} className="mr-2" />
+            <DummyIcon scale={0.3} className="block md:hidden mr-2" />
           }
           <CVLink href={project.url}>{project.name}</CVLink>
         </h1>

@@ -433,7 +433,7 @@
     {
       "name": "StartRacing (DEVINT)",
       "startDate": "2012-01-31",
-      "description": "The goal of this project was to create a game for visually impaired people. We focused on creating a 3D game, that provides a great user experience for both people with perfect vision and those with disabilities.\n\nThe game is built around the idea of using sound as a main gameplay component. The sound made by the engine is created by interpolating between multiple audio recording of real car engines recorded at specific fixed rpm. This provides a realistic engine sound that is directly correlated to the car performance at any given RPM and gear ratio.\n\nAdditionnaly to sound, great care was taken into modelling realistic car engine physics.\nIt uses torque curve data obtained from the cars brand used in the game to compute the force generated on each wheel, and thus achieve a realistic car speed.\n\n\nThis allowed us to build a game mode suitable for even blind people, where the concept is to have the user compete with an artificial intelligence in a quarter mile race. The user needs to change gears at the most appropriate moment based on sound to achieve maximum speed, and beat the AI.\nIn that mode, the AI uses a gaussian-like statistical model to choose when to change gears.\n\nWe also created a \"free for all\" mode, where cars have an artificial intelligence making them try to hit the player's car. A damage system is in place modulating the damage according to the angle and strenght of collisions (managed by Bullet Physics).\n\n\nThe project has been tested during Project DEVINT 2012 by a class of primary school students, and their supervisors, suffering from a wide range of visual defficiencies, including blindness. Even blind people were able to successfully manage to beat the artificial intelligence just by hearing the sound made by the engine!\n\nMain technologies: Java, OpenGL",
+      "description": "3D Game implemented specifically for visually impaired people, that can be played based on listening to simulated engine sounds.",
       "url": "http://prdevint.polytech.unice.fr/index.php",
       "endDate": "2012-03-31",
       "keywords": ["Java", "OpenGL", "Game Development", "Computer Graphics", "Computer Science", "University"]
@@ -555,10 +555,12 @@
     {
       "name": "ICRA2019 - Closed-loop MPC with Dense Visual SLAM-Stability through Reactive Stepping",
       "description": "Closed-loop MPC with Dense Visual SLAM-Stability through Reactive Stepping - Arnaud Tanguy, Daniele de Simone, Andrew Comport, Giuseppe Oriolo, Abderrahmane Kheddar",
+      "featured": true,
       "endDate": "2020-10-01",
       "location": "AIST - Tsukuba - Japan",
       "keywords": ["C++", "mc_rtc", "SLAM", "Model Predictive Control"],
       "url": "https://hal.archives-ouvertes.fr/hal-01883725",
+      "roles": ["Implementation of the whole demo", "Integration of the HRP-5P robot with mc_rtc"],
       "media":
       {
         "url": "https://www.youtube.com/watch?v=h38D6yRJM24",
@@ -587,6 +589,7 @@
       "location": "LIRMM - Montpellier - France",
       "keywords": ["C++", "mc_rtc", "Force Control", "Stability"],
       "url": "https://hal.science/hal-02297879",
+      "roles": ["Implemantation of the demonstrator"],
       "media":
       {
         "url": "https://www.youtube.com/watch?v=Wai-Lp4e5FE",
@@ -615,6 +618,7 @@
       "location": "LIRMM - Montpellier - France",
       "keywords": ["C++", "mc_rtc", "Pepper", "integration"],
       "url": "https://hal.science/hal-02919367",
+      "roles": ["Integration of the robot Pepper with mc_rtc", "Help with controller implementation"],
       "media":
       {
         "url": "https://www.youtube.com/watch?v=qzEnCGlT93s",
