@@ -7,6 +7,8 @@ import Keywords from '@/app/components/portfolio/CVKeywords';
 import CVLink from '@/app/components/portfolio/CVLink';
 import {nanoid} from 'nanoid'
 import clsx from 'clsx'
+import { Suspense } from 'react';
+import { shimmer } from '@/app/ui/animations';
 
 export const sortFeaturedProjects = ( projects : FeaturedProjectType[] ) =>
 {
@@ -21,16 +23,6 @@ export const sortFeaturedProjects = ( projects : FeaturedProjectType[] ) =>
     return 0;
   })
   return sortedProjects;
-
-  // return (
-  //   <>
-  //     <CVSectionTitle title="Featured Projects" />
-  //     {
-  //       sortedProjects.map((project) => (
-  //         <FeaturedProject key={nanoid()} project={project} />
-  //       ))
-  //     }
-  //   </>)
 }
 
 export function DummyIcon({ scale, className } : { scale?: number, className?: string })
@@ -47,23 +39,46 @@ export function DummyIcon({ scale, className } : { scale?: number, className?: s
   )
 }
 
+export function FeaturedProjectMediaLargeScreenSkeleton() {
+  return (
+      <div className={`${shimmer} relative overflow-hidden w-full h-[350px] dark:bg-gray-700 bg-gray-300`}>
+      </div>
+  )
+}
+
+export function FeaturedProjectMediaSmallScreenSkeleton() {
+  return (
+      <div className={`${shimmer} relative overflow-hidden w-full h-[300px] dark:bg-gray-700 bg-gray-300`}>
+      </div>
+  )
+}
+
 // One colum below md size
 // Two colum on larger screen 
 export function FeaturedProject( { project } : { project: FeaturedProjectType } ) {
   const ref = React.useRef(null);
   return (
       <div ref={ref} className="flex w-full first:mt-0 mb-16 last:mb-0">
+          {/* Media displayed wide on the left colum for large screen */}
           <div className="hidden md:flex md:w-2/5 items-center justify-center">
-            { project.media 
-              ? <MediaPlayer image={project.media} className="w-full !h-[350px]" showTitle={false} />
+            { project.media
+              ? 
+            <>
+                <Suspense fallback={<FeaturedProjectMediaLargeScreenSkeleton />}>
+                  <MediaPlayer image={project.media} className="w-full !h-[350px]" showTitle={false} />
+                </Suspense>
+                </>
               : <DummyIcon scale={1} />
             }
           </div>
         <div className={clsx("w-full md:w-3/5", "flex flex-col justify-center, px-2 md:px-8")}>
 
+        {/* Media displayed on the left column for large screens */}
         { project.media &&
             <div className="md:hidden w-full first:mt-0 mt-16 mb-2 flex items-center justify-center">
-              <MediaPlayer image={project.media} className="w-full h-[300px]" showTitle={false} />
+              <Suspense fallback={<FeaturedProjectMediaSmallScreenSkeleton />}>
+                <MediaPlayer image={project.media} className="w-full h-[300px]" showTitle={false} />
+              </Suspense>
             </div>
         }
 

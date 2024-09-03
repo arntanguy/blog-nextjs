@@ -10,6 +10,8 @@ import { nanoid } from 'nanoid'
 export function MediaPlayer( { image, className, showTitle = false } : { image: CarouselImage, className: string, showTitle?: boolean } )
 {
   let path = image.url;
+  // Wait 2s
+  setTimeout(() => {}, 5000);
   return (
     <div key={image.url} className={`relative flex overflow-hidden rounded-lg ${className}`} >
       { (!image.type || image.type === "image") &&

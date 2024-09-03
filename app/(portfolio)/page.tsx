@@ -9,19 +9,29 @@ import Image from 'next/image';
 import Keyword from '@/app/components/Keyword';
 import SocialButtons from '@/app/components/Social';
 import { PortfolioSocials } from '@/app/components/Social';
+import { Suspense } from 'react' 
+import { shimmer } from '@/app/ui/animations';
 
 export const metadata: Metadata = {
   title: 'Portfolio | Arnaud TANGUY',
 };
 
+const LoadingAvatarSkeleton = () =>
+{
+  return (
+    <div className={`${shimmer} relative overflow-hidden w-full h-full !rounded-full dark:bg-gray-700`}></div>
+  )
+}
+
 export default function Page() {
   return (
     <div className="mx-auto w-full">
       <div className="h-screen my-auto grid grid-cols-1 md:grid-cols-2 items-center justify-center">
-      <div className="w-full flex flex-col items-center self-center">
-          {/* <span className="text-xl">Placeholder for picture</span> */}
-          <div className="relative w-[200px] h-[200px] md:w-[350px] md:h-[350px] lg:w-[450px] lg:h-[450px]">
-          <Image src="/portfolio/arnaud_tanguy.jpg" alt="Photo of Arnaud TANGUY" className="object-cover rounded-full" fill />
+      <div className="w-full flex flex-col items-center justify-center">
+          <div className="relative w-[200px] h-[200px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px] p-2">
+          <Suspense fallback={<LoadingAvatarSkeleton />}>
+            <Image src="/portfolio/arnaud_tanguy.jpg" alt="Photo of Arnaud TANGUY" className="object-cover rounded-full" fill />
+          </Suspense>
           </div>
       </div>
       <div className="w-full flex flex-col items-center justify-center p-2">

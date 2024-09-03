@@ -21,6 +21,13 @@ const config: Config = {
         primaryDark: "#f97316", // light orange
       }
     },
+    keyframes: {
+      shimmer: {
+        '100%': {
+          transform: 'translateX(100%)',
+        },
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
