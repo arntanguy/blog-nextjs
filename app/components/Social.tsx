@@ -1,9 +1,10 @@
-import { FaInstagram } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaPaypal } from "react-icons/fa";
-import { FaStrava } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import { FaPaypal } from "react-icons/fa6";
+import { FaStrava } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGoogleScholar } from "react-icons/fa6";
 
 type SocialType = { icon: JSX.Element, url: string }
 
@@ -19,6 +20,7 @@ export const DefaultSocials : SocialType[] = [
 
 export const PortfolioSocials : SocialType[] = [
   { icon: <FaGithub    size="1.25rem" />, url: "https://github.com/arntanguy" },
+  { icon: <FaGoogleScholar    size="1.25rem" />, url: "https://scholar.google.fr/citations?user=SeWUqycAAAAJ" },
   { icon: <FaLinkedin    size="1.25rem" />, url: "https://www.linkedin.com/in/arnaud-tanguy" },
 ]
 
