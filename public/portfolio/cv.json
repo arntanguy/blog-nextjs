@@ -26,7 +26,7 @@
       "position": "Robotics Engineer - Humanoid Robotics",
       "startDate": "2021-10-31",
       "endDate": "2024-04-31",
-      "highlights": ["Live robot dance performance on stage at Centre des Arts Enghain-les-Bains", "ANA Avatar XPrize Finalist"],
+      "highlights": ["Live robot dance performance on stage at Centre des Arts Enghain-les-Bains", "ANA Avatar XPrize Finalist", "Large-scale loco-manipulation demonstration on-sight for an industrial partner (confidential)"],
       "url": "https://www.linkedin.com/company/cnrs/",
       "location": "Montpellier, Occitanie, France",
       "keywords": ["C++", "Humanoid Robotics", "Unity", "Augmented Reality", "ANA Avatar XPRIZE", "mc_rtc framework"]
@@ -77,7 +77,7 @@
       "startDate": "2014-03-31",
       "endDate": "2014-09-30",
       "highlights": [],
-      "summary": "Place recognition using Convolutional Neural Networks (deep-learning) applied to SLAM Loop-closure detection algorithms.\n\nMain technologies: C++, GPU (Cuda), Python",
+      "summary": "Place recognition using Convolutional Neural Networks (deep-learning) applied to SLAM Loop-closure detection algorithms.",
       "keywords": ["C++", "Python", "Deep Learning", "Convolutional Neural Networks", "Caffe framework", "CUDA",  "SLAM", "Loop-closure detection"],
       "url": "https://www.linkedin.com/school/technische-universitat-munchen/",
       "location": "Munich"
@@ -396,10 +396,10 @@
       "name": "mc_rtc robotics framework",
       "startDate": "2016-12-31",
       "description": "I am one of the lead developpers of the mc_rtc robotics framework. It has been used extensively at both AIST and LIRMM research labs. Notable achievements with the framework include:",
-      "highlights": ["DARPA Robotic Challenge",
-        "COMANOID project: large scale aircraft manufacturing in partnership with Airbus", "ANA Avatar XPrize Finalist", "Walking, including stair climbing (see https://github.com/jrl-umi3218/lipm_walking_controller)", "Widely used within the research community", "Fully open-source under BSD-2"],
+      "highlights": ["DARPA Robotic Challenge Finals",
+        "COMANOID project: large scale aircraft manufacturing in partnership with Airbus", "ANA Avatar XPrize Finals", "Supports 20+ Robots (Humanoids, Manipulators and Quadrupeds)", "Walking, including stair climbing (see https://github.com/jrl-umi3218/lipm_walking_controller)", "Widely used within the research community", "Fully open-source under BSD-2"],
       "url": "https://jrl-umi3218.github.io/mc_rtc/index.html",
-      "roles": ["Co-Lead Developper", "Implementation of industrial demonstrators", "Support for PhD and PostDocs (Paper experiments, framework development)", "Integration with robots and sensors"],
+      "roles": ["Co-Lead Developper and Maintainer", "Implementation of industrial demonstrators", "Support for PhD and PostDocs (Paper experiments, framework development)", "Integration with robots and sensors"],
       "keywords": ["C++", "mc_rtc", "ROS", "ROS2", "Real-time Control", "Humanoid Robots", "HRP-2", "HRP-4", "HRP-5P", "Pepper", "NAO", "Sawyer", "Panda", "Kukka LWR"],
       "media":
       {
@@ -411,14 +411,26 @@
       "name": "Robohow.Cog",
       "startDate": "2014-10-31",
       "description": "*Robohow* is a **four-year European research project** that started in February 2012. It aims at enabling robots to competently perform everyday human-scale manipulation activities - both in human working and living environments. In order to achieve this goal, *Robohow* pursues a knowledge-enabled and plan-based approach to robot programming and control. The vision of the project is that of a cognitive robot that autonomously performs complex everyday manipulation tasks and extends its repertoire of such by acquiring new skills using web-enabled and experience-based learning as well as by observing humans. ",
-      "url": "http://robohow.eu/",
+      "media":
+      {
+        "url": "/portfolio/featured_projects/robohow.png",
+        "title": "Robohow.Cog"
+      },
+      "url": "https://robohow.org/",
       "endDate": "2015-02-28"
     },
     {
       "name": "Loop-closure detection for visual odometry (SLAM)",
       "startDate": "2014-03-31",
-      "highlights": ["Visual odometery consists of tracking the position and orientation of camera-like sensors as they are moving. As the camera moves, drift in the estimated camera pose can accumulate.", "Loop-closure detection is a technique to minimise the pose drift, by exploiting knowledge about previously visited locations. The goal of this project was to explore the feasibility of using \"convolutional neural networks\" to perform place-recognition."],
-      "keywords": ["C++", "GPU (Cuda)", "Python"],
+      "url": "/portfolio/featured_projects/rapport_stage_final_tum.pdf",
+      "description": "Visual odometery consists of tracking the position and orientation of camera-like sensors as they are moving. As the camera moves, drift in the estimated camera pose can accumulate. Loop-closure detection is a technique to minimise the pose drift, by exploiting knowledge about previously visited locations. The goal of this project was to explore the feasibility of using convolutional neural networks to perform place-recognition.",
+      "roles": ["Integrated Siamese Neural Networks into the Caffe deep learning framework", "Trained and evaluated the use of convolutional neural networks to perform place recognition", "Implemented a loop-closure detection algorithm in C++ and Python"],
+      "media":
+      {
+        "url": "/portfolio/featured_projects/loop_closure.png",
+        "title": "Loop-closure detection for SLAM"
+      },
+      "keywords": ["C++", "Python", "Deep Learning", "Convolutional Neural Networks", "Caffe framework", "CUDA",  "SLAM", "Loop-closure detection"],
       "endDate": "2014-09-30"
     },
     {
@@ -426,15 +438,25 @@
       "startDate": "2008-06-30",
       "description": "Fotowall is an opensource tool that creates patchworks with photos, text, live videos from your webcam. The development of this application helped me to build up my C++ experience along with my knowledge of the framwork Qt. It also developed my capacities of teamwork, and I learned to use project managment tools like git.",
       "url": "https://github.com/enricoros/fotowall",
+      "media":
+      {
+        "url": "/portfolio/featured_projects/fotowall.jpg",
+        "title": "Fotowall"
+      },
       "endDate": "2012-03-31",
       "keywords": ["C++", "Qt", "Self-taught", "git", "collaborative project", "open source"]
 
     },
     {
-      "name": "StartRacing (DEVINT)",
+      "name": "StartRacing - Projet DEVINT (Déficients Visuels et Nouvelles Technologies)",
       "startDate": "2012-01-31",
       "description": "3D Game implemented specifically for visually impaired people, that can be played based on listening to simulated engine sounds.",
-      "url": "http://prdevint.polytech.unice.fr/index.php",
+      "url": "https://users.polytech.unice.fr/~strombon/DEVINT2015/LesProjetsDevint.html",
+      "media":
+      {
+        "url": "/portfolio/featured_projects/start_racing.jpg",
+        "title": "StartRacing"
+      },
       "endDate": "2012-03-31",
       "keywords": ["Java", "OpenGL", "Game Development", "Computer Graphics", "Computer Science", "University"]
 
