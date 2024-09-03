@@ -92,12 +92,12 @@ export function FeaturedProject( { project } : { project: FeaturedProjectType } 
         <DateAndLocation location={project.location} startDate={project.startDate} endDate={project.endDate} />
 
         { project.description &&
-          <div className="text-lg w-full mt-4 md:mt-8">
+          <div className="text-base md:text-lg w-full mt-4 md:mt-8">
               <Markdown>{project.description}</Markdown>
           </div>
         }
         { project.highlights &&
-          <ul className='ml-4 md:ml-8 list-disc font-medium text-sm md:text-lg w-full mt-2 md:mt-4'>
+          <ul className='pl-4 md:pl-8 list-disc font-medium text-sm md:text-lg !w-full mt-2 md:mt-4'>
           { project.highlights.map((highlight) => (
             <li key={nanoid()}><span><Markdown key={nanoid()}>{highlight}</Markdown></span></li>
             ))
@@ -108,7 +108,7 @@ export function FeaturedProject( { project } : { project: FeaturedProjectType } 
           project.roles &&
             <>
             <h3 className='font-bold uppercase tracking-wide text-lg md:text-xl dark:text-primaryDark text-primary mt-4 md:mt-8'>Roles</h3>
-            <ul className='ml-4 md:ml-8 list-disc font-medium text-sm md:text-lg w-full mt-1 md:mt-2'>
+            <ul className='pl-4 md:pl-8 list-disc font-medium text-base md:text-lg w-full mt-1 md:mt-2'>
             {
               project.roles.map((role) => (
                 <li key={nanoid()}><span><Markdown key={nanoid()}>{role}</Markdown></span></li>

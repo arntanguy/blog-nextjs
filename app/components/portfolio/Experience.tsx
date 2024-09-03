@@ -27,7 +27,7 @@ export const ExperienceDetails = ( { experience } : { experience : ResumeWorkTyp
       </span>
     }
     { highlights &&
-      <ul className='ml-8 list-disc font-medium text-sm md:text-lg w-full'>
+      <ul className='pl-8 list-disc font-medium text-sm md:text-lg w-full'>
         {
           highlights.map((item, index) => (
           <li key={item + index}><span><Markdown>{item}</Markdown></span></li>
