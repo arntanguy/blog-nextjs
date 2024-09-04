@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { motion } from 'framer-motion';
 import AnimatedText from '@/app/components/portfolio/AnimatedText';
 import Link from 'next/link';
 import { LinkIcon } from '@heroicons/react/24/outline';
@@ -30,7 +29,7 @@ export default function Page() {
       <div className="w-full flex flex-col items-center justify-center">
           <div className="relative w-[200px] h-[200px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px]">
           <Suspense fallback={<LoadingAvatarSkeleton />}>
-            <Image src="/portfolio/arnaud_tanguy.jpg" alt="Photo of Arnaud TANGUY" className="object-cover rounded-full" fill />
+            <Image src="/portfolio/arnaud_tanguy_2.jpg" alt="Photo of Arnaud TANGUY" className="object-cover rounded-full" fill />
           </Suspense>
           </div>
       </div>
