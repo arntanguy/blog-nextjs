@@ -60,12 +60,12 @@ export function FeaturedProject( { project } : { project: FeaturedProjectType } 
   return (
       <div ref={ref} className="flex w-full first:mt-0 mb-16 last:mb-0">
           {/* Media displayed wide on the left colum for large screen */}
-          <div className="hidden md:flex md:w-2/5 items-center justify-center">
+          <div className="hidden md:flex md:w-2/5 p-2 md:p-4 items-center justify-center">
             { project.media
               ? 
             <>
                 <Suspense fallback={<FeaturedProjectMediaLargeScreenSkeleton />}>
-                  <MediaPlayer image={project.media} className="w-full !h-[350px]" showTitle={false} />
+                  <MediaPlayer image={project.media} className="w-full !h-[350px] !bg-transparent" showTitle={false} />
                 </Suspense>
                 </>
               : <DummyIcon scale={1} />
@@ -77,7 +77,7 @@ export function FeaturedProject( { project } : { project: FeaturedProjectType } 
         { project.media &&
             <div className="md:hidden w-full first:mt-0 mt-16 mb-2 flex items-center justify-center">
               <Suspense fallback={<FeaturedProjectMediaSmallScreenSkeleton />}>
-                <MediaPlayer image={project.media} className="w-full h-[300px]" showTitle={false} />
+                <MediaPlayer image={project.media} className="w-full h-[300px] !bg-transparent" showTitle={false} />
               </Suspense>
             </div>
         }
