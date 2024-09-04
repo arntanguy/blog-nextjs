@@ -677,6 +677,57 @@
       }
     }
   ],
+  "robots":
+  [ 
+    {
+      "name": "HRP-2Kai",
+      "url": "/portfolio/robots/hrp2.jpg"
+    },
+    {
+      "url": "/portfolio/robots/hrp4.jpg",
+      "name": "HRP-4"
+    },
+    {
+      "url": "/portfolio/robots/hrp4cr.jpg",
+      "name": "HRP-4CR"
+    },
+    {
+      "url": "/portfolio/robots/hrp5p.jpg",
+      "name": "HRP-5P"
+    },
+    {
+      "url": "/portfolio/robots/nao.jpg",
+      "name": "NAO"
+    },
+    {
+      "url": "/portfolio/robots/pepper.jpg",
+      "name": "Pepper"
+    },
+    {
+      "url": "/portfolio/robots/sawyer.jpg",
+      "name": "Sawyer"
+    },
+    {
+      "url": "/portfolio/robots/ur5e.png",
+      "name": "UR5e"
+    },
+    {
+      "url": "/portfolio/robots/panda.png",
+      "name": "Panda"
+    },
+    {
+      "url": "/portfolio/robots/bazar.jpg",
+      "name": "Bazar"
+    },
+    {
+      "url": "/portfolio/robots/fetch_image.png",
+      "name": "Fetch"
+    },
+    {
+      "url": "/portfolio/robots/aliengo.jpg",
+      "name": "Aliengo"
+    }
+  ],
   "meta": {
     "version": "v1.0.0",
     "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"

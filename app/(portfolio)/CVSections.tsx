@@ -5,9 +5,10 @@ import { ExperienceDetails } from '@/app/components/portfolio/Experience';
 import { ProjectsDetails } from '@/app/components/portfolio/Projects';
 import AnimatedTimeline from '@/app/components/portfolio/AnimatedTimeline';
 import AnimatedTimelineItem from '@/app/components/portfolio/AnimatedTimelineItem';
-import { ResumeWorkType, ResumeEducationType, FeaturedProjectType } from '@/app/(portfolio)/JSONResumeSchema';
+import { ResumeWorkType, ResumeEducationType, FeaturedProjectType, Robot} from '@/app/(portfolio)/JSONResumeSchema';
 import { nanoid } from 'nanoid'
 import { FeaturedProject } from '@/app/components/portfolio/FeaturedProject';
+import { HorizontalScrollCarousel } from '@/app/components/ScrollCarousel'; 
 
 export function CVSectionTitle( { title } : { title: string } )
 {
@@ -16,7 +17,7 @@ export function CVSectionTitle( { title } : { title: string } )
       <h2 className="font-bold text-6xl lg:text-8xl mb-32 w-full text-center">
         {title} 
       </h2>
-      </div>)
+    </div>)
 }
 
 export function CVEducation( { educationSection } : { educationSection: ResumeEducationType[] } )
@@ -41,6 +42,27 @@ export function CVEducation( { educationSection } : { educationSection: ResumeEd
         </AnimatedTimeline>
       </div>
   )
+}
+
+export function CVRobots( { robots } : { robots: Robot[] } )
+{
+  const cards = robots.map(robot => {
+    return {
+      url: robot.url,
+      title: robot.name
+    }
+  });
+
+  return (
+    <>
+      <h2 className="font-bold text-6xl lg:text-8xl mt-8 md:mt-32 mb-8 w-full text-center">
+        Robots
+      </h2>
+      <p className="text-xl dark:text-gray-400 text-center">I have worked with the following robots:</p>
+      <HorizontalScrollCarousel cards={cards} />
+    </>
+  );
+
 }
 
 export function CVWork( { workSection } : { workSection: ResumeWorkType[] } )

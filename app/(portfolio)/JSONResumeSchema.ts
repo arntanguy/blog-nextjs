@@ -26,7 +26,15 @@ export type FeaturedProjectType = ProjectsType &
   featured: boolean
 };
 
+export type Robot = 
+{
+  name: string,
+  url: string,
+  roles?: string[]
+};
+
 export type FullResumeSchema = ResumeSchema & {
-  featuredProjects?: FeaturedProjectType[],
+  projects?: FeaturedProjectType[],
+  robots?: Robot[],
 };
 
