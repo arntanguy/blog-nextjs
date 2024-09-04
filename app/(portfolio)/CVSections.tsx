@@ -71,7 +71,7 @@ export function CVRobots( { robots } : { robots: Robot[] } )
       <h2 className="font-bold text-6xl lg:text-8xl mt-8 md:mt-32 mb-8 w-full text-center">
         Robots
       </h2>
-      <p className="text-xl dark:text-gray-400 text-center">I have worked with the following robots:</p>
+      <p className="text-xl dark:text-gray-400 text-center">I have worked with the following <span className="text-primary uppercase font-semibold tracking-wider">{robots.length} robots</span>, and more!</p>
       <div className="hidden md:block">
         <HorizontalScrollCarousel cards={cards} />
       </div>

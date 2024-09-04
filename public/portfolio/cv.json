@@ -696,12 +696,20 @@
       "name": "HRP-5P"
     },
     {
+      "url": "/portfolio/robots/talos.webp",
+      "name": "Talos"
+    },
+    {
       "url": "/portfolio/robots/nao.jpg",
       "name": "NAO"
     },
     {
       "url": "/portfolio/robots/pepper.jpg",
       "name": "Pepper"
+    },
+    {
+      "url": "/portfolio/robots/hoap3.png",
+      "name": "HOAP-3"
     },
     {
       "url": "/portfolio/robots/sawyer.jpg",
@@ -726,6 +734,14 @@
     {
       "url": "/portfolio/robots/aliengo.jpg",
       "name": "Aliengo"
+    },
+    {
+      "url": "/portfolio/robots/Yaskawa_HC10DTP.webp",
+      "name": "Yaskawa HC10DT"
+    },
+    {
+      "url": "/portfolio/robots/FANUC_R-1000iA.jpg",
+      "name": "FANUC R-1000iA"
     }
   ],
   "meta": {
