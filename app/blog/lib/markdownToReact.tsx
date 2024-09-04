@@ -53,7 +53,7 @@ export function MarkdownToReact({ post } : { post: Post }) {
     {
       const carousel = post.carousels[name];
       // Wrap in not-prose to prevent the prose style from messing up the carousel layout
-      return <div className="not-prose"><Carousel carousel={carousel} fullWidth={fullWidth} /></div>;
+      return <div className="not-prose"><Carousel carousel={carousel} fullWidth={fullWidth} mediaClassName="!bg-gray-600" /></div>;
     }
     else
     {

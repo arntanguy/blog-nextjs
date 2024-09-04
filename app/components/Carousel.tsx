@@ -36,7 +36,7 @@ export function MediaPlayer( { image, className, showTitle = false } : { image: 
       </div>)
 }
 
-export default function Carousel( { carousel, fullWidth = true, background = true, showTitle=true }: { carousel : CarouselType, fullWidth?: boolean, background?: boolean, showTitle?: boolean } )
+export default function Carousel( { carousel, fullWidth = true, background = true, showTitle=true, mediaClassName }: { carousel : CarouselType, fullWidth?: boolean, background?: boolean, showTitle?: boolean, mediaClassName?: string } )
 {
   const images = carousel.images;
 
@@ -56,7 +56,7 @@ export default function Carousel( { carousel, fullWidth = true, background = tru
                   {
                     image.url = carousel.basePath + "/" + image.url; // relative path
                   }
-                  return (<MediaPlayer key={nanoid()} image={image} showTitle={showTitle} className="h-48 md:h-96" />);
+                  return (<MediaPlayer key={nanoid()} image={image} showTitle={showTitle} className={`h-48 md:h-96 ${mediaClassName}`} />);
               }
               )
             }
