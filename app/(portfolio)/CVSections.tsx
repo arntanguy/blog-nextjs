@@ -115,7 +115,12 @@ export function CVProjects( { projectsSection } : { projectsSection: FeaturedPro
 
   return (
     <div className="w-full mx-auto">
-      <CVSectionTitle title="Projects" />
+      <div className="my-16 md:my-32">
+        <h2 className="font-bold text-6xl lg:text-8xl mt-8 md:mt-32 mb-8 w-full text-center">
+          Projects
+        </h2>
+        <p className="text-xl dark:text-gray-400 text-center">I have worked on the following <span className="text-primary uppercase font-semibold tracking-wider">{projectsSection.length} projects</span>, and more!</p>
+        </div>
         {/* <AnimatedTimeline> */}
           {
           projectsSection.map((projectElement : FeaturedProjectType) => {

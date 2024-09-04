@@ -408,6 +408,32 @@
       }
     },
     {
+      "name": "Knee Orthosis",
+      "startDate": "2023",
+      "endDate": "2024-04",
+      "description": "Developpement of an mc_rtc controller for evaluation of novel knee orthosis devices.",
+      "url": "https://github.com/jrl-umi3218/panda_prosthesis",
+      "keywords": ["C++", "mc_rtc", "Orthosis", "Medical Robotics", "Panda", "Force Control"],
+      "media":
+      {
+        "url": "/portfolio/featured_projects/PandaBrace.png",
+        "title": "Panda Orthosis"
+      }
+    },
+    {
+      "name": "BoneTag: Robotics for learning in-vivo knee (implants) motion monitoring",
+      "startDate": "2023",
+      "endDate": "2024-04",
+      "description": "BoneTag is developping a novel sensor to track the motion of knee prosthesis in patients in real-time. I developped a controller using Franka Emika's Panda robot to evaluate the accuracy of the sensor and help improve their deep-learning based tracker.",
+      "url": "https://bonetag.eu/kneematics/",
+      "keywords": ["C++", "mc_rtc", "Medical Robotics", "Panda", "Sensor integration"],
+      "media":
+      {
+        "url": "/portfolio/featured_projects/bonetag_kneematics.png",
+        "title": "BoneTag"
+      }
+    },
+    {
       "name": "Robohow.Cog",
       "startDate": "2014-10-31",
       "description": "*Robohow* is a **four-year European research project** that started in February 2012. It aims at enabling robots to competently perform everyday human-scale manipulation activities - both in human working and living environments. In order to achieve this goal, *Robohow* pursues a knowledge-enabled and plan-based approach to robot programming and control. The vision of the project is that of a cognitive robot that autonomously performs complex everyday manipulation tasks and extends its repertoire of such by acquiring new skills using web-enabled and experience-based learning as well as by observing humans. ",
