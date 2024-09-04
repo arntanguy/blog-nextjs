@@ -25,10 +25,10 @@ const LoadingAvatarSkeleton = () =>
 
 export default function Page() {
   return (
-    <div className="mx-auto w-full">
+    <div className="mx-auto w-full mt-4">
       <div className="h-screen my-auto grid grid-cols-1 md:grid-cols-2 items-center justify-center">
       <div className="w-full flex flex-col items-center justify-center">
-          <div className="relative w-[200px] h-[200px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px] p-2">
+          <div className="relative w-[200px] h-[200px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px]">
           <Suspense fallback={<LoadingAvatarSkeleton />}>
             <Image src="/portfolio/arnaud_tanguy.jpg" alt="Photo of Arnaud TANGUY" className="object-cover rounded-full" fill />
           </Suspense>
