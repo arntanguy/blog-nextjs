@@ -100,7 +100,7 @@ const Card = ({ card, showTitle = true } : { card: any, showTitle?: boolean }) =
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110 bg-neutral-200 dark:bg-gray-700 h-[450px]"
+        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110 bg-neutral-200 h-[450px]"
       >
       </div>
       { showTitle &&

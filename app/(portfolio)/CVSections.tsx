@@ -9,6 +9,8 @@ import { ResumeWorkType, ResumeEducationType, FeaturedProjectType, Robot} from '
 import { nanoid } from 'nanoid'
 import { FeaturedProject } from '@/app/components/portfolio/FeaturedProject';
 import { HorizontalScrollCarousel } from '@/app/components/ScrollCarousel'; 
+import Carousel from '@/app/components/Carousel';
+import { CarouselImage, CarouselType } from '@/app/blog/lib/definitions';
 
 export function CVSectionTitle( { title } : { title: string } )
 {
@@ -53,13 +55,29 @@ export function CVRobots( { robots } : { robots: Robot[] } )
     }
   });
 
+  const carouselCards : CarouselImage[] = cards.map(card => {
+    return {
+      url: card.url,
+      title: card.title
+    }
+  });
+
+  const carousel : CarouselType = {
+    images: carouselCards
+  };
+
   return (
     <>
       <h2 className="font-bold text-6xl lg:text-8xl mt-8 md:mt-32 mb-8 w-full text-center">
         Robots
       </h2>
       <p className="text-xl dark:text-gray-400 text-center">I have worked with the following robots:</p>
-      <HorizontalScrollCarousel cards={cards} />
+      <div className="hidden md:block">
+        <HorizontalScrollCarousel cards={cards} />
+      </div>
+      <div className="block md:hidden">
+        <Carousel carousel={carousel} fullWidth={false} background={false} showTitle />
+      </div>
     </>
   );
 

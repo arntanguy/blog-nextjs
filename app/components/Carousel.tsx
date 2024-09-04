@@ -13,14 +13,20 @@ export function MediaPlayer( { image, className, showTitle = false } : { image: 
   // Wait 2s
   setTimeout(() => {}, 5000);
   return (
-    <div key={image.url} className={`relative flex overflow-hidden rounded-lg ${className}`} >
+    <div key={image.url} className={`relative flex overflow-hidden rounded-lg bg-neutral-200 ${className}`} >
       { (!image.type || image.type === "image") &&
         <>
           <Image src={path} alt={image.title || ""} className="absolute h-full w-full object-contain object-center transition duration-200 group-hover:scale-110"
           sizes="(max-width: 768px) 30vw, (max-width: 1200px) 40vw, 50vw"
           fill />
             { showTitle && image.title &&
-              <span className="relative mx-4 my-3 inline-block text-sm text-white md:mx-5 md:text-lg">{image.title}</span>
+              <>
+              <div className="absolute inset-0 z-10 grid place-content-end justify-center">
+                <p className="bg-gradient-to-br from-white/20 to-white/0 p-2 text-xl font-black uppercase text-gray-800 tracking-wider backdrop-blur-lg">
+                  {image.title}
+                </p>
+              </div>
+              </>
           }
           </>
     }
@@ -30,7 +36,7 @@ export function MediaPlayer( { image, className, showTitle = false } : { image: 
       </div>)
 }
 
-export default function Carousel( { carousel, fullWidth = true }: { carousel : CarouselType, fullWidth?: boolean } )
+export default function Carousel( { carousel, fullWidth = true, background = true, showTitle=true }: { carousel : CarouselType, fullWidth?: boolean, background?: boolean, showTitle?: boolean } )
 {
   const images = carousel.images;
 
@@ -38,8 +44,7 @@ export default function Carousel( { carousel, fullWidth = true }: { carousel : C
     // Make carousel fullscreen
     <FullWidth fullWidth={fullWidth} >
       <div className={ clsx(
-        fullWidth && 'bg-gray-300 dark:bg-gray-700', // full width style
-        !fullWidth && 'bg-gray-300 dark:bg-gray-700',
+        background && 'bg-gray-300 dark:bg-gray-700', 
         "sm:rounded-xl overflow-hidden shadow-lg h-full w-full",
         "py-6 sm:py-8 lg:py-12 mt-6 sm:mt-8 lg:mt-12 mb-6 sm:mb-8 lg:mb-12")} >
         <div className="mx-auto px-2 sm:px-4 md:px-8">
@@ -51,7 +56,7 @@ export default function Carousel( { carousel, fullWidth = true }: { carousel : C
                   {
                     image.url = carousel.basePath + "/" + image.url; // relative path
                   }
-                  return (<MediaPlayer key={nanoid()} image={image} className="h-48 md:h-96" />);
+                  return (<MediaPlayer key={nanoid()} image={image} showTitle={showTitle} className="h-48 md:h-96" />);
               }
               )
             }
