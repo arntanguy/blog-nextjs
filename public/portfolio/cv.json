@@ -26,7 +26,8 @@
       "position": "Robotics Engineer - Humanoid Robotics",
       "startDate": "2021-10-31",
       "endDate": "2024-04-31",
-      "highlights": ["Live robot dance performance on stage at Centre des Arts Enghain-les-Bains", "ANA Avatar XPrize Finalist", "Large-scale loco-manipulation demonstration on-sight for an industrial partner (confidential)"],
+      "highlights": ["Live robot dance performance on stage at Centre des Arts Enghain-les-Bains", "ANA Avatar XPrize Finalist", "Large-scale loco-manipulation demonstration on-sight for an industrial partner (confidential)", "Industrial project (confidential) - Using a large 7 DoF robot Fanuc R1000IA to unload a containter full of randomly stacked objects"],
+
       "url": "https://www.linkedin.com/company/cnrs/",
       "location": "Montpellier, Occitanie, France",
       "keywords": ["C++", "Humanoid Robotics", "Unity", "Augmented Reality", "ANA Avatar XPRIZE", "mc_rtc framework"]

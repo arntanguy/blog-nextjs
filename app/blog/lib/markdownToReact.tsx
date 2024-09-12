@@ -35,6 +35,16 @@ export function MarkdownImage({ src, caption, credits, fullWidth = false } : { s
         </>;
 } 
 
+export function MarkdownImg( { title, alt, src } : { title: string, alt: string, src: string } )
+{
+  return <MarkdownImage src={src} caption={title} fullWidth={false} />
+}
+
+export function ReplacePwithDiv( { children } : { children: React.ReactNode } )
+{
+  return <div>{children}</div>
+}
+
 /*
  * Converts from markdown to JSX with curtom react components support
  *
@@ -63,6 +73,8 @@ export function MarkdownToReact({ post } : { post: Post }) {
 
   return <Markdown
     options={{
+      forceBlock: true,
+      forceInline: false,
       // These components should be wrapped in className="not-pose" when appropriate
       overrides: {
         Link: {
@@ -79,6 +91,16 @@ export function MarkdownToReact({ post } : { post: Post }) {
         },
         Strava: {
           component: Strava
+        },
+        img: {
+          component: MarkdownImg
+        },
+        // FIXME: content gets warped in <p> tag, which is not allowed
+        // since we cannot have <div> in <p> tags
+        // For now replace every <p> tag with <div>
+        // Ultimately this should be solved upstream, maybe my warping custom components in div automatically
+        p: {
+          component: ReplacePwithDiv
         }
       },
     }}>{markdown}</Markdown>;
