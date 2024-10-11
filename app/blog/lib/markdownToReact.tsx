@@ -4,35 +4,62 @@ import Markdown from 'markdown-to-jsx'
 import Link from 'next/link'
 import Carousel from '@/app/components/Carousel'
 import Video from '@/app/components/video'
-import Image from 'next/image'
 import { Post } from '@/app/blog/lib/definitions';
 import React from 'react';
 import Strava from '@/app/components/Strava'
 import FullWidth from '@/app/components/FullWidth';
 import clsx from 'clsx';
+// Syntax highlighting
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
+import {materialDark as CodeStyle} from 'react-syntax-highlighter/dist/esm/styles/prism';
+// Latex
+import TeX from '@matejmazur/react-katex'
+
+function Code({ className, children } : { className: string, children: string }) {
+  if(!className) return <></>;
+  console.log("className is " + className);
+  console.log("children is " + children);
+  const language = className.replace("lang-", "").toLowerCase();
+  console.log("Language is " + language);
+  if(language == "latex")
+  {
+    return ( <TeX as="div" className="not-prose">{children}</TeX> );
+
+  }
+  else
+  {
+    return (
+      <div className="codeBlock not-prose">
+        <SyntaxHighlighter language={language} style={CodeStyle}>
+          {children}
+        </SyntaxHighlighter>
+      </div>
+    );
+  }
+}
 
 export function MarkdownImage({ src, caption, credits, fullWidth = false } : { src: string, caption: string, credits?: string, fullWidth?: boolean }) {
   console.log("Image src: " + src + " fullwidth: " + fullWidth);
   return <>
-          <FullWidth fullWidth={fullWidth} padding={false} >
-          <div className={ clsx(
-            "relative overflow-hidden not-prose my-2 md:my-2",
-            fullWidth ?
-            "w-full my-2 md:my-2"
-            : "h-[300px] w-full" 
+    <FullWidth fullWidth={fullWidth} padding={false} >
+      <div className={ clsx(
+        "relative overflow-hidden not-prose my-2 md:my-2",
+        fullWidth ?
+          "w-full my-2 md:my-2"
+          : "h-[300px] w-full" 
       ) }>
-            {/* <Image src={src} alt={alt} className="w-full h-full object-contain object-center transition duration-200 group-hover:scale-110" fill /> */}
-            {/* XXX: Using next/image does not work without specifying height */}
-            <img src={src} alt={caption} className="w-full h-full object-contain object-center transition duration-200 group-hover:scale-110" />
-            { (caption || credits) &&
-              <figcaption className="italic ml-4 sm:ml-10 md:ml-20 lg:ml-30 p-2 md:p-4 bg-gray-200 dark:bg-gray-700 rounded-lg">
-              { caption && <p className="text-gray-600 dark:text-gray-300">{caption}</p> }
+        {/* <Image src={src} alt={alt} className="w-full h-full object-contain object-center transition duration-200 group-hover:scale-110" fill /> */}
+        {/* XXX: Using next/image does not work without specifying height */}
+        <img src={src} alt={caption} className="w-full h-full object-contain object-center transition duration-200 group-hover:scale-110" />
+        { (caption || credits) &&
+          <figcaption className="italic ml-4 sm:ml-10 md:ml-20 lg:ml-30 p-2 md:p-4 bg-gray-200 dark:bg-gray-700 rounded-lg">
+            { caption && <p className="text-gray-600 dark:text-gray-300">{caption}</p> }
               { credits && <p className="text-gray-400 dark:text-gray-400">Credits: {credits}</p> }
-              </figcaption>
-            }
-          </div>
-          </FullWidth>
-        </>;
+            </figcaption>
+      }
+      </div>
+    </FullWidth>
+    </>;
 } 
 
 export function MarkdownImg( { title, alt, src } : { title: string, alt: string, src: string } )
@@ -101,7 +128,10 @@ export function MarkdownToReact({ post } : { post: Post }) {
         // Ultimately this should be solved upstream, maybe my warping custom components in div automatically
         p: {
           component: ReplacePwithDiv
-        }
+        },
+        code: {
+          component: Code,
+        },
       },
     }}>{markdown}</Markdown>;
 }
