@@ -31,5 +31,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME}}/arntanguy/arntanguy-blog:${{ github.sha }}
-            ${{ secrets.DOCKER_HUB_USERNAME}}/arntanguy/arntanguy-blog:latest
+            ${{ secrets.DOCKER_HUB_USERNAME}}/arntanguy-blog:${{ github.sha }}
+            ${{ secrets.DOCKER_HUB_USERNAME}}/arntanguy-blog:latest
