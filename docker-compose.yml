@@ -1,0 +1,8 @@
+version: '3'
+services:
+  nextjs:
+    image: arntanguy/arntanguy-blog:latest
+  nginx:
+    image: arntanguy/arntanguy-blog:nginx-latest
+    ports:
+      - 80:80
