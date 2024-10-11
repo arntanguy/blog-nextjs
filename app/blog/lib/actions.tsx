@@ -53,14 +53,21 @@ export async function getPostBySlug(slug: string) {
 
 }
 
-export async function getAllPosts() {
+export async function getAllPosts({ showUnpublished } : { showUnpublished?: boolean } = {}) {
   const slugs = await getPostSlugs();
   const postsData = await Promise.all(
     slugs.map((slug) => getPostBySlug(slug))
   )
   return postsData
   // sort posts by date in descending order
-  .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+  // get only published posts unless showUnpublished is true
+  .filter((post) => 
+    { 
+        if(post.published == undefined)
+          return showUnpublished == undefined || !showUnpublished;
+        return post.published;
+    });
 }
 
 export async function getPostsByTag( tag: string) {

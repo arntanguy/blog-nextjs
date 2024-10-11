@@ -38,6 +38,7 @@ export type Post = {
   content: string;
   preview?: boolean;
   carousels?: Carousels;
+  published?: boolean;
 };
 
 export type TagWithCount = {
