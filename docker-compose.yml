@@ -5,4 +5,4 @@ services:
   nginx:
     image: arntanguy/arntanguy-blog:nginx-latest
     ports:
-      - 80:80
+      - 80:2285
