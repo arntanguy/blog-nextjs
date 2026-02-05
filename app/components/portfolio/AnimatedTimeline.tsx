@@ -11,7 +11,6 @@ const AnimatedTimeline = ({children} : {children: React.ReactNode}) => {
   const { scrollYProgress} = useScroll(
     {
       target: ref,
-      layoutEffect: false, 
       offset: 
       [
        "start end", // empty when the start of the container appears at the bottom of the viewport
