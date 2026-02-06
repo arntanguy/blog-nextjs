@@ -22,7 +22,29 @@
   },
   "work": [
     {
-      "name": "Centre national de la recherche scientifique",
+      "name": "LIRMM / University of Montpellier",
+      "position": "Robotics Engineer – Humanoid & Underwater Robotics",
+      "startDate": "2025-02-10",
+      "endDate": "present",
+      "highlights": [
+        "Developed and implemented whole-body dynamic balance control algorithms for humanoid robots (in collaboration with Hugo Lefevre).",
+        "Automated the generation of development and deployment environments using CI/CD pipelines, including devcontainers and Docker, to enable reproducible science and seamless demonstrator deployment on real robots.",
+        "Project Rolkneematics: designed control software and integrated sensors for capacitive tracking of human prosthesis articulation (knees, hips, shoulders, etc.).",
+        "Nix-based declarative and reproducible build systems"
+      ],
+      "url": "https://www.lirmm.fr/",
+      "location": "LIRMM, Montpellier, Occitanie, France",
+      "keywords": [
+        "C++",
+        "Humanoid Robotics",
+        "Continuous Integration",
+        "DevOps",
+        "Reproducible Science",
+        "mc_rtc framework"
+      ]
+    },
+    {
+      "name": "Centre national de la recherche scientifique (CNRS) / LIRMM",
       "position": "Robotics Engineer - Humanoid Robotics",
       "startDate": "2021-10-31",
       "endDate": "2024-04-31",
@@ -33,7 +55,7 @@
       "keywords": ["C++", "Humanoid Robotics", "Unity", "Augmented Reality", "ANA Avatar XPRIZE", "mc_rtc framework"]
     },
     {
-      "name": "National Institute of Advanced Industrial Science and Technology (AIST)",
+      "name": "National Institute of Advanced Industrial Science and Technology (AIST) / Joint Robotics Laboratory (JRL)",
       "position": "Research Engineer - Humanoid Robotics",
       "startDate": "2019-11-30",
       "endDate": "2021-04-30",
@@ -43,7 +65,7 @@
       "keywords": ["C++", "Humanoid Robotics", "Unity", "Augmented Reality", "ANA Avatar XPrize", "mc_rtc framework"]
     },
     {
-      "name": "Centre national de la recherche scientifique",
+      "name": "Centre national de la recherche scientifique / LIRMM",
       "position": "Research Engineer in Humanoid Robotics",
       "startDate": "2018-10-31",
       "endDate": "2019-11-30",
@@ -53,7 +75,7 @@
       "keywords": ["C++", "Humanoid Robotics", "SLAM", "COMANOID H2020", "mc_rtc framework"]
     },
     {
-      "name": "CNRS - Centre national de la recherche scientifique",
+      "name": "CNRS - Centre national de la recherche scientifique / I3S / LIRMM / AIST-JRL",
       "position": "PhD in Humanoid Robotics and Computer Vision",
       "startDate": "2014-10-31",
       "endDate": "2018-11-30",

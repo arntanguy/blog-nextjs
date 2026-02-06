@@ -34,8 +34,22 @@ export default function Page() {
           </div>
       </div>
       <div className="w-full flex flex-col items-center justify-center p-2">
-        <AnimatedText text="Software Engineer in Robotics and Computer Vision" className="!text-3xl md:!text-4xl lg:!text-6xl !text-left" />
-        <p className="my-4 text-base font-medium">I am a skilled <Keyword>C++ software engineer</Keyword>  with <Keyword>8⁺ years</Keyword> of experience in <Keyword>Humanoid Robotics</Keyword> and <Keyword>Computer Vision</Keyword>. I have worked as a research engineer for both CNRS (France) and AIST (Japan) on control of state-of-the-art full size Humanoid Robots. Our work has lead to the development of the mc_rtc robotics framework.</p>
+        <AnimatedText text="Research Engineer in Robotics and Computer Vision" className="!text-3xl md:!text-4xl lg:!text-6xl !text-left" />
+        <p className="my-4 text-base font-medium">
+          I am an experienced <Keyword>C++ Software Engineer</Keyword> with over <Keyword>8 years</Keyword> of expertise in <Keyword>Humanoid Robotics</Keyword> and <Keyword>Computer Vision</Keyword>.
+        </p>
+        <p className="px-6 my-2 text-base italic font-medium">
+          My work centers on designing, developing, and maintaining advanced, user-friendly control software for complex robotic systems—including humanoids, quadrupeds, and manipulators. I am committed to open science and reproducibility, ensuring that all research outcomes are accessible and verifiable. My current focus is on integrating robust DevOps and build systems to streamline the entire development pipeline, from developer experience to reliable deployment on real-world robotic platforms.
+        </p>
+          <p className="my-2 text-base italic font-medium">
+            I have contributed as a research engineer at leading institutions, including{" "}
+            <Keyword title="Computer Science, Robotics and Microelectronics Laboratory of Montpellier, Montpellier, France">LIRMM</Keyword>,{" "}
+            <Keyword title="Joint Robotics Laboratory, Tsukuba, Japan">JRL</Keyword>, and{" "}
+            <Keyword title="Laboratory of Computer Science, Signals and Systems, Sophia-Antipolis, France">I3S</Keyword>.
+            During my career, I have had the privilege of working under the mentorship of
+            <Keyword>Abderrahmane Kheddar</Keyword> and <Keyword>Andrew Comport</Keyword>.
+            My efforts have culminated in the development of the <Keyword>mc_rtc</Keyword> robotics framework.
+          </p>
         <div className="flex items-center justify-center md:self-start flex-wrap mt-2">
           <SocialButtons social={PortfolioSocials} className="!mx-0 !mr-4 !p-3" />
           <Link href="/portfolio/cv_english.pdf" target={"_blank"} className={`
